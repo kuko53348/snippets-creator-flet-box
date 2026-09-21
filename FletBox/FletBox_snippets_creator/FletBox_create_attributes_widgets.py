@@ -1,4 +1,118 @@
 attrs_all_placeholders_complete = {
+# ==========================================================================
+# CATALOGO DE SNIPPETS (attributos) - todos los keys, para citar en README.md
+# ==========================================================================
+# ANIMATION: animation_fn
+# ARRAY: chunk, reverse_fn, shuffle, sort, unique
+# BORDER: border_fn
+# CLIPBOARD: clipboard.copy, clipboard.copyWithFeedback, clipboard.read
+# COLOR: color.alpha, color.complement, color.contrast, color.darken, color.hex, color.isDark, color.isLight, color.lighten, color.rgb, color.rgba, color_fn
+# CREATE LIST: createList, createList.fromData, createList.groupBy, createList.paginate, createList.range, createList.repeat, createList.search, createList.sort, createWidget
+# DELAY: delay_fn, retry, withMinDelay
+# DEVICE: device.hasGesture, device.isDesktop, device.isMobile, device.isTablet, device.isTouch, device.onOrientationChange, device.onResize, device.orientation
+# DIMENSIONS: dimensions.addListener, dimensions.get, dimensions.height, dimensions.removeListener, dimensions.width
+# DICT: Dict, dict, emptyDict, fromEntries, fromJSON
+# FILTER: filter_fn
+# FLEX: flex_fn
+# GRADIENT: gradient_fn
+# GRID: grid_fn
+# MAP LIST: mapList, range, repeat
+# MEMO: clearMemo, memo, memoWithKey
+# OS: os.isDesktop, os.isMobile, os.name, os.version
+# RANDOM: random.age, random.boolean, random.choice, random.date, random.dateString, random.datetime, random.dayOfWeek, random.email, random.firstName, random.fullName, random.hexColor, random.id, random.lastName, random.month, random.number, random.rgbColor, random.string, random.time, random.timeAmPm, random.timestamp
+# REF: ref_fn
+# RGBA: rgba
+# SHADOW: shadow_fn
+# STRING: capitalize, capitalizeWords, lowerCase, reverseString, truncate, upperCase
+# TIME: formatDate, now, relativeTime, sleep
+# TRANSFORM: transform_fn
+# TRANSITION: transition_fn
+# useState: useState, useWatchState
+# UUID: numericId, shortId, timestampId, uuid
+# THEMES: applySystemTheme, colors, getColor, getTheme, setTheme, subscribeTheme, toggleTheme, watchSystemTheme
+# HTTP: httpDelete, httpGet, httpPatch, httpPost, httpPut
+# RAM STORE: clearAllRam, deleteRam, getAllRam, getAllRamKeys, getRam, getRamItemCount, hasRam, isRamAvailable, saveRam, subscribeRam, updateRam
+# SESSION: clearAllSession, deleteSession, deleteSessionByPrefix, deleteSessionBySuffix, getAllSessionData, getAllSessionKeys, getSession, getSessionItemCount, getSessionSize, getSessionSync, hasSession, isSessionAvailable, saveSession, updateSession
+# STORAGE: clearAllData, deleteData, deleteDataByPrefix, deleteDataBySuffix, getAllData, getAllKeys, getData, getDataSync, getItemCount, getStorageSize, hasData, isStorageAvailable, saveData, updateData
+# getWidgetProps utils: getWidgetProp, getWidgetProps, stringifyWidgetProps
+# markdownParser utils: markdownToWidgets, parseInlineToWidgets, parseMarkdownToWidgets
+# mediaTime utils: formatMediaProgress, formatMediaTime, formatMediaTimeLong, getProgressPercent, percentToSeconds
+# stopWebRefresh: stopWebRefresh
+# syntaxHighlight: generateHighlightedHtml
+# TextInputValidator: TextInputValidator.escapeHtml, TextInputValidator.filter, TextInputValidator.filterEmail, TextInputValidator.isEmail, TextInputValidator.isOnlyLetters, TextInputValidator.isOnlyNumbers, TextInputValidator.isSafe, TextInputValidator.limitLength, TextInputValidator.onlyAlphanumeric, TextInputValidator.onlyLetters, TextInputValidator.onlyNumbers, TextInputValidator.safeText, TextInputValidator.sanitize
+# units: getBaseFontSize, setBaseFontSize, toPX, toREM
+# animate.js: animate_fn, animateAsync, fadeIn, fadeInAsync, fadeOut, fadeOutAsync, pulse, pulseAsync
+# Identificación y atributos DOM: className, id, key, ref, style
+# Contenido y composición: child, children
+# Espaciado (atributo: valor): gap, margin, margin.all, margin.horizontal, margin.only, margin.vertical, padding, padding.all, padding.horizontal, padding.only, padding.vertical
+# Dimensiones: expand, flex, height, maxHeight, maxWidth, minWidth, width
+# Colores y fondos: backgroundColor, bgColor, color, gradient, opacity, textColor
+# Bordes y sombras: border, borderColor, borderRadius, borderStyle, borderWidth, boxShadow, elevation, shadow
+# Posición: bottom, left, position, right, top, zIndex
+# Flexbox / alineación: alignItems, flexDirection, flexWrap, justifyContent
+# Texto: align, letterSpacing, lineHeight, size, text, weight
+# Efectos: cursor, overflow, transform, transition
+# Eventos genéricos: onBlur, onChange, onClick, onDoublePress, onFocus, onHover, onInput, onMouseEnter, onMouseLeave, onPress, onRightClick, onScroll, onWheel
+# Estado: checked, disabled, error, expanded, label, placeholder, readonly, required, selected, value, visible
+# Iconos: icon, iconBottom, iconColor, iconLeft, iconPosition, iconRight, iconSize, iconTop
+# Variantes: fullWidth, sizeVariant, variant
+# Validación (Input): autocomplete, customPattern, inputmode, maxLength, name, onValidated, pattern, showValidationIcon, showValidationMessage, type, validation
+# Slider: inverted, max, min, onChanged, onChangeEnd, orientation, showValue, step, valuePrefix, valueSuffix
+# Dropdown: clearable, optionHoverColor, options, portal
+# Rating: activeColor, allowHalf, iconActive, iconHalf, iconInactive, inactiveColor, maxRating
+# Progress Bar: animatedStripes, backgroundColorProgress, borderRadiusProgress, colorProgress, glow, heightProgress, indeterminate, maxProgress, progress, stripeColor, striped, valueProgress
+# Chip: iconChip, labelChip, onDelete
+# List Tile: description, divider, hoverColor, leftItem, rightItem, selectedBgColor, subtitle, subtitleWidget, title
+# Card: elevationCard
+# Avatar: alt, fit, shape, src
+# Image: poster
+# Button: buttonText, onLongPress
+# Switch: onToggle
+# Checkbox / Radio: onCheck, onSelect
+# Snackbar: action, dismissible, duration, message, onAction, onShow, positionSnackbar, typeSnackbar
+# Modal / BottomSheet / AlertDialog: actions, cancelText, closeOnDragDown, closeOnEsc, closeOnOverlayClick, confirmText, content, contentBgColor, footerBgColor, footerBorder, footerPadding, headerBgColor, headerBorder, headerPadding, headerTextColor, modalContentElevation, modalFooterElevation, modalHeaderElevation, onCancel, onClose, onConfirm, onOpen, overlayColor, showCloseButton, showDragHandle, variantDialog
+# BottomSheet específico: bottomSheetActionBorderColor, bottomSheetActionPadding, bottomSheetContentPadding, bottomSheetDragHandleColor, bottomSheetDragHandleHeight, bottomSheetDragHandlePadding, bottomSheetDragHandleWidth, bottomSheetHeaderBorderColor, bottomSheetHeaderPadding, bottomSheetOverlayZIndex
+# Accordion: animate, animationDuration, childrenAccordion, contentPadding, expandedColor, iconCollapsed, iconColorAccordion, iconExpanded, iconSizeAccordion, onToggleAccordion, titlePadding, variantAccordion
+# Stepper: activeStep, backLabel, finishLabel, nextLabel, onFinish, onStepChange, orientationStepper, showLabelsStepper, showNavigation, steps, variantStepper
+# Pagination: currentPage, maxButtons, onPageChange, pageSize, showFirstLast, showPrevNext, showTotal, totalItems
+# Tree View: childrenGap, collapseIcon, defaultExpanded, expandedNodes, expandIcon, fileIcon, folderIcon, folderOpenIcon, iconSizeTree, indent, nodeGap, nodePadding, nodes, onToggleTree, selectable, selectedNodeId, showIcons, treeFolderIconColor, treeHoverBgColor, treeIconColor, treeSelectedBgColor, treeSelectedTextColor, treeTextColor
+# Chart: areaColor, areaGradient, areaGradientColors, axisColor, barColor, candleDownColor, candleSpacing, candleUpColor, candleWidth, chartBgColor, chartPadding, data, labels, lineColor, showGrid, showLabelsChart, showValues, smooth, textColorChart, typeChart, yAxisColor
+# QR Code: bgColorQR, errorCorrection, fgColorQR, sizeQR, valueQR
+# Circular Bar: animateCircular, animationDurationCircular, backgroundColorCircular, colorCircular, glowCircular, glowColor, gradientCircular, innerColor, innerStrokeWidth, labelCircular, labelColor, labelSize, labelSizeCircular, lineCap, markers, maxCircular, onClickCircular, onComplete, onHoverCircular, shadowBlur, shadowColor, sizeCircular, strokeWidth, subtitleCircular, subtitleColor, subtitleSize, thumbColor, tooltipCircular, trackColor, valueCircular, valueColorCircular, valueDecimals, valueFormat, valueSizeCircular
+# Carousel: autoPlay, buttonBgColorCarousel, buttonIconColor, buttonIconSizeCarousel, buttonSizeCarousel, dotActiveColor, dotActiveSize, dotColor, dotSize, infinite, interval, items, onIndexChange, showArrows, showDots
+# Video / Audio: autoplay, controls, loopMedia, muted, onEnd, onLoad, onPause, onPlay, onProgress, onTimeUpdate, volume
+# Drag & Drop: acceptGroups, cloneOnDrag, dragBorderColor, dragData, dragImage, dragOpacity, dragOverlayColor, group, onDragEnd, onDragEnter, onDragLeave, onDragOver, onDragStart, onDrop
+# DroppBox: droppBoxActiveBgColor, droppBoxActiveBorderColor, droppBoxActiveBorderStyle, droppBoxActiveBorderWidth, droppBoxActiveShadow, droppBoxInvalidBgColor, droppBoxInvalidBorderColor, droppBoxShowFeedback, droppBoxTransitionDuration, droppBoxTransitionTiming, droppBoxValidBgColor, droppBoxValidBorderColor
+# Tooltip: delay, offset, showArrow, tooltipPosition, tooltipText
+# Skeleton: pulseDuration, skeletonAnimation, skeletonCount, skeletonGap, skeletonHighlightColor, skeletonShimmerColor, skeletonVariant, skeletonWaveDuration
+# Code Viewer: code, codeBorderRadius, codeFontSize, codeMaxHeight, codeTitle, lineNumberColor, lineNumberWidth, showHeader, showLineNumbers, startingLineNumber
+# Inspector: inspect, inspectWidget, printWidgetCode
+# Markdown: allowDangerousHtml, blockquoteBorderColor, codeBgColor, codeColor, linkColor, markdownText, preBgColor
+# Install Button: installText, onInstalled
+# App Bar: actionsAppBar, backButtonRoute, centerTitle, hideOnScroll, leading, onBackPress, scrollThreshold, showBackButton, sticky
+# Bottom Navigation: currentIndex, itemsBottomNav, onTabChange, selectedColor, showLabels, unselectedColor, useRouter
+# Tabs: activeIndex, badges, childrenTabs, dividerColorTabs, iconPositionTabs, iconSizeTabs, onChangeTabs, showDivider, showIconTabs, tabs, variantTabs
+# Drawer: blur, blurIntensity, closeOnEscDrawer, closeOnOverlayClickDrawer, drawerBody, drawerBorderRadius, drawerFooter, drawerHeader, drawerPosition, drawerWidth, elevationDrawer
+# Collapsible Sidebar: borderRight, expandedSidebar, onToggleSidebar, showTooltip, tooltipDelay, widthCollapsed, widthExpanded
+# Drawer Item: closeOnPress, disableTransform, hintColor, route, trailingIcon
+# Scaffold: appBar, body, bottomBar, closeDrawerOnNavigate, drawer, fab, leftNavBar, leftNavBarWidth, navSideBar, navSideBarPosition, navSideBarWidth, rightNavBar, rightNavBarWidth, routes
+# List View / Grid View: bufferSize, crossAxisCount, itemSize, ListEmptyComponent, ListFooterComponent, ListHeaderComponent, onEndReached, onEndReachedThreshold, onRefresh, renderItem, showsScrollIndicator, wrapItems
+# Data Table: borderColorTable, bordered, borderWidthTable, cellPadding, columns, headerBgColorTable, headerCellPadding, headerFontSize, headerFontWeight, headerTextColorTable, hoverable, hoverRowBgColor, onRowClick, rowBgColor, rowFontSize, rows, rowTextColor, stripedRowBgColor
+# Floating Action Button: elevationFAB, extended, mini
+# Matrix Rain: chars, fadeAmount, fontSize, positionMatrix, resetProbability, speed, useDynamicColor
+# Parallax Box: directionParallax, durationParallax, easing, maxOffset, onParallaxMove, reverse, speedParallax, typeParallax
+# Animated Text: animations, delayBetween, orientationAnimatedText, sameTime
+# Animated Box: fillMode, timing
+# 4. ROUTER API (funciones de navegación avanzada): buildUrl, clearRouter, closeDrawer, destroyDrawer, getCurrentPath, getCurrentRoute, getCurrentRouteConfig, getRoute, goForward, isActive, openDrawer, replace, subscribeRouter, toggleDrawer
+# 5. CORE / PWA / HMR: createApp, getHMR, initHMR, insertAfter, insertBefore, insertBy, installPWA, isPWAInstalled, mountAll, prependBy, removePWA, replaceBy, updatePWA
+# 6. SERVICIOS (clases y HTTP): httpRequest, RamStore, Session, Storage
+# 7. VISUAL EFFECTS (utils de animación DOM): applyGlow, applyIndeterminate, applyPulse, applyShimmer, applyStripes, injectKeyframes, removeStripes
+# 8. MARKDOWN / SYNTAX HIGHLIGHT (utils de parser): escapeHtml, highlightColors, parseInlineMarkdown, parseMarkdown, tokenize
+# 9. THEMES (adicional): palettes, useTheme
+# 10. NAVIGATION / MISC UTILS: addNavigation, heightDims, printFn, stackPosition, widthDims
+# 11. PROPS EXTRA POR WIDGET (según API real del framework): actionsGap, alignColumn, buttonTop, customValueFormatter, direction, formatterColumn, gradientAngle, marks, minHeight, onEnter, onIconPress, passwordToggle, showCancel, showMarks, textAlign, thumbSize, titleSize, titleWeight, valueColor, valuePosition, valueSize, wrap
+# ==========================================================================
+
     # =========================================================================
     # 1. UTILIDADES (funciones) – terminan en _fn para no chocar con props
     # =========================================================================

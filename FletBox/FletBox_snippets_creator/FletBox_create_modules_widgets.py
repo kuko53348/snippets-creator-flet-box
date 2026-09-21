@@ -1,4 +1,13 @@
 only_modules = {
+# ==========================================================================
+# CATALOGO DE SNIPPETS (modules) - todos los keys, para citar en README.md
+# ==========================================================================
+# PAGE TEMPLATES (createPage): createPage.container, createPage.minimal
+# SCAFFOLD TEMPLATES (createPageScaffold): createPageScaffold.basic, createPageScaffold.bottomnav, createPageScaffold.drawer, createPageScaffold.full, createPageScaffold.router, createPageScaffold.tabs
+# COMPONENT TEMPLATES (createComponent): createComponent.basic, createComponent.gridview, createComponent.listview
+# WIDGET TEMPLATES (createWidget): createWidget.basic, createWidget.stateful, createWidget.withProps
+# ==========================================================================
+
     # =========================================================================
     # PAGE TEMPLATES (createPage)
     # =========================================================================

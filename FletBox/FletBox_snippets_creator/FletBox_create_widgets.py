@@ -1,4 +1,107 @@
 only_controls = {
+# ==========================================================================
+# CATALOGO DE SNIPPETS (widgets) - todos los keys, para citar en README.md
+# ==========================================================================
+# Container: Container.basic, Container.full, Container.normal
+# Row: Row.basic, Row.full, Row.normal
+# Column: Column.basic, Column.full, Column.normal
+# Stack: Stack.basic, Stack.full, Stack.normal
+# Expanded: Expanded.basic, Expanded.full, Expanded.normal
+# Text: Text.basic, Text.full, Text.normal
+# Button: Button.basic, Button.full, Button.normal
+# Icon: Icon.basic, Icon.full, Icon.normal
+# Image: Image.basic, Image.full, Image.normal
+# Avatar: Avatar.basic, Avatar.full, Avatar.normal
+# Card: Card.basic, Card.full, Card.normal
+# Input: Input.basic, Input.full, Input.normal
+# Dropdown: Dropdown.basic, Dropdown.full, Dropdown.normal
+# Slider: Slider.basic, Slider.full, Slider.normal
+# Checkbox: Checkbox.basic, Checkbox.full, Checkbox.normal
+# Radio: Radio.basic, Radio.full, Radio.normal
+# Switch: Switch.basic, Switch.full, Switch.normal
+# Rating: Rating.basic, Rating.full, Rating.normal
+# Modal: Modal.basic, Modal.full, Modal.normal
+# BottomSheet: BottomSheet.basic, BottomSheet.full, BottomSheet.normal
+# AlertDialog: AlertDialog.basic, AlertDialog.full, AlertDialog.normal
+# SnackBar: SnackBar.basic, SnackBar.full, SnackBar.normal
+# Tooltip: Tooltip.basic, Tooltip.full, Tooltip.normal
+# Scaffold: Scaffold.basic, Scaffold.full, Scaffold.normal
+# AdaptiveScaffold: AdaptiveScaffold.basic, AdaptiveScaffold.full, AdaptiveScaffold.normal
+# AppBar: AppBar.basic, AppBar.full, AppBar.normal
+# Drawer: Drawer.basic, Drawer.full, Drawer.normal
+# BottomNavigation: BottomNavigation.basic, BottomNavigation.full, BottomNavigation.normal
+# Tabs: Tabs.basic, Tabs.full, Tabs.normal
+# CollapsibleSideBar: CollapsibleSideBar.basic, CollapsibleSideBar.full, CollapsibleSideBar.normal
+# DrawerItem: DrawerItem.basic, DrawerItem.full, DrawerItem.normal
+# Router: Router.buildUrl, Router.clearRouter, Router.closeDrawer, Router.destroyDrawer, Router.getCurrentPath, Router.getCurrentRoute, Router.getCurrentRouteConfig, Router.getRoute, Router.goBack, Router.goForward, Router.goTo, Router.init, Router.isActive, Router.openDrawer, Router.replace, Router.subscribe, Router.toggleDrawer, Router.useParams, Router.useQueryParams
+# ListView: ListView.basic, ListView.full, ListView.normal
+# GridView: GridView.basic, GridView.full, GridView.normal
+# DataTable: DataTable.basic, DataTable.full, DataTable.normal
+# Chart: Chart.basic, Chart.full, Chart.normal
+# QRCode: QRCode.basic, QRCode.full, QRCode.normal
+# CodeViewer: CodeViewer.basic, CodeViewer.full, CodeViewer.normal
+# Video: Video.basic, Video.full, Video.normal
+# Audio: Audio.basic, Audio.full, Audio.normal
+# Carousel: Carousel.basic, Carousel.full, Carousel.normal
+# AnimatedBox: AnimatedBox.basic, AnimatedBox.full, AnimatedBox.normal
+# AnimatedText: AnimatedText.basic, AnimatedText.full, AnimatedText.normal
+# MatrixRain: MatrixRain.basic, MatrixRain.full, MatrixRain.normal
+# ParallaxBox: ParallaxBox.basic, ParallaxBox.full, ParallaxBox.normal
+# animate: animate.custom, animate.fadeIn, animate.fadeOut, animate.pulse
+# useState: useState
+# httpGet: httpGet
+# httpPost: httpPost
+# saveData: saveData
+# getData: getData
+# saveSession: saveSession
+# saveRam: saveRam
+# colors: colors
+# setTheme: setTheme
+# toggleTheme: toggleTheme
+# random: random.email, random.name
+# delay: delay
+# clipboard: clipboard.copy
+# dimensions: dimensions
+# device: device.isMobile
+# toREM: toREM
+# padding: padding
+# margin: margin
+# border: border
+# shadow: shadow
+# rgba: rgba
+# gradient: gradient
+# mapList: mapList
+# uuid: uuid
+# ref: ref
+# animateAsync: animateAsync
+# fadeInAsync: fadeInAsync
+# fadeOutAsync: fadeOutAsync
+# pulseAsync: pulseAsync
+# createApp: createApp
+# createWidget: createWidget.basic, createWidget.stateful, createWidget.withProps
+# httpRequest: httpRequest
+# useTheme: useTheme
+# ThemeProvider: ThemeProvider.basic, ThemeProvider.full, ThemeProvider.normal
+# Accordion: Accordion.basic, Accordion.full, Accordion.normal
+# Stepper: Stepper.basic, Stepper.full, Stepper.normal
+# Pagination: Pagination.basic, Pagination.full, Pagination.normal
+# TreeView: TreeView.basic, TreeView.full, TreeView.normal
+# Skeleton: Skeleton.basic, Skeleton.full, Skeleton.normal
+# ProgressBar: ProgressBar.basic, ProgressBar.full, ProgressBar.normal
+# CircularBar: CircularBar.basic, CircularBar.full, CircularBar.normal
+# Divider: Divider.basic, Divider.full, Divider.normal
+# Chip: Chip.basic, Chip.full, Chip.normal
+# Markdown: Markdown.basic, Markdown.full, Markdown.normal
+# Inspector: Inspector.basic, Inspector.full, Inspector.normal
+# InstallButton: InstallButton.basic, InstallButton.full, InstallButton.normal
+# Badge: Badge.basic, Badge.full, Badge.normal
+# ListTile: ListTile.basic, ListTile.full, ListTile.normal
+# FloatingActionButton: FloatingActionButton.basic, FloatingActionButton.full, FloatingActionButton.normal
+# DraggBox: DraggBox.basic, DraggBox.full, DraggBox.normal
+# DroppBox: DroppBox.basic, DroppBox.full, DroppBox.normal
+# CircularChart: CircularChart.basic, CircularChart.full, CircularChart.normal
+# ==========================================================================
+
 
 'Container.basic': 'Container({ child: Text("Hello") })',
 'Container.normal': '''Container({
