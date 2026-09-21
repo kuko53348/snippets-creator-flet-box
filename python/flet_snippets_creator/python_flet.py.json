@@ -1,0 +1,732 @@
+{
+    "at.bgcolor": {
+        "prefix": "at.bgcolor",
+        "body": ["bgcolor=ft.Colors.${1:GREY_900}"],
+        "description": "bgcolor placeholder"
+    },
+    "at.bgcolor_gradient": {
+        "prefix": "at.bgcolor_gradient",
+        "body": ["bgcolor=ft.LinearGradient(colors=[ft.Colors.${1:BLUE}, ft.Colors.${2:CYAN}])"],
+        "description": "bgcolor linear gradient"
+    },
+    "at.bgimage": {
+        "prefix": "at.bgimage",
+        "body": ["bgimage=ft.Image(src='${1:https://via.placeholder.com/600}')"],
+        "description": "background image"
+    },
+    "at.color": {
+        "prefix": "at.color",
+        "body": ["color=ft.Colors.${1:WHITE}"],
+        "description": "color placeholder"
+    },
+    "at.text": {
+        "prefix": "at.text",
+        "body": ["text='${1:flet-box}'"],
+        "description": "text simple"
+    },
+    "at.title": {
+        "prefix": "at.title",
+        "body": ["title=ft.Text('${1:flet-box}')"],
+        "description": "title as ft.Text"
+    },
+    "at.content": {
+        "prefix": "at.content",
+        "body": ["content=ft.Text('${1:flet-box}')"],
+        "description": "content as ft.Text"
+    },
+    "at.child": {
+        "prefix": "at.child",
+        "body": ["content=${1:ft.Container(content=ft.Text('${2:flet-box}'))}"],
+        "description": "child container"
+    },
+    "at.children": {
+        "prefix": "at.children",
+        "body": ["controls=${1:[ft.Text('${2:flet-box}'), ft.Text('${3:flet-box}')]}"],
+        "description": "children controls"
+    },
+    "at.children_controls": {
+        "prefix": "at.children_controls",
+        "body": ["controls=${1:[ft.Text('flet-box') for _ in range(${2:3})]}"],
+        "description": "children generator"
+    },
+    "at.width": {
+        "prefix": "at.width",
+        "body": ["width=${1:200}"],
+        "description": "width"
+    },
+    "at.height": {
+        "prefix": "at.height",
+        "body": ["height=${1:100}"],
+        "description": "height"
+    },
+    "at.min_width": {
+        "prefix": "at.min_width",
+        "body": ["min_width=${1:0}"],
+        "description": "min width"
+    },
+    "at.max_width": {
+        "prefix": "at.max_width",
+        "body": ["max_width=${1:800}"],
+        "description": "max width"
+    },
+    "at.min_height": {
+        "prefix": "at.min_height",
+        "body": ["min_height=${1:0}"],
+        "description": "min height"
+    },
+    "at.max_height": {
+        "prefix": "at.max_height",
+        "body": ["max_height=${1:600}"],
+        "description": "max height"
+    },
+    "at.expand": {
+        "prefix": "at.expand",
+        "body": ["expand=${1:False}"],
+        "description": "expand"
+    },
+    "at.flex": {
+        "prefix": "at.flex",
+        "body": ["flex=${1:1}"],
+        "description": "flex"
+    },
+    "at.alignment": {
+        "prefix": "at.alignment",
+        "body": ["alignment=ft.MainAxisAlignment.${1:START}"],
+        "description": "alignment"
+    },
+    "at.child_aspect_ratio": {
+        "prefix": "at.child_aspect_ratio",
+        "body": ["child_aspect_ratio=${1:1.0}"],
+        "description": "child aspect ratio"
+    },
+    "at.scroll": {
+        "prefix": "at.scroll",
+        "body": ["scroll='${1:auto}'"],
+        "description": "scroll"
+    },
+    "at.spacing": {
+        "prefix": "at.spacing",
+        "body": ["spacing=${1:8}"],
+        "description": "spacing"
+    },
+    "at.gap": {
+        "prefix": "at.gap",
+        "body": ["gap=${1:8}"],
+        "description": "gap"
+    },
+    "at.margin_all": {
+        "prefix": "at.margin_all",
+        "body": ["margin=ft.padding.all(${1:10})"],
+        "description": "margin all"
+    },
+    "at.padding_all": {
+        "prefix": "at.padding_all",
+        "body": ["padding=ft.padding.all(${1:10})"],
+        "description": "padding all"
+    },
+    "at.margin_only": {
+        "prefix": "at.margin_only",
+        "body": ["margin=ft.padding.only(left=${1:0}, top=${2:10}, right=${3:0}, bottom=${4:10})"],
+        "description": "margin only"
+    },
+    "at.padding_only": {
+        "prefix": "at.padding_only",
+        "body": ["padding=ft.padding.only(left=${1:0}, top=${2:10}, right=${3:0}, bottom=${4:10})"],
+        "description": "padding only"
+    },
+    "at.margin_symmetric": {
+        "prefix": "at.margin_symmetric",
+        "body": ["margin=ft.padding.symmetric(horizontal=${1:8}, vertical=${2:12})"],
+        "description": "margin symmetric"
+    },
+    "at.padding_symmetric": {
+        "prefix": "at.padding_symmetric",
+        "body": ["padding=ft.padding.symmetric(horizontal=${1:8}, vertical=${2:12})"],
+        "description": "padding symmetric"
+    },
+    "at.margin_horizontal": {
+        "prefix": "at.margin_horizontal",
+        "body": ["margin=ft.padding.symmetric(horizontal=${1:8})"],
+        "description": "margin horizontal"
+    },
+    "at.margin_vertical": {
+        "prefix": "at.margin_vertical",
+        "body": ["margin=ft.padding.symmetric(vertical=${1:12})"],
+        "description": "margin vertical"
+    },
+    "at.padding_horizontal": {
+        "prefix": "at.padding_horizontal",
+        "body": ["padding=ft.padding.symmetric(horizontal=${1:8})"],
+        "description": "padding horizontal"
+    },
+    "at.padding_vertical": {
+        "prefix": "at.padding_vertical",
+        "body": ["padding=ft.padding.symmetric(vertical=${1:12})"],
+        "description": "padding vertical"
+    },
+    "at.margin_top": {
+        "prefix": "at.margin_top",
+        "body": ["margin=ft.padding.only(top=${1:10})"],
+        "description": "margin top"
+    },
+    "at.margin_bottom": {
+        "prefix": "at.margin_bottom",
+        "body": ["margin=ft.padding.only(bottom=${1:10})"],
+        "description": "margin bottom"
+    },
+    "at.margin_left": {
+        "prefix": "at.margin_left",
+        "body": ["margin=ft.padding.only(left=${1:10})"],
+        "description": "margin left"
+    },
+    "at.margin_right": {
+        "prefix": "at.margin_right",
+        "body": ["margin=ft.padding.only(right=${1:10})"],
+        "description": "margin right"
+    },
+    "at.padding_top": {
+        "prefix": "at.padding_top",
+        "body": ["padding=ft.padding.only(top=${1:10})"],
+        "description": "padding top"
+    },
+    "at.padding_bottom": {
+        "prefix": "at.padding_bottom",
+        "body": ["padding=ft.padding.only(bottom=${1:10})"],
+        "description": "padding bottom"
+    },
+    "at.padding_left": {
+        "prefix": "at.padding_left",
+        "body": ["padding=ft.padding.only(left=${1:10})"],
+        "description": "padding left"
+    },
+    "at.padding_right": {
+        "prefix": "at.padding_right",
+        "body": ["padding=ft.padding.only(right=${1:10})"],
+        "description": "padding right"
+    },
+    "at.item_padding": {
+        "prefix": "at.item_padding",
+        "body": ["item_padding=ft.padding.all(${1:6})"],
+        "description": "item padding"
+    },
+    "at.content_padding": {
+        "prefix": "at.content_padding",
+        "body": ["content_padding=ft.padding.symmetric(horizontal=${1:12}, vertical=${2:8})"],
+        "description": "content padding"
+    },
+    "at.inner_padding": {
+        "prefix": "at.inner_padding",
+        "body": ["inner_padding=ft.padding.only(left=${1:8}, right=${2:8})"],
+        "description": "inner padding"
+    },
+    "at.border": {
+        "prefix": "at.border",
+        "body": ["border=ft.Border.all(${1:1}, ft.Colors.${2:GREY_300})"],
+        "description": "border"
+    },
+    "at.border_width": {
+        "prefix": "at.border_width",
+        "body": ["border_width=${1:1}"],
+        "description": "border width"
+    },
+    "at.border_color": {
+        "prefix": "at.border_color",
+        "body": ["border=ft.Border.all(${1:1}, ft.Colors.${2:GREY_300})"],
+        "description": "border color"
+    },
+    "at.border_radius": {
+        "prefix": "at.border_radius",
+        "body": ["border_radius=${1:8}"],
+        "description": "border radius"
+    },
+    "at.shadow": {
+        "prefix": "at.shadow",
+        "body": ["shadow=ft.Shadow(offset=ft.Offset(${1:2}, ${2:2}), blur=${3:6}, color=ft.Colors.${4:GREY_500})"],
+        "description": "shadow"
+    },
+    "at.shadow_color": {
+        "prefix": "at.shadow_color",
+        "body": ["shadow=ft.Shadow(offset=ft.Offset(${1:2}, ${2:2}), blur=${3:6}, color=ft.Colors.${4:GREY_500})"],
+        "description": "shadow color"
+    },
+    "at.bg_opacity": {
+        "prefix": "at.bg_opacity",
+        "body": ["opacity=${1:0.8}"],
+        "description": "background opacity"
+    },
+    "at.gradient": {
+        "prefix": "at.gradient",
+        "body": ["bgcolor=ft.LinearGradient(colors=[ft.Colors.${1:BLUE}, ft.Colors.${2:CYAN}])"],
+        "description": "gradient"
+    },
+    "at.icon": {
+        "prefix": "at.icon",
+        "body": ["icon=ft.Icon(ft.icons.${1:INFO})"],
+        "description": "icon"
+    },
+    "at.icon_only": {
+        "prefix": "at.icon_only",
+        "body": ["icon=ft.Icon(ft.icons.${1:ADD})"],
+        "description": "icon only"
+    },
+    "at.leading": {
+        "prefix": "at.leading",
+        "body": ["leading=ft.Icon(ft.icons.${1:PERSON})"],
+        "description": "leading icon"
+    },
+    "at.trailing": {
+        "prefix": "at.trailing",
+        "body": ["trailing=ft.Icon(ft.icons.${1:CHECK})"],
+        "description": "trailing icon"
+    },
+    "at.src": {
+        "prefix": "at.src",
+        "body": ["src='${1:https://via.placeholder.com/150}'"],
+        "description": "src url"
+    },
+    "at.fit": {
+        "prefix": "at.fit",
+        "body": ["fit='${1:contain}'"],
+        "description": "fit mode"
+    },
+    "at.fit_mode": {
+        "prefix": "at.fit_mode",
+        "body": ["fit='${1:contain}'"],
+        "description": "fit mode alias"
+    },
+    "at.autoplay": {
+        "prefix": "at.autoplay",
+        "body": ["autoplay=${1:False}"],
+        "description": "autoplay"
+    },
+    "at.autoplay_lottie": {
+        "prefix": "at.autoplay_lottie",
+        "body": ["autoplay=${1:False}"],
+        "description": "autoplay lottie"
+    },
+    "at.poster": {
+        "prefix": "at.poster",
+        "body": ["poster='${1:https://via.placeholder.com/320x180}'"],
+        "description": "poster"
+    },
+    "at.javascript_enabled": {
+        "prefix": "at.javascript_enabled",
+        "body": ["javascript_enabled=${1:True}"],
+        "description": "javascript enabled"
+    },
+    "at.cache": {
+        "prefix": "at.cache",
+        "body": ["cache=${1:True}"],
+        "description": "cache"
+    },
+    "at.preload": {
+        "prefix": "at.preload",
+        "body": ["preload=${1:False}"],
+        "description": "preload"
+    },
+    "at.poster_image": {
+        "prefix": "at.poster_image",
+        "body": ["poster='${1:https://via.placeholder.com/320x180}'"],
+        "description": "poster image"
+    },
+    "at.value": {
+        "prefix": "at.value",
+        "body": ["value=${1:False}"],
+        "description": "value"
+    },
+    "at.values": {
+        "prefix": "at.values",
+        "body": ["values=${1:(10, 90)}"],
+        "description": "values"
+    },
+    "at.min": {
+        "prefix": "at.min",
+        "body": ["min=${1:0}"],
+        "description": "min"
+    },
+    "at.max": {
+        "prefix": "at.max",
+        "body": ["max=${1:100}"],
+        "description": "max"
+    },
+    "at.value_range": {
+        "prefix": "at.value_range",
+        "body": ["min=${1:0}, max=${2:100}, value=${3:50}"],
+        "description": "value range"
+    },
+    "at.checked": {
+        "prefix": "at.checked",
+        "body": ["value=${1:True}"],
+        "description": "checked"
+    },
+    "at.hint_text": {
+        "prefix": "at.hint_text",
+        "body": ["hint_text='${1:flet-box}'"],
+        "description": "hint text"
+    },
+    "at.label": {
+        "prefix": "at.label",
+        "body": ["label='${1:flet-box}'"],
+        "description": "label"
+    },
+    "at.placeholder": {
+        "prefix": "at.placeholder",
+        "body": ["hint_text='${1:flet-box}'"],
+        "description": "placeholder"
+    },
+    "at.options": {
+        "prefix": "at.options",
+        "body": ["options=${1:[\"flet-box\",\"op2\",\"op3\"]}"],
+        "description": "options"
+    },
+    "at.selected_index": {
+        "prefix": "at.selected_index",
+        "body": ["selected_index=${1:0}"],
+        "description": "selected index"
+    },
+    "at.data": {
+        "prefix": "at.data",
+        "body": ["data=${1:[10,20,30]}"],
+        "description": "data"
+    },
+    "at.labels": {
+        "prefix": "at.labels",
+        "body": ["labels=${1:[\"A\",\"B\",\"C\"]}"],
+        "description": "labels"
+    },
+    "at.points": {
+        "prefix": "at.points",
+        "body": ["points=${1:[(1,2),(2,3),(3,1)]}"],
+        "description": "points"
+    },
+    "at.max_items": {
+        "prefix": "at.max_items",
+        "body": ["max_items=${1:10}"],
+        "description": "max items"
+    },
+    "at.min_items": {
+        "prefix": "at.min_items",
+        "body": ["min_items=${1:0}"],
+        "description": "min items"
+    },
+    "at.font_size": {
+        "prefix": "at.font_size",
+        "body": ["size=${1:14}"],
+        "description": "font size"
+    },
+    "at.font_family": {
+        "prefix": "at.font_family",
+        "body": ["font_family='${1:Roboto}'"],
+        "description": "font family"
+    },
+    "at.font_weight": {
+        "prefix": "at.font_weight",
+        "body": ["weight=ft.FontWeight.${1:NORMAL}"],
+        "description": "font weight"
+    },
+    "at.text_align": {
+        "prefix": "at.text_align",
+        "body": ["text_align=ft.TextAlign.${1:LEFT}"],
+        "description": "text align"
+    },
+    "at.overflow": {
+        "prefix": "at.overflow",
+        "body": ["overflow=ft.TextOverflow.${1:ELLIPSIS}"],
+        "description": "overflow"
+    },
+    "at.max_lines": {
+        "prefix": "at.max_lines",
+        "body": ["max_lines=${1:3}"],
+        "description": "max lines"
+    },
+    "at.min_lines": {
+        "prefix": "at.min_lines",
+        "body": ["min_lines=${1:1}"],
+        "description": "min lines"
+    },
+    "at.wrap": {
+        "prefix": "at.wrap",
+        "body": ["wrap=${1:True}"],
+        "description": "wrap"
+    },
+    "at.stroke_width": {
+        "prefix": "at.stroke_width",
+        "body": ["stroke_width=${1:2}"],
+        "description": "stroke width"
+    },
+    "at.stroke_color": {
+        "prefix": "at.stroke_color",
+        "body": ["color=ft.Colors.${1:BLACK}"],
+        "description": "stroke color"
+    },
+    "at.blur": {
+        "prefix": "at.blur",
+        "body": ["blur=${1:6}"],
+        "description": "blur"
+    },
+    "at.offset": {
+        "prefix": "at.offset",
+        "body": ["offset=ft.Offset(${1:2}, ${2:2})"],
+        "description": "offset"
+    },
+    "at.animate": {
+        "prefix": "at.animate",
+        "body": ["animate=${1:True}"],
+        "description": "animate"
+    },
+    "at.animation_duration": {
+        "prefix": "at.animation_duration",
+        "body": ["animation_duration=${1:300}"],
+        "description": "animation duration"
+    },
+    "at.animation_curve": {
+        "prefix": "at.animation_curve",
+        "body": ["animation_curve=ft.AnimationCurve.${1:EASE_IN_OUT}"],
+        "description": "animation curve"
+    },
+    "at.transition": {
+        "prefix": "at.transition",
+        "body": ["transition=${1:None}"],
+        "description": "transition"
+    },
+    "at.easing": {
+        "prefix": "at.easing",
+        "body": ["duration=${1:300}, transition=ft.AnimatedSwitcherTransitionType.${2:SCALE}"],
+        "description": "easing"
+    },
+    "at.easing_curve": {
+        "prefix": "at.easing_curve",
+        "body": ["curve=ft.AnimationCurve.${1:EASE_IN_OUT}"],
+        "description": "easing curve"
+    },
+    "at.on_click": {
+        "prefix": "at.on_click",
+        "body": ["on_click=lambda e: print('${1:flet-box}')"],
+        "description": "on click"
+    },
+    "at.on_change": {
+        "prefix": "at.on_change",
+        "body": ["on_change=lambda e: print('${1:flet-box}')"],
+        "description": "on change"
+    },
+    "at.on_dismiss": {
+        "prefix": "at.on_dismiss",
+        "body": ["on_dismiss=lambda e: print('${1:flet-box}')"],
+        "description": "on dismiss"
+    },
+    "at.on_hover": {
+        "prefix": "at.on_hover",
+        "body": ["on_hover=lambda e: print('${1:hovered}')"],
+        "description": "on hover"
+    },
+    "at.on_long_press": {
+        "prefix": "at.on_long_press",
+        "body": ["on_long_press=lambda e: print('${1:long_press}')"],
+        "description": "on long press"
+    },
+    "at.on_double_tap": {
+        "prefix": "at.on_double_tap",
+        "body": ["on_double_tap=lambda e: print('${1:double_tap}')"],
+        "description": "on double tap"
+    },
+    "at.on_tap": {
+        "prefix": "at.on_tap",
+        "body": ["on_tap=lambda e: print('${1:tapped}')"],
+        "description": "on tap"
+    },
+    "at.on_submit": {
+        "prefix": "at.on_submit",
+        "body": ["on_submit=lambda e: print('${1:submitted}')"],
+        "description": "on submit"
+    },
+    "at.on_drop": {
+        "prefix": "at.on_drop",
+        "body": ["on_drop=lambda e: print('${1:dropped}')"],
+        "description": "on drop"
+    },
+    "at.on_accept": {
+        "prefix": "at.on_accept",
+        "body": ["on_accept=lambda data: print('${1:accepted}')"],
+        "description": "on accept"
+    },
+    "at.on_selected": {
+        "prefix": "at.on_selected",
+        "body": ["on_selected=lambda e: print('${1:selected}')"],
+        "description": "on selected"
+    },
+    "at.on_screenshot": {
+        "prefix": "at.on_screenshot",
+        "body": ["on_screenshot=lambda e: print('${1:screenshot}')"],
+        "description": "on screenshot"
+    },
+    "at.validator": {
+        "prefix": "at.validator",
+        "body": ["validator=lambda v: ${1:True}  # return True/False or error string"],
+        "description": "validator"
+    },
+    "at.value_binding": {
+        "prefix": "at.value_binding",
+        "body": ["value_binding=${1:my_binding}"],
+        "description": "value binding"
+    },
+    "at.format": {
+        "prefix": "at.format",
+        "body": ["format='${1:%Y-%m-%d}'"],
+        "description": "format"
+    },
+    "at.tooltip": {
+        "prefix": "at.tooltip",
+        "body": ["tooltip='${1:flet-box}'"],
+        "description": "tooltip"
+    },
+    "at.aria_label": {
+        "prefix": "at.aria_label",
+        "body": ["aria_label='${1:description}'"],
+        "description": "aria label"
+    },
+    "at.tab_index": {
+        "prefix": "at.tab_index",
+        "body": ["tab_index=${1:0}"],
+        "description": "tab index"
+    },
+    "at.enabled": {
+        "prefix": "at.enabled",
+        "body": ["enabled=${1:True}"],
+        "description": "enabled"
+    },
+    "at.visible": {
+        "prefix": "at.visible",
+        "body": ["visible=${1:True}"],
+        "description": "visible"
+    },
+    "at.readonly": {
+        "prefix": "at.readonly",
+        "body": ["readonly=${1:False}"],
+        "description": "readonly"
+    },
+    "at.selectable": {
+        "prefix": "at.selectable",
+        "body": ["selectable=${1:True}"],
+        "description": "selectable"
+    },
+    "at.open": {
+        "prefix": "at.open",
+        "body": ["open=${1:True}"],
+        "description": "open"
+    },
+    "at.open_on_start": {
+        "prefix": "at.open_on_start",
+        "body": ["open=${1:True}"],
+        "description": "open on start"
+    },
+    "at.location": {
+        "prefix": "at.location",
+        "body": ["location=(${1:23.1136}, ${2:-82.3666})"],
+        "description": "location"
+    },
+    "at.url_template": {
+        "prefix": "at.url_template",
+        "body": ["url_template='${1:https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png}'"],
+        "description": "url template"
+    },
+    "at.tile_options": {
+        "prefix": "at.tile_options",
+        "body": ["tile_options={'maxZoom':${1:18}}"],
+        "description": "tile options"
+    },
+    "at.cluster": {
+        "prefix": "at.cluster",
+        "body": ["cluster=${1:True}"],
+        "description": "cluster"
+    },
+    "at.draggable_marker": {
+        "prefix": "at.draggable_marker",
+        "body": ["draggable_marker=${1:True}"],
+        "description": "draggable marker"
+    },
+    "at.marker_radius": {
+        "prefix": "at.marker_radius",
+        "body": ["radius=${1:5}"],
+        "description": "marker radius"
+    },
+    "at.map_type": {
+        "prefix": "at.map_type",
+        "body": ["map_type='${1:streets}'"],
+        "description": "map type"
+    },
+    "at.marker_content": {
+        "prefix": "at.marker_content",
+        "body": ["content=ft.Text('${1:flet-box}')"],
+        "description": "marker content"
+    },
+    "at.figure": {
+        "prefix": "at.figure",
+        "body": ["figure=${1:None}, width=${2:400}, height=${3:300}"],
+        "description": "figure"
+    },
+    "at.plotly_figure": {
+        "prefix": "at.plotly_figure",
+        "body": ["figure=${1:None}, width=${2:400}, height=${3:300}"],
+        "description": "plotly figure"
+    },
+    "at.matplotlib_figure": {
+        "prefix": "at.matplotlib_figure",
+        "body": ["figure=${1:None}, width=${2:400}, height=${3:300}"],
+        "description": "matplotlib figure"
+    },
+    "at.feedback": {
+        "prefix": "at.feedback",
+        "body": ["feedback=ft.Text('${1:dragging}')"],
+        "description": "feedback"
+    },
+    "at.draggable": {
+        "prefix": "at.draggable",
+        "body": ["draggable=${1:False}"],
+        "description": "draggable"
+    },
+    "at.drop_target": {
+        "prefix": "at.drop_target",
+        "body": ["on_drop=lambda e: print('${1:dropped}')"],
+        "description": "drop target"
+    },
+    "at.readonly_mode": {
+        "prefix": "at.readonly_mode",
+        "body": ["readonly=${1:False}"],
+        "description": "readonly mode"
+    },
+    "at.cache_policy": {
+        "prefix": "at.cache_policy",
+        "body": ["cache=${1:True}"],
+        "description": "cache policy"
+    },
+    "at.preload_resources": {
+        "prefix": "at.preload_resources",
+        "body": ["preload=${1:False}"],
+        "description": "preload resources"
+    },
+    "at.poster_image": {
+        "prefix": "at.poster_image",
+        "body": ["poster='${1:https://via.placeholder.com/320x180}'"],
+        "description": "poster image"
+    },
+    "at.aria_role": {
+        "prefix": "at.aria_role",
+        "body": ["aria_role='${1:button}'"],
+        "description": "aria role"
+    },
+    "at.data_testid": {
+        "prefix": "at.data_testid",
+        "body": ["data_testid='${1:test-id}'"],
+        "description": "data test id"
+    },
+    "at.custom_style": {
+        "prefix": "at.custom_style",
+        "body": ["style=${1:ft.ButtonStyle(color=ft.Colors.${2:BLUE})}"],
+        "description": "custom style"
+    },
+    "at.extra": {
+        "prefix": "at.extra",
+        "body": ["extra=${1:None}"],
+        "description": "extra"
+    }
+}

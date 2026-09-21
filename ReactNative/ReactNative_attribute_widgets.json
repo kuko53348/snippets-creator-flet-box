@@ -1,0 +1,3111 @@
+{
+  "ReactNative widgets st.direction.fb.init": {
+    "prefix": "st.direction.fb.init",
+    "description": "Make a ReactNative widgets st.direction.fb.init widget",
+    "body": [
+      "direction=\"column\"",
+      "// 'column' | 'row'"
+    ]
+  },
+  "ReactNative widgets st.direction.nav.init": {
+    "prefix": "st.direction.nav.init",
+    "description": "Make a ReactNative widgets st.direction.nav.init widget",
+    "body": [
+      "direction=\"column\"",
+      "// 'column' | 'row'"
+    ]
+  },
+  "ReactNative widgets st.gap.fb.init": {
+    "prefix": "st.gap.fb.init",
+    "description": "Make a ReactNative widgets st.gap.fb.init widget",
+    "body": [
+      "gap={8}",
+      "// number - espacio entre hijos"
+    ]
+  },
+  "ReactNative widgets st.gap.nav.init": {
+    "prefix": "st.gap.nav.init",
+    "description": "Make a ReactNative widgets st.gap.nav.init widget",
+    "body": [
+      "gap={8}",
+      "// number - espacio entre hijos"
+    ]
+  },
+  "ReactNative widgets st.expand.fb.init": {
+    "prefix": "st.expand.fb.init",
+    "description": "Make a ReactNative widgets st.expand.fb.init widget",
+    "body": [
+      "expand={true}",
+      "// boolean - flex: 1"
+    ]
+  },
+  "ReactNative widgets st.expand.nav.init": {
+    "prefix": "st.expand.nav.init",
+    "description": "Make a ReactNative widgets st.expand.nav.init widget",
+    "body": [
+      "expand={true}",
+      "// boolean - flex: 1"
+    ]
+  },
+  "ReactNative widgets st.expand.rn.init": {
+    "prefix": "st.expand.rn.init",
+    "description": "Make a ReactNative widgets st.expand.rn.init widget",
+    "body": [
+      "flex: 1,",
+      "// number - flex: 1"
+    ]
+  },
+  "ReactNative widgets st.wrap.fb.init": {
+    "prefix": "st.wrap.fb.init",
+    "description": "Make a ReactNative widgets st.wrap.fb.init widget",
+    "body": [
+      "wrap={true}",
+      "// boolean - flexWrap: 'wrap'"
+    ]
+  },
+  "ReactNative widgets st.wrap.rn.init": {
+    "prefix": "st.wrap.rn.init",
+    "description": "Make a ReactNative widgets st.wrap.rn.init widget",
+    "body": [
+      "flexWrap: 'wrap',",
+      "// 'wrap' | 'nowrap' | 'wrap-reverse'"
+    ]
+  },
+  "ReactNative widgets st.padding.fb.init": {
+    "prefix": "st.padding.fb.init",
+    "description": "Make a ReactNative widgets st.padding.fb.init widget",
+    "body": [
+      "padding={16}",
+      "// number | object - espacio interno"
+    ]
+  },
+  "ReactNative widgets st.padding.rn.init": {
+    "prefix": "st.padding.rn.init",
+    "description": "Make a ReactNative widgets st.padding.rn.init widget",
+    "body": [
+      "padding: 16,",
+      "// number - espacio interno"
+    ]
+  },
+  "ReactNative widgets st.padding.nav.init": {
+    "prefix": "st.padding.nav.init",
+    "description": "Make a ReactNative widgets st.padding.nav.init widget",
+    "body": [
+      "padding={16}",
+      "// number | object - espacio interno"
+    ]
+  },
+  "ReactNative widgets st.paddingHorizontal.fb.init": {
+    "prefix": "st.paddingHorizontal.fb.init",
+    "description": "Make a ReactNative widgets st.paddingHorizontal.fb.init widget",
+    "body": [
+      "paddingHorizontal={16}",
+      "// number - padding izquierda + derecha"
+    ]
+  },
+  "ReactNative widgets st.paddingHorizontal.rn.init": {
+    "prefix": "st.paddingHorizontal.rn.init",
+    "description": "Make a ReactNative widgets st.paddingHorizontal.rn.init widget",
+    "body": [
+      "paddingHorizontal: 16,",
+      "// number - padding izquierda + derecha"
+    ]
+  },
+  "ReactNative widgets st.paddingVertical.fb.init": {
+    "prefix": "st.paddingVertical.fb.init",
+    "description": "Make a ReactNative widgets st.paddingVertical.fb.init widget",
+    "body": [
+      "paddingVertical={12}",
+      "// number - padding arriba + abajo"
+    ]
+  },
+  "ReactNative widgets st.paddingVertical.rn.init": {
+    "prefix": "st.paddingVertical.rn.init",
+    "description": "Make a ReactNative widgets st.paddingVertical.rn.init widget",
+    "body": [
+      "paddingVertical: 12,",
+      "// number - padding arriba + abajo"
+    ]
+  },
+  "ReactNative widgets st.paddingTop.fb.init": {
+    "prefix": "st.paddingTop.fb.init",
+    "description": "Make a ReactNative widgets st.paddingTop.fb.init widget",
+    "body": [
+      "paddingTop={8}",
+      "// number - padding superior"
+    ]
+  },
+  "ReactNative widgets st.paddingTop.rn.init": {
+    "prefix": "st.paddingTop.rn.init",
+    "description": "Make a ReactNative widgets st.paddingTop.rn.init widget",
+    "body": [
+      "paddingTop: 8,",
+      "// number - padding superior"
+    ]
+  },
+  "ReactNative widgets st.paddingBottom.fb.init": {
+    "prefix": "st.paddingBottom.fb.init",
+    "description": "Make a ReactNative widgets st.paddingBottom.fb.init widget",
+    "body": [
+      "paddingBottom={8}",
+      "// number - padding inferior"
+    ]
+  },
+  "ReactNative widgets st.paddingBottom.rn.init": {
+    "prefix": "st.paddingBottom.rn.init",
+    "description": "Make a ReactNative widgets st.paddingBottom.rn.init widget",
+    "body": [
+      "paddingBottom: 8,",
+      "// number - padding inferior"
+    ]
+  },
+  "ReactNative widgets st.paddingLeft.fb.init": {
+    "prefix": "st.paddingLeft.fb.init",
+    "description": "Make a ReactNative widgets st.paddingLeft.fb.init widget",
+    "body": [
+      "paddingLeft={8}",
+      "// number - padding izquierdo"
+    ]
+  },
+  "ReactNative widgets st.paddingLeft.rn.init": {
+    "prefix": "st.paddingLeft.rn.init",
+    "description": "Make a ReactNative widgets st.paddingLeft.rn.init widget",
+    "body": [
+      "paddingLeft: 8,",
+      "// number - padding izquierdo"
+    ]
+  },
+  "ReactNative widgets st.paddingRight.fb.init": {
+    "prefix": "st.paddingRight.fb.init",
+    "description": "Make a ReactNative widgets st.paddingRight.fb.init widget",
+    "body": [
+      "paddingRight={8}",
+      "// number - padding derecho"
+    ]
+  },
+  "ReactNative widgets st.paddingRight.rn.init": {
+    "prefix": "st.paddingRight.rn.init",
+    "description": "Make a ReactNative widgets st.paddingRight.rn.init widget",
+    "body": [
+      "paddingRight: 8,",
+      "// number - padding derecho"
+    ]
+  },
+  "ReactNative widgets st.margin.fb.init": {
+    "prefix": "st.margin.fb.init",
+    "description": "Make a ReactNative widgets st.margin.fb.init widget",
+    "body": [
+      "margin={16}",
+      "// number | object - espacio externo"
+    ]
+  },
+  "ReactNative widgets st.margin.rn.init": {
+    "prefix": "st.margin.rn.init",
+    "description": "Make a ReactNative widgets st.margin.rn.init widget",
+    "body": [
+      "margin: 16,",
+      "// number - espacio externo"
+    ]
+  },
+  "ReactNative widgets st.margin.nav.init": {
+    "prefix": "st.margin.nav.init",
+    "description": "Make a ReactNative widgets st.margin.nav.init widget",
+    "body": [
+      "margin={16}",
+      "// number | object - espacio externo"
+    ]
+  },
+  "ReactNative widgets st.marginHorizontal.fb.init": {
+    "prefix": "st.marginHorizontal.fb.init",
+    "description": "Make a ReactNative widgets st.marginHorizontal.fb.init widget",
+    "body": [
+      "marginHorizontal={16}",
+      "// number - margin izquierda + derecha"
+    ]
+  },
+  "ReactNative widgets st.marginHorizontal.rn.init": {
+    "prefix": "st.marginHorizontal.rn.init",
+    "description": "Make a ReactNative widgets st.marginHorizontal.rn.init widget",
+    "body": [
+      "marginHorizontal: 16,",
+      "// number - margin izquierda + derecha"
+    ]
+  },
+  "ReactNative widgets st.marginVertical.fb.init": {
+    "prefix": "st.marginVertical.fb.init",
+    "description": "Make a ReactNative widgets st.marginVertical.fb.init widget",
+    "body": [
+      "marginVertical={12}",
+      "// number - margin arriba + abajo"
+    ]
+  },
+  "ReactNative widgets st.marginVertical.rn.init": {
+    "prefix": "st.marginVertical.rn.init",
+    "description": "Make a ReactNative widgets st.marginVertical.rn.init widget",
+    "body": [
+      "marginVertical: 12,",
+      "// number - margin arriba + abajo"
+    ]
+  },
+  "ReactNative widgets st.marginTop.fb.init": {
+    "prefix": "st.marginTop.fb.init",
+    "description": "Make a ReactNative widgets st.marginTop.fb.init widget",
+    "body": [
+      "marginTop={8}",
+      "// number - margin superior"
+    ]
+  },
+  "ReactNative widgets st.marginTop.rn.init": {
+    "prefix": "st.marginTop.rn.init",
+    "description": "Make a ReactNative widgets st.marginTop.rn.init widget",
+    "body": [
+      "marginTop: 8,",
+      "// number - margin superior"
+    ]
+  },
+  "ReactNative widgets st.marginBottom.fb.init": {
+    "prefix": "st.marginBottom.fb.init",
+    "description": "Make a ReactNative widgets st.marginBottom.fb.init widget",
+    "body": [
+      "marginBottom={8}",
+      "// number - margin inferior"
+    ]
+  },
+  "ReactNative widgets st.marginBottom.rn.init": {
+    "prefix": "st.marginBottom.rn.init",
+    "description": "Make a ReactNative widgets st.marginBottom.rn.init widget",
+    "body": [
+      "marginBottom: 8,",
+      "// number - margin inferior"
+    ]
+  },
+  "ReactNative widgets st.marginLeft.fb.init": {
+    "prefix": "st.marginLeft.fb.init",
+    "description": "Make a ReactNative widgets st.marginLeft.fb.init widget",
+    "body": [
+      "marginLeft={8}",
+      "// number - margin izquierdo"
+    ]
+  },
+  "ReactNative widgets st.marginLeft.rn.init": {
+    "prefix": "st.marginLeft.rn.init",
+    "description": "Make a ReactNative widgets st.marginLeft.rn.init widget",
+    "body": [
+      "marginLeft: 8,",
+      "// number - margin izquierdo"
+    ]
+  },
+  "ReactNative widgets st.marginRight.fb.init": {
+    "prefix": "st.marginRight.fb.init",
+    "description": "Make a ReactNative widgets st.marginRight.fb.init widget",
+    "body": [
+      "marginRight={8}",
+      "// number - margin derecho"
+    ]
+  },
+  "ReactNative widgets st.marginRight.rn.init": {
+    "prefix": "st.marginRight.rn.init",
+    "description": "Make a ReactNative widgets st.marginRight.rn.init widget",
+    "body": [
+      "marginRight: 8,",
+      "// number - margin derecho"
+    ]
+  },
+  "ReactNative widgets st.border.fb.init": {
+    "prefix": "st.border.fb.init",
+    "description": "Make a ReactNative widgets st.border.fb.init widget",
+    "body": [
+      "border={1}",
+      "// number - ancho del borde"
+    ]
+  },
+  "ReactNative widgets st.border.rn.init": {
+    "prefix": "st.border.rn.init",
+    "description": "Make a ReactNative widgets st.border.rn.init widget",
+    "body": [
+      "borderWidth: 1,",
+      "// number - ancho del borde"
+    ]
+  },
+  "ReactNative widgets st.borderColor.fb.init": {
+    "prefix": "st.borderColor.fb.init",
+    "description": "Make a ReactNative widgets st.borderColor.fb.init widget",
+    "body": [
+      "borderColor=\"red\"",
+      "// string - color del borde"
+    ]
+  },
+  "ReactNative widgets st.borderColor.rn.init": {
+    "prefix": "st.borderColor.rn.init",
+    "description": "Make a ReactNative widgets st.borderColor.rn.init widget",
+    "body": [
+      "borderColor: '#ddd',",
+      "// string - color del borde"
+    ]
+  },
+  "ReactNative widgets st.borderRadius.fb.init": {
+    "prefix": "st.borderRadius.fb.init",
+    "description": "Make a ReactNative widgets st.borderRadius.fb.init widget",
+    "body": [
+      "borderRadius={8}",
+      "// number - radio de todas las esquinas"
+    ]
+  },
+  "ReactNative widgets st.borderRadius.rn.init": {
+    "prefix": "st.borderRadius.rn.init",
+    "description": "Make a ReactNative widgets st.borderRadius.rn.init widget",
+    "body": [
+      "borderRadius: 8,",
+      "// number - radio de todas las esquinas"
+    ]
+  },
+  "ReactNative widgets st.borderLeft.fb.init": {
+    "prefix": "st.borderLeft.fb.init",
+    "description": "Make a ReactNative widgets st.borderLeft.fb.init widget",
+    "body": [
+      "borderLeft={1}",
+      "// number - borde izquierdo"
+    ]
+  },
+  "ReactNative widgets st.borderLeft.rn.init": {
+    "prefix": "st.borderLeft.rn.init",
+    "description": "Make a ReactNative widgets st.borderLeft.rn.init widget",
+    "body": [
+      "borderLeftWidth: 1,",
+      "// number - borde izquierdo"
+    ]
+  },
+  "ReactNative widgets st.borderRight.fb.init": {
+    "prefix": "st.borderRight.fb.init",
+    "description": "Make a ReactNative widgets st.borderRight.fb.init widget",
+    "body": [
+      "borderRight={1}",
+      "// number - borde derecho"
+    ]
+  },
+  "ReactNative widgets st.borderRight.rn.init": {
+    "prefix": "st.borderRight.rn.init",
+    "description": "Make a ReactNative widgets st.borderRight.rn.init widget",
+    "body": [
+      "borderRightWidth: 1,",
+      "// number - borde derecho"
+    ]
+  },
+  "ReactNative widgets st.borderTop.fb.init": {
+    "prefix": "st.borderTop.fb.init",
+    "description": "Make a ReactNative widgets st.borderTop.fb.init widget",
+    "body": [
+      "borderTop={1}",
+      "// number - borde superior"
+    ]
+  },
+  "ReactNative widgets st.borderTop.rn.init": {
+    "prefix": "st.borderTop.rn.init",
+    "description": "Make a ReactNative widgets st.borderTop.rn.init widget",
+    "body": [
+      "borderTopWidth: 1,",
+      "// number - borde superior"
+    ]
+  },
+  "ReactNative widgets st.borderBottom.fb.init": {
+    "prefix": "st.borderBottom.fb.init",
+    "description": "Make a ReactNative widgets st.borderBottom.fb.init widget",
+    "body": [
+      "borderBottom={1}",
+      "// number - borde inferior"
+    ]
+  },
+  "ReactNative widgets st.borderBottom.rn.init": {
+    "prefix": "st.borderBottom.rn.init",
+    "description": "Make a ReactNative widgets st.borderBottom.rn.init widget",
+    "body": [
+      "borderBottomWidth: 1,",
+      "// number - borde inferior"
+    ]
+  },
+  "ReactNative widgets st.borderLeftColor.fb.init": {
+    "prefix": "st.borderLeftColor.fb.init",
+    "description": "Make a ReactNative widgets st.borderLeftColor.fb.init widget",
+    "body": [
+      "borderLeftColor=\"red\"",
+      "// string - color borde izquierdo"
+    ]
+  },
+  "ReactNative widgets st.borderLeftColor.rn.init": {
+    "prefix": "st.borderLeftColor.rn.init",
+    "description": "Make a ReactNative widgets st.borderLeftColor.rn.init widget",
+    "body": [
+      "borderLeftColor: '#ddd',",
+      "// string - color borde izquierdo"
+    ]
+  },
+  "ReactNative widgets st.borderRightColor.fb.init": {
+    "prefix": "st.borderRightColor.fb.init",
+    "description": "Make a ReactNative widgets st.borderRightColor.fb.init widget",
+    "body": [
+      "borderRightColor=\"red\"",
+      "// string - color borde derecho"
+    ]
+  },
+  "ReactNative widgets st.borderRightColor.rn.init": {
+    "prefix": "st.borderRightColor.rn.init",
+    "description": "Make a ReactNative widgets st.borderRightColor.rn.init widget",
+    "body": [
+      "borderRightColor: '#ddd',",
+      "// string - color borde derecho"
+    ]
+  },
+  "ReactNative widgets st.borderTopColor.fb.init": {
+    "prefix": "st.borderTopColor.fb.init",
+    "description": "Make a ReactNative widgets st.borderTopColor.fb.init widget",
+    "body": [
+      "borderTopColor=\"red\"",
+      "// string - color borde superior"
+    ]
+  },
+  "ReactNative widgets st.borderTopColor.rn.init": {
+    "prefix": "st.borderTopColor.rn.init",
+    "description": "Make a ReactNative widgets st.borderTopColor.rn.init widget",
+    "body": [
+      "borderTopColor: '#ddd',",
+      "// string - color borde superior"
+    ]
+  },
+  "ReactNative widgets st.borderBottomColor.fb.init": {
+    "prefix": "st.borderBottomColor.fb.init",
+    "description": "Make a ReactNative widgets st.borderBottomColor.fb.init widget",
+    "body": [
+      "borderBottomColor=\"red\"",
+      "// string - color borde inferior"
+    ]
+  },
+  "ReactNative widgets st.borderBottomColor.rn.init": {
+    "prefix": "st.borderBottomColor.rn.init",
+    "description": "Make a ReactNative widgets st.borderBottomColor.rn.init widget",
+    "body": [
+      "borderBottomColor: '#ddd',",
+      "// string - color borde inferior"
+    ]
+  },
+  "ReactNative widgets st.borderTopLeftRadius.fb.init": {
+    "prefix": "st.borderTopLeftRadius.fb.init",
+    "description": "Make a ReactNative widgets st.borderTopLeftRadius.fb.init widget",
+    "body": [
+      "borderTopLeftRadius={8}",
+      "// number - esquina superior izquierda"
+    ]
+  },
+  "ReactNative widgets st.borderTopLeftRadius.rn.init": {
+    "prefix": "st.borderTopLeftRadius.rn.init",
+    "description": "Make a ReactNative widgets st.borderTopLeftRadius.rn.init widget",
+    "body": [
+      "borderTopLeftRadius: 8,",
+      "// number - esquina superior izquierda"
+    ]
+  },
+  "ReactNative widgets st.borderTopRightRadius.fb.init": {
+    "prefix": "st.borderTopRightRadius.fb.init",
+    "description": "Make a ReactNative widgets st.borderTopRightRadius.fb.init widget",
+    "body": [
+      "borderTopRightRadius={8}",
+      "// number - esquina superior derecha"
+    ]
+  },
+  "ReactNative widgets st.borderTopRightRadius.rn.init": {
+    "prefix": "st.borderTopRightRadius.rn.init",
+    "description": "Make a ReactNative widgets st.borderTopRightRadius.rn.init widget",
+    "body": [
+      "borderTopRightRadius: 8,",
+      "// number - esquina superior derecha"
+    ]
+  },
+  "ReactNative widgets st.borderBottomLeftRadius.fb.init": {
+    "prefix": "st.borderBottomLeftRadius.fb.init",
+    "description": "Make a ReactNative widgets st.borderBottomLeftRadius.fb.init widget",
+    "body": [
+      "borderBottomLeftRadius={8}",
+      "// number - esquina inferior izquierda"
+    ]
+  },
+  "ReactNative widgets st.borderBottomLeftRadius.rn.init": {
+    "prefix": "st.borderBottomLeftRadius.rn.init",
+    "description": "Make a ReactNative widgets st.borderBottomLeftRadius.rn.init widget",
+    "body": [
+      "borderBottomLeftRadius: 8,",
+      "// number - esquina inferior izquierda"
+    ]
+  },
+  "ReactNative widgets st.borderBottomRightRadius.fb.init": {
+    "prefix": "st.borderBottomRightRadius.fb.init",
+    "description": "Make a ReactNative widgets st.borderBottomRightRadius.fb.init widget",
+    "body": [
+      "borderBottomRightRadius={8}",
+      "// number - esquina inferior derecha"
+    ]
+  },
+  "ReactNative widgets st.borderBottomRightRadius.rn.init": {
+    "prefix": "st.borderBottomRightRadius.rn.init",
+    "description": "Make a ReactNative widgets st.borderBottomRightRadius.rn.init widget",
+    "body": [
+      "borderBottomRightRadius: 8,",
+      "// number - esquina inferior derecha"
+    ]
+  },
+  "ReactNative widgets st.borderStyle.rn.init": {
+    "prefix": "st.borderStyle.rn.init",
+    "description": "Make a ReactNative widgets st.borderStyle.rn.init widget",
+    "body": [
+      "borderStyle: 'solid',",
+      "// 'solid' | 'dotted' | 'dashed'"
+    ]
+  },
+  "ReactNative widgets st.bgcolor.fb.init": {
+    "prefix": "st.bgcolor.fb.init",
+    "description": "Make a ReactNative widgets st.bgcolor.fb.init widget",
+    "body": [
+      "bgcolor=\"#007aff\"",
+      "// string - color de fondo"
+    ]
+  },
+  "ReactNative widgets st.bgcolor.nav.init": {
+    "prefix": "st.bgcolor.nav.init",
+    "description": "Make a ReactNative widgets st.bgcolor.nav.init widget",
+    "body": [
+      "bgcolor=\"#007aff\"",
+      "// string - color de fondo"
+    ]
+  },
+  "ReactNative widgets st.backgroundColor.rn.init": {
+    "prefix": "st.backgroundColor.rn.init",
+    "description": "Make a ReactNative widgets st.backgroundColor.rn.init widget",
+    "body": [
+      "backgroundColor: '#fff',",
+      "// string - color de fondo"
+    ]
+  },
+  "ReactNative widgets st.bgimage.fb.init": {
+    "prefix": "st.bgimage.fb.init",
+    "description": "Make a ReactNative widgets st.bgimage.fb.init widget",
+    "body": [
+      "bgimage={require('./bg.jpg')}",
+      "// object - imagen de fondo"
+    ]
+  },
+  "ReactNative widgets st.bgimage.nav.init": {
+    "prefix": "st.bgimage.nav.init",
+    "description": "Make a ReactNative widgets st.bgimage.nav.init widget",
+    "body": [
+      "bgimage={require('./bg.jpg')}",
+      "// object - imagen de fondo"
+    ]
+  },
+  "ReactNative widgets st.bgimageStyle.fb.init": {
+    "prefix": "st.bgimageStyle.fb.init",
+    "description": "Make a ReactNative widgets st.bgimageStyle.fb.init widget",
+    "body": [
+      "bgimageStyle={{ resizeMode: 'cover' }}",
+      "// object - estilos de la imagen de fondo"
+    ]
+  },
+  "ReactNative widgets st.bgimageStyle.nav.init": {
+    "prefix": "st.bgimageStyle.nav.init",
+    "description": "Make a ReactNative widgets st.bgimageStyle.nav.init widget",
+    "body": [
+      "bgimageStyle={{ resizeMode: 'cover' }}",
+      "// object - estilos de la imagen de fondo"
+    ]
+  },
+  "ReactNative widgets st.opacity.fb.init": {
+    "prefix": "st.opacity.fb.init",
+    "description": "Make a ReactNative widgets st.opacity.fb.init widget",
+    "body": [
+      "opacity={0.5}",
+      "// number (0-1) - opacidad"
+    ]
+  },
+  "ReactNative widgets st.opacity.rn.init": {
+    "prefix": "st.opacity.rn.init",
+    "description": "Make a ReactNative widgets st.opacity.rn.init widget",
+    "body": [
+      "opacity: 0.5,",
+      "// number (0-1) - opacidad"
+    ]
+  },
+  "ReactNative widgets st.opacity.nav.init": {
+    "prefix": "st.opacity.nav.init",
+    "description": "Make a ReactNative widgets st.opacity.nav.init widget",
+    "body": [
+      "opacity={0.5}",
+      "// number (0-1) - opacidad"
+    ]
+  },
+  "ReactNative widgets st.shadow.fb.init": {
+    "prefix": "st.shadow.fb.init",
+    "description": "Make a ReactNative widgets st.shadow.fb.init widget",
+    "body": [
+      "shadow={true}",
+      "// boolean - activar sombra"
+    ]
+  },
+  "ReactNative widgets st.shadow.rn.init": {
+    "prefix": "st.shadow.rn.init",
+    "description": "Make a ReactNative widgets st.shadow.rn.init widget",
+    "body": [
+      "shadowColor: '#000',",
+      "shadowOffset: { width: 0, height: 2 },",
+      "shadowOpacity: 0.1,",
+      "shadowRadius: 4,",
+      "// sombra para iOS"
+    ]
+  },
+  "ReactNative widgets st.shadow.nav.init": {
+    "prefix": "st.shadow.nav.init",
+    "description": "Make a ReactNative widgets st.shadow.nav.init widget",
+    "body": [
+      "shadow={true}",
+      "// boolean - activar sombra"
+    ]
+  },
+  "ReactNative widgets st.elevation.fb.init": {
+    "prefix": "st.elevation.fb.init",
+    "description": "Make a ReactNative widgets st.elevation.fb.init widget",
+    "body": [
+      "elevation={4}",
+      "// number (Android) - elevaci\u00f3n"
+    ]
+  },
+  "ReactNative widgets st.elevation.rn.init": {
+    "prefix": "st.elevation.rn.init",
+    "description": "Make a ReactNative widgets st.elevation.rn.init widget",
+    "body": [
+      "elevation: 4,",
+      "// number (Android) - elevaci\u00f3n"
+    ]
+  },
+  "ReactNative widgets st.elevation.nav.init": {
+    "prefix": "st.elevation.nav.init",
+    "description": "Make a ReactNative widgets st.elevation.nav.init widget",
+    "body": [
+      "elevation={4}",
+      "// number (Android) - elevaci\u00f3n"
+    ]
+  },
+  "ReactNative widgets st.shadowColor.fb.init": {
+    "prefix": "st.shadowColor.fb.init",
+    "description": "Make a ReactNative widgets st.shadowColor.fb.init widget",
+    "body": [
+      "shadowColor=\"#000\"",
+      "// string - color de la sombra"
+    ]
+  },
+  "ReactNative widgets st.shadowColor.rn.init": {
+    "prefix": "st.shadowColor.rn.init",
+    "description": "Make a ReactNative widgets st.shadowColor.rn.init widget",
+    "body": [
+      "shadowColor: '#000',",
+      "// string - color de la sombra"
+    ]
+  },
+  "ReactNative widgets st.shadowOffsetWidth.fb.init": {
+    "prefix": "st.shadowOffsetWidth.fb.init",
+    "description": "Make a ReactNative widgets st.shadowOffsetWidth.fb.init widget",
+    "body": [
+      "shadowOffsetWidth={0}",
+      "// number - desplazamiento horizontal"
+    ]
+  },
+  "ReactNative widgets st.shadowOffsetHeight.fb.init": {
+    "prefix": "st.shadowOffsetHeight.fb.init",
+    "description": "Make a ReactNative widgets st.shadowOffsetHeight.fb.init widget",
+    "body": [
+      "shadowOffsetHeight={2}",
+      "// number - desplazamiento vertical"
+    ]
+  },
+  "ReactNative widgets st.shadowOpacity.fb.init": {
+    "prefix": "st.shadowOpacity.fb.init",
+    "description": "Make a ReactNative widgets st.shadowOpacity.fb.init widget",
+    "body": [
+      "shadowOpacity={0.25}",
+      "// number (0-1) - opacidad de la sombra"
+    ]
+  },
+  "ReactNative widgets st.shadowOpacity.rn.init": {
+    "prefix": "st.shadowOpacity.rn.init",
+    "description": "Make a ReactNative widgets st.shadowOpacity.rn.init widget",
+    "body": [
+      "shadowOpacity: 0.25,",
+      "// number (0-1) - opacidad de la sombra"
+    ]
+  },
+  "ReactNative widgets st.shadowRadius.fb.init": {
+    "prefix": "st.shadowRadius.fb.init",
+    "description": "Make a ReactNative widgets st.shadowRadius.fb.init widget",
+    "body": [
+      "shadowRadius={4}",
+      "// number - radio de desenfoque"
+    ]
+  },
+  "ReactNative widgets st.shadowRadius.rn.init": {
+    "prefix": "st.shadowRadius.rn.init",
+    "description": "Make a ReactNative widgets st.shadowRadius.rn.init widget",
+    "body": [
+      "shadowRadius: 4,",
+      "// number - radio de desenfoque"
+    ]
+  },
+  "ReactNative widgets st.alignItems.fb.init": {
+    "prefix": "st.alignItems.fb.init",
+    "description": "Make a ReactNative widgets st.alignItems.fb.init widget",
+    "body": [
+      "alignItems=\"center\"",
+      "// 'flex-start' | 'center' | 'flex-end' | 'stretch'"
+    ]
+  },
+  "ReactNative widgets st.alignItems.rn.init": {
+    "prefix": "st.alignItems.rn.init",
+    "description": "Make a ReactNative widgets st.alignItems.rn.init widget",
+    "body": [
+      "alignItems: 'center',",
+      "// 'flex-start' | 'center' | 'flex-end' | 'stretch' | 'baseline'"
+    ]
+  },
+  "ReactNative widgets st.alignItems.nav.init": {
+    "prefix": "st.alignItems.nav.init",
+    "description": "Make a ReactNative widgets st.alignItems.nav.init widget",
+    "body": [
+      "alignItems=\"center\"",
+      "// 'flex-start' | 'center' | 'flex-end' | 'stretch'"
+    ]
+  },
+  "ReactNative widgets st.justifyContent.fb.init": {
+    "prefix": "st.justifyContent.fb.init",
+    "description": "Make a ReactNative widgets st.justifyContent.fb.init widget",
+    "body": [
+      "justifyContent=\"center\"",
+      "// 'flex-start' | 'center' | 'flex-end' | 'space-between' | 'space-around' | 'space-evenly'"
+    ]
+  },
+  "ReactNative widgets st.justifyContent.rn.init": {
+    "prefix": "st.justifyContent.rn.init",
+    "description": "Make a ReactNative widgets st.justifyContent.rn.init widget",
+    "body": [
+      "justifyContent: 'center',",
+      "// 'flex-start' | 'center' | 'flex-end' | 'space-between' | 'space-around' | 'space-evenly'"
+    ]
+  },
+  "ReactNative widgets st.justifyContent.nav.init": {
+    "prefix": "st.justifyContent.nav.init",
+    "description": "Make a ReactNative widgets st.justifyContent.nav.init widget",
+    "body": [
+      "justifyContent=\"center\"",
+      "// 'flex-start' | 'center' | 'flex-end' | 'space-between' | 'space-around' | 'space-evenly'"
+    ]
+  },
+  "ReactNative widgets st.alignSelf.fb.init": {
+    "prefix": "st.alignSelf.fb.init",
+    "description": "Make a ReactNative widgets st.alignSelf.fb.init widget",
+    "body": [
+      "alignSelf=\"center\"",
+      "// 'auto' | 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline'"
+    ]
+  },
+  "ReactNative widgets st.alignSelf.rn.init": {
+    "prefix": "st.alignSelf.rn.init",
+    "description": "Make a ReactNative widgets st.alignSelf.rn.init widget",
+    "body": [
+      "alignSelf: 'center',",
+      "// 'auto' | 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline'"
+    ]
+  },
+  "ReactNative widgets st.position.fb.init": {
+    "prefix": "st.position.fb.init",
+    "description": "Make a ReactNative widgets st.position.fb.init widget",
+    "body": [
+      "position=\"relative\"",
+      "// 'relative' | 'absolute'"
+    ]
+  },
+  "ReactNative widgets st.position.rn.init": {
+    "prefix": "st.position.rn.init",
+    "description": "Make a ReactNative widgets st.position.rn.init widget",
+    "body": [
+      "position: 'relative',",
+      "// 'relative' | 'absolute'"
+    ]
+  },
+  "ReactNative widgets st.position.nav.init": {
+    "prefix": "st.position.nav.init",
+    "description": "Make a ReactNative widgets st.position.nav.init widget",
+    "body": [
+      "position=\"relative\"",
+      "// 'relative' | 'absolute'"
+    ]
+  },
+  "ReactNative widgets st.top.fb.init": {
+    "prefix": "st.top.fb.init",
+    "description": "Make a ReactNative widgets st.top.fb.init widget",
+    "body": [
+      "top={10}",
+      "// number - posici\u00f3n superior"
+    ]
+  },
+  "ReactNative widgets st.top.rn.init": {
+    "prefix": "st.top.rn.init",
+    "description": "Make a ReactNative widgets st.top.rn.init widget",
+    "body": [
+      "top: 10,",
+      "// number - posici\u00f3n superior"
+    ]
+  },
+  "ReactNative widgets st.bottom.fb.init": {
+    "prefix": "st.bottom.fb.init",
+    "description": "Make a ReactNative widgets st.bottom.fb.init widget",
+    "body": [
+      "bottom={10}",
+      "// number - posici\u00f3n inferior"
+    ]
+  },
+  "ReactNative widgets st.bottom.rn.init": {
+    "prefix": "st.bottom.rn.init",
+    "description": "Make a ReactNative widgets st.bottom.rn.init widget",
+    "body": [
+      "bottom: 10,",
+      "// number - posici\u00f3n inferior"
+    ]
+  },
+  "ReactNative widgets st.left.fb.init": {
+    "prefix": "st.left.fb.init",
+    "description": "Make a ReactNative widgets st.left.fb.init widget",
+    "body": [
+      "left={10}",
+      "// number - posici\u00f3n izquierda"
+    ]
+  },
+  "ReactNative widgets st.left.rn.init": {
+    "prefix": "st.left.rn.init",
+    "description": "Make a ReactNative widgets st.left.rn.init widget",
+    "body": [
+      "left: 10,",
+      "// number - posici\u00f3n izquierda"
+    ]
+  },
+  "ReactNative widgets st.right.fb.init": {
+    "prefix": "st.right.fb.init",
+    "description": "Make a ReactNative widgets st.right.fb.init widget",
+    "body": [
+      "right={10}",
+      "// number - posici\u00f3n derecha"
+    ]
+  },
+  "ReactNative widgets st.right.rn.init": {
+    "prefix": "st.right.rn.init",
+    "description": "Make a ReactNative widgets st.right.rn.init widget",
+    "body": [
+      "right: 10,",
+      "// number - posici\u00f3n derecha"
+    ]
+  },
+  "ReactNative widgets st.width.fb.init": {
+    "prefix": "st.width.fb.init",
+    "description": "Make a ReactNative widgets st.width.fb.init widget",
+    "body": [
+      "width={100}",
+      "// number | string - ancho"
+    ]
+  },
+  "ReactNative widgets st.width.rn.init": {
+    "prefix": "st.width.rn.init",
+    "description": "Make a ReactNative widgets st.width.rn.init widget",
+    "body": [
+      "width: 100,",
+      "// number | string - ancho"
+    ]
+  },
+  "ReactNative widgets st.width.nav.init": {
+    "prefix": "st.width.nav.init",
+    "description": "Make a ReactNative widgets st.width.nav.init widget",
+    "body": [
+      "width={100}",
+      "// number | string - ancho"
+    ]
+  },
+  "ReactNative widgets st.height.fb.init": {
+    "prefix": "st.height.fb.init",
+    "description": "Make a ReactNative widgets st.height.fb.init widget",
+    "body": [
+      "height={100}",
+      "// number | string - alto"
+    ]
+  },
+  "ReactNative widgets st.height.rn.init": {
+    "prefix": "st.height.rn.init",
+    "description": "Make a ReactNative widgets st.height.rn.init widget",
+    "body": [
+      "height: 100,",
+      "// number | string - alto"
+    ]
+  },
+  "ReactNative widgets st.height.nav.init": {
+    "prefix": "st.height.nav.init",
+    "description": "Make a ReactNative widgets st.height.nav.init widget",
+    "body": [
+      "height={100}",
+      "// number | string - alto"
+    ]
+  },
+  "ReactNative widgets st.minWidth.rn.init": {
+    "prefix": "st.minWidth.rn.init",
+    "description": "Make a ReactNative widgets st.minWidth.rn.init widget",
+    "body": [
+      "minWidth: 100,",
+      "// number - ancho m\u00ednimo"
+    ]
+  },
+  "ReactNative widgets st.maxWidth.rn.init": {
+    "prefix": "st.maxWidth.rn.init",
+    "description": "Make a ReactNative widgets st.maxWidth.rn.init widget",
+    "body": [
+      "maxWidth: 500,",
+      "// number - ancho m\u00e1ximo"
+    ]
+  },
+  "ReactNative widgets st.minHeight.rn.init": {
+    "prefix": "st.minHeight.rn.init",
+    "description": "Make a ReactNative widgets st.minHeight.rn.init widget",
+    "body": [
+      "minHeight: 100,",
+      "// number - alto m\u00ednimo"
+    ]
+  },
+  "ReactNative widgets st.maxHeight.rn.init": {
+    "prefix": "st.maxHeight.rn.init",
+    "description": "Make a ReactNative widgets st.maxHeight.rn.init widget",
+    "body": [
+      "maxHeight: 500,",
+      "// number - alto m\u00e1ximo"
+    ]
+  },
+  "ReactNative widgets st.aspectRatio.fb.init": {
+    "prefix": "st.aspectRatio.fb.init",
+    "description": "Make a ReactNative widgets st.aspectRatio.fb.init widget",
+    "body": [
+      "aspectRatio={1}",
+      "// number - relaci\u00f3n ancho/alto (1 = cuadrado)"
+    ]
+  },
+  "ReactNative widgets st.aspectRatio.rn.init": {
+    "prefix": "st.aspectRatio.rn.init",
+    "description": "Make a ReactNative widgets st.aspectRatio.rn.init widget",
+    "body": [
+      "aspectRatio: 1,",
+      "// number - relaci\u00f3n ancho/alto (1 = cuadrado)"
+    ]
+  },
+  "ReactNative widgets st.label.fb.init": {
+    "prefix": "st.label.fb.init",
+    "description": "Make a ReactNative widgets st.label.fb.init widget",
+    "body": [
+      "label=\"Texto\"",
+      "// string - contenido del texto"
+    ]
+  },
+  "ReactNative widgets st.label.nav.init": {
+    "prefix": "st.label.nav.init",
+    "description": "Make a ReactNative widgets st.label.nav.init widget",
+    "body": [
+      "label=\"Texto\"",
+      "// string - contenido del texto"
+    ]
+  },
+  "ReactNative widgets st.size.fb.init": {
+    "prefix": "st.size.fb.init",
+    "description": "Make a ReactNative widgets st.size.fb.init widget",
+    "body": [
+      "size={16}",
+      "// number - tama\u00f1o de fuente"
+    ]
+  },
+  "ReactNative widgets st.size.nav.init": {
+    "prefix": "st.size.nav.init",
+    "description": "Make a ReactNative widgets st.size.nav.init widget",
+    "body": [
+      "size={16}",
+      "// number - tama\u00f1o de fuente"
+    ]
+  },
+  "ReactNative widgets st.fontSize.rn.init": {
+    "prefix": "st.fontSize.rn.init",
+    "description": "Make a ReactNative widgets st.fontSize.rn.init widget",
+    "body": [
+      "fontSize: 16,",
+      "// number - tama\u00f1o de fuente"
+    ]
+  },
+  "ReactNative widgets st.color.fb.init": {
+    "prefix": "st.color.fb.init",
+    "description": "Make a ReactNative widgets st.color.fb.init widget",
+    "body": [
+      "color=\"#007aff\"",
+      "// string - color del texto"
+    ]
+  },
+  "ReactNative widgets st.color.nav.init": {
+    "prefix": "st.color.nav.init",
+    "description": "Make a ReactNative widgets st.color.nav.init widget",
+    "body": [
+      "color=\"#007aff\"",
+      "// string - color del texto"
+    ]
+  },
+  "ReactNative widgets st.color.rn.init": {
+    "prefix": "st.color.rn.init",
+    "description": "Make a ReactNative widgets st.color.rn.init widget",
+    "body": [
+      "color: '#333',",
+      "// string - color del texto"
+    ]
+  },
+  "ReactNative widgets st.weight.fb.init": {
+    "prefix": "st.weight.fb.init",
+    "description": "Make a ReactNative widgets st.weight.fb.init widget",
+    "body": [
+      "weight=\"bold\"",
+      "// 'normal' | 'bold' | '100'-'900'"
+    ]
+  },
+  "ReactNative widgets st.weight.nav.init": {
+    "prefix": "st.weight.nav.init",
+    "description": "Make a ReactNative widgets st.weight.nav.init widget",
+    "body": [
+      "weight=\"bold\"",
+      "// 'normal' | 'bold' | '100'-'900'"
+    ]
+  },
+  "ReactNative widgets st.fontWeight.rn.init": {
+    "prefix": "st.fontWeight.rn.init",
+    "description": "Make a ReactNative widgets st.fontWeight.rn.init widget",
+    "body": [
+      "fontWeight: 'bold',",
+      "// 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900'"
+    ]
+  },
+  "ReactNative widgets st.align.fb.init": {
+    "prefix": "st.align.fb.init",
+    "description": "Make a ReactNative widgets st.align.fb.init widget",
+    "body": [
+      "align=\"center\"",
+      "// 'left' | 'center' | 'right' | 'justify'"
+    ]
+  },
+  "ReactNative widgets st.align.nav.init": {
+    "prefix": "st.align.nav.init",
+    "description": "Make a ReactNative widgets st.align.nav.init widget",
+    "body": [
+      "align=\"center\"",
+      "// 'left' | 'center' | 'right' | 'justify'"
+    ]
+  },
+  "ReactNative widgets st.textAlign.rn.init": {
+    "prefix": "st.textAlign.rn.init",
+    "description": "Make a ReactNative widgets st.textAlign.rn.init widget",
+    "body": [
+      "textAlign: 'center',",
+      "// 'auto' | 'left' | 'right' | 'center' | 'justify'"
+    ]
+  },
+  "ReactNative widgets st.decoration.fb.init": {
+    "prefix": "st.decoration.fb.init",
+    "description": "Make a ReactNative widgets st.decoration.fb.init widget",
+    "body": [
+      "decoration=\"underline\"",
+      "// 'none' | 'underline' | 'line-through'"
+    ]
+  },
+  "ReactNative widgets st.decoration.nav.init": {
+    "prefix": "st.decoration.nav.init",
+    "description": "Make a ReactNative widgets st.decoration.nav.init widget",
+    "body": [
+      "decoration=\"underline\"",
+      "// 'none' | 'underline' | 'line-through'"
+    ]
+  },
+  "ReactNative widgets st.textDecorationLine.rn.init": {
+    "prefix": "st.textDecorationLine.rn.init",
+    "description": "Make a ReactNative widgets st.textDecorationLine.rn.init widget",
+    "body": [
+      "textDecorationLine: 'underline',",
+      "// 'none' | 'underline' | 'line-through' | 'underline line-through'"
+    ]
+  },
+  "ReactNative widgets st.transform.fb.init": {
+    "prefix": "st.transform.fb.init",
+    "description": "Make a ReactNative widgets st.transform.fb.init widget",
+    "body": [
+      "transform=\"uppercase\"",
+      "// 'none' | 'uppercase' | 'lowercase' | 'capitalize'"
+    ]
+  },
+  "ReactNative widgets st.transform.nav.init": {
+    "prefix": "st.transform.nav.init",
+    "description": "Make a ReactNative widgets st.transform.nav.init widget",
+    "body": [
+      "transform=\"uppercase\"",
+      "// 'none' | 'uppercase' | 'lowercase' | 'capitalize'"
+    ]
+  },
+  "ReactNative widgets st.textTransform.rn.init": {
+    "prefix": "st.textTransform.rn.init",
+    "description": "Make a ReactNative widgets st.textTransform.rn.init widget",
+    "body": [
+      "textTransform: 'uppercase',",
+      "// 'none' | 'uppercase' | 'lowercase' | 'capitalize'"
+    ]
+  },
+  "ReactNative widgets st.letterSpacing.fb.init": {
+    "prefix": "st.letterSpacing.fb.init",
+    "description": "Make a ReactNative widgets st.letterSpacing.fb.init widget",
+    "body": [
+      "letterSpacing={1}",
+      "// number - espacio entre letras"
+    ]
+  },
+  "ReactNative widgets st.letterSpacing.rn.init": {
+    "prefix": "st.letterSpacing.rn.init",
+    "description": "Make a ReactNative widgets st.letterSpacing.rn.init widget",
+    "body": [
+      "letterSpacing: 1,",
+      "// number - espacio entre letras"
+    ]
+  },
+  "ReactNative widgets st.lineHeight.fb.init": {
+    "prefix": "st.lineHeight.fb.init",
+    "description": "Make a ReactNative widgets st.lineHeight.fb.init widget",
+    "body": [
+      "lineHeight={24}",
+      "// number - altura de l\u00ednea"
+    ]
+  },
+  "ReactNative widgets st.lineHeight.rn.init": {
+    "prefix": "st.lineHeight.rn.init",
+    "description": "Make a ReactNative widgets st.lineHeight.rn.init widget",
+    "body": [
+      "lineHeight: 24,",
+      "// number - altura de l\u00ednea"
+    ]
+  },
+  "ReactNative widgets st.italic.fb.init": {
+    "prefix": "st.italic.fb.init",
+    "description": "Make a ReactNative widgets st.italic.fb.init widget",
+    "body": [
+      "italic={true}",
+      "// boolean - texto en cursiva"
+    ]
+  },
+  "ReactNative widgets st.italic.nav.init": {
+    "prefix": "st.italic.nav.init",
+    "description": "Make a ReactNative widgets st.italic.nav.init widget",
+    "body": [
+      "italic={true}",
+      "// boolean - texto en cursiva"
+    ]
+  },
+  "ReactNative widgets st.fontStyle.rn.init": {
+    "prefix": "st.fontStyle.rn.init",
+    "description": "Make a ReactNative widgets st.fontStyle.rn.init widget",
+    "body": [
+      "fontStyle: 'italic',",
+      "// 'normal' | 'italic'"
+    ]
+  },
+  "ReactNative widgets st.numberOfLines.fb.init": {
+    "prefix": "st.numberOfLines.fb.init",
+    "description": "Make a ReactNative widgets st.numberOfLines.fb.init widget",
+    "body": [
+      "numberOfLines={2}",
+      "// number - n\u00famero m\u00e1ximo de l\u00edneas"
+    ]
+  },
+  "ReactNative widgets st.numberOfLines.rn.init": {
+    "prefix": "st.numberOfLines.rn.init",
+    "description": "Make a ReactNative widgets st.numberOfLines.rn.init widget",
+    "body": [
+      "numberOfLines: 2,",
+      "// number - n\u00famero m\u00e1ximo de l\u00edneas"
+    ]
+  },
+  "ReactNative widgets st.ellipsizeMode.fb.init": {
+    "prefix": "st.ellipsizeMode.fb.init",
+    "description": "Make a ReactNative widgets st.ellipsizeMode.fb.init widget",
+    "body": [
+      "ellipsizeMode=\"tail\"",
+      "// 'head' | 'middle' | 'tail' | 'clip'"
+    ]
+  },
+  "ReactNative widgets st.ellipsizeMode.rn.init": {
+    "prefix": "st.ellipsizeMode.rn.init",
+    "description": "Make a ReactNative widgets st.ellipsizeMode.rn.init widget",
+    "body": [
+      "ellipsizeMode: 'tail',",
+      "// 'head' | 'middle' | 'tail' | 'clip'"
+    ]
+  },
+  "ReactNative widgets st.src.fb.init": {
+    "prefix": "st.src.fb.init",
+    "description": "Make a ReactNative widgets st.src.fb.init widget",
+    "body": [
+      "src=\"https://ejemplo.com/img.jpg\"",
+      "// string - URL de la imagen"
+    ]
+  },
+  "ReactNative widgets st.src.nav.init": {
+    "prefix": "st.src.nav.init",
+    "description": "Make a ReactNative widgets st.src.nav.init widget",
+    "body": [
+      "src=\"https://ejemplo.com/img.jpg\"",
+      "// string - URL de la imagen"
+    ]
+  },
+  "ReactNative widgets st.source.fb.init": {
+    "prefix": "st.source.fb.init",
+    "description": "Make a ReactNative widgets st.source.fb.init widget",
+    "body": [
+      "source={require('./img.png')}",
+      "// object - imagen local"
+    ]
+  },
+  "ReactNative widgets st.source.nav.init": {
+    "prefix": "st.source.nav.init",
+    "description": "Make a ReactNative widgets st.source.nav.init widget",
+    "body": [
+      "source={require('./img.png')}",
+      "// object - imagen local"
+    ]
+  },
+  "ReactNative widgets st.source.rn.init": {
+    "prefix": "st.source.rn.init",
+    "description": "Make a ReactNative widgets st.source.rn.init widget",
+    "body": [
+      "source={{uri: 'https://ejemplo.com/img.jpg'}}",
+      "// object - origen de la imagen"
+    ]
+  },
+  "ReactNative widgets st.fit.fb.init": {
+    "prefix": "st.fit.fb.init",
+    "description": "Make a ReactNative widgets st.fit.fb.init widget",
+    "body": [
+      "fit=\"cover\"",
+      "// 'cover' | 'contain' | 'stretch' | 'repeat' | 'center'"
+    ]
+  },
+  "ReactNative widgets st.fit.nav.init": {
+    "prefix": "st.fit.nav.init",
+    "description": "Make a ReactNative widgets st.fit.nav.init widget",
+    "body": [
+      "fit=\"cover\"",
+      "// 'cover' | 'contain' | 'stretch' | 'repeat' | 'center'"
+    ]
+  },
+  "ReactNative widgets st.resizeMode.rn.init": {
+    "prefix": "st.resizeMode.rn.init",
+    "description": "Make a ReactNative widgets st.resizeMode.rn.init widget",
+    "body": [
+      "resizeMode: 'cover',",
+      "// 'cover' | 'contain' | 'stretch' | 'repeat' | 'center'"
+    ]
+  },
+  "ReactNative widgets st.radius.fb.init": {
+    "prefix": "st.radius.fb.init",
+    "description": "Make a ReactNative widgets st.radius.fb.init widget",
+    "body": [
+      "radius={8}",
+      "// number - radio de borde"
+    ]
+  },
+  "ReactNative widgets st.radius.nav.init": {
+    "prefix": "st.radius.nav.init",
+    "description": "Make a ReactNative widgets st.radius.nav.init widget",
+    "body": [
+      "radius={8}",
+      "// number - radio de borde"
+    ]
+  },
+  "ReactNative widgets st.circular.fb.init": {
+    "prefix": "st.circular.fb.init",
+    "description": "Make a ReactNative widgets st.circular.fb.init widget",
+    "body": [
+      "circular={true}",
+      "// boolean - forma circular (avatar)"
+    ]
+  },
+  "ReactNative widgets st.circular.nav.init": {
+    "prefix": "st.circular.nav.init",
+    "description": "Make a ReactNative widgets st.circular.nav.init widget",
+    "body": [
+      "circular={true}",
+      "// boolean - forma circular (avatar)"
+    ]
+  },
+  "ReactNative widgets st.blurRadius.rn.init": {
+    "prefix": "st.blurRadius.rn.init",
+    "description": "Make a ReactNative widgets st.blurRadius.rn.init widget",
+    "body": [
+      "blurRadius: 5,",
+      "// number - radio de desenfoque"
+    ]
+  },
+  "ReactNative widgets st.variant.fb.init": {
+    "prefix": "st.variant.fb.init",
+    "description": "Make a ReactNative widgets st.variant.fb.init widget",
+    "body": [
+      "variant=\"filled\"",
+      "// 'filled' | 'elevated' | 'outlined' | 'text' | 'icon'"
+    ]
+  },
+  "ReactNative widgets st.variant.nav.init": {
+    "prefix": "st.variant.nav.init",
+    "description": "Make a ReactNative widgets st.variant.nav.init widget",
+    "body": [
+      "variant=\"filled\"",
+      "// 'filled' | 'elevated' | 'outlined' | 'text' | 'icon'"
+    ]
+  },
+  "ReactNative widgets st.icon.fb.init": {
+    "prefix": "st.icon.fb.init",
+    "description": "Make a ReactNative widgets st.icon.fb.init widget",
+    "body": [
+      "icon=\"home\"",
+      "// string - nombre del icono (Ionicons)"
+    ]
+  },
+  "ReactNative widgets st.icon.nav.init": {
+    "prefix": "st.icon.nav.init",
+    "description": "Make a ReactNative widgets st.icon.nav.init widget",
+    "body": [
+      "icon=\"home\"",
+      "// string - nombre del icono (Ionicons)"
+    ]
+  },
+  "ReactNative widgets st.iconPosition.fb.init": {
+    "prefix": "st.iconPosition.fb.init",
+    "description": "Make a ReactNative widgets st.iconPosition.fb.init widget",
+    "body": [
+      "iconPosition=\"left\"",
+      "// 'left' | 'right'"
+    ]
+  },
+  "ReactNative widgets st.iconPosition.nav.init": {
+    "prefix": "st.iconPosition.nav.init",
+    "description": "Make a ReactNative widgets st.iconPosition.nav.init widget",
+    "body": [
+      "iconPosition=\"left\"",
+      "// 'left' | 'right'"
+    ]
+  },
+  "ReactNative widgets st.iconSize.fb.init": {
+    "prefix": "st.iconSize.fb.init",
+    "description": "Make a ReactNative widgets st.iconSize.fb.init widget",
+    "body": [
+      "iconSize={24}",
+      "// number - tama\u00f1o del icono"
+    ]
+  },
+  "ReactNative widgets st.iconSize.nav.init": {
+    "prefix": "st.iconSize.nav.init",
+    "description": "Make a ReactNative widgets st.iconSize.nav.init widget",
+    "body": [
+      "iconSize={24}",
+      "// number - tama\u00f1o del icono"
+    ]
+  },
+  "ReactNative widgets st.iconColor.fb.init": {
+    "prefix": "st.iconColor.fb.init",
+    "description": "Make a ReactNative widgets st.iconColor.fb.init widget",
+    "body": [
+      "iconColor=\"#fff\"",
+      "// string - color del icono"
+    ]
+  },
+  "ReactNative widgets st.iconColor.nav.init": {
+    "prefix": "st.iconColor.nav.init",
+    "description": "Make a ReactNative widgets st.iconColor.nav.init widget",
+    "body": [
+      "iconColor=\"#fff\"",
+      "// string - color del icono"
+    ]
+  },
+  "ReactNative widgets st.loading.fb.init": {
+    "prefix": "st.loading.fb.init",
+    "description": "Make a ReactNative widgets st.loading.fb.init widget",
+    "body": [
+      "loading={false}",
+      "// boolean - estado de carga"
+    ]
+  },
+  "ReactNative widgets st.loading.nav.init": {
+    "prefix": "st.loading.nav.init",
+    "description": "Make a ReactNative widgets st.loading.nav.init widget",
+    "body": [
+      "loading={false}",
+      "// boolean - estado de carga"
+    ]
+  },
+  "ReactNative widgets st.disabled.fb.init": {
+    "prefix": "st.disabled.fb.init",
+    "description": "Make a ReactNative widgets st.disabled.fb.init widget",
+    "body": [
+      "disabled={false}",
+      "// boolean - deshabilitado"
+    ]
+  },
+  "ReactNative widgets st.disabled.nav.init": {
+    "prefix": "st.disabled.nav.init",
+    "description": "Make a ReactNative widgets st.disabled.nav.init widget",
+    "body": [
+      "disabled={false}",
+      "// boolean - deshabilitado"
+    ]
+  },
+  "ReactNative widgets st.disabled.rn.init": {
+    "prefix": "st.disabled.rn.init",
+    "description": "Make a ReactNative widgets st.disabled.rn.init widget",
+    "body": [
+      "disabled={false}",
+      "// boolean - deshabilitado"
+    ]
+  },
+  "ReactNative widgets st.value.fb.init": {
+    "prefix": "st.value.fb.init",
+    "description": "Make a ReactNative widgets st.value.fb.init widget",
+    "body": [
+      "value={value}",
+      "// any - valor del campo"
+    ]
+  },
+  "ReactNative widgets st.value.nav.init": {
+    "prefix": "st.value.nav.init",
+    "description": "Make a ReactNative widgets st.value.nav.init widget",
+    "body": [
+      "value={value}",
+      "// any - valor del campo"
+    ]
+  },
+  "ReactNative widgets st.placeholder.fb.init": {
+    "prefix": "st.placeholder.fb.init",
+    "description": "Make a ReactNative widgets st.placeholder.fb.init widget",
+    "body": [
+      "placeholder=\"Escribe aqu\u00ed\"",
+      "// string - texto de ejemplo"
+    ]
+  },
+  "ReactNative widgets st.placeholder.nav.init": {
+    "prefix": "st.placeholder.nav.init",
+    "description": "Make a ReactNative widgets st.placeholder.nav.init widget",
+    "body": [
+      "placeholder=\"Escribe aqu\u00ed\"",
+      "// string - texto de ejemplo"
+    ]
+  },
+  "ReactNative widgets st.secureTextEntry.fb.init": {
+    "prefix": "st.secureTextEntry.fb.init",
+    "description": "Make a ReactNative widgets st.secureTextEntry.fb.init widget",
+    "body": [
+      "secureTextEntry={true}",
+      "// boolean - ocultar texto (contrase\u00f1a)"
+    ]
+  },
+  "ReactNative widgets st.secureTextEntry.nav.init": {
+    "prefix": "st.secureTextEntry.nav.init",
+    "description": "Make a ReactNative widgets st.secureTextEntry.nav.init widget",
+    "body": [
+      "secureTextEntry={true}",
+      "// boolean - ocultar texto (contrase\u00f1a)"
+    ]
+  },
+  "ReactNative widgets st.secureTextEntry.rn.init": {
+    "prefix": "st.secureTextEntry.rn.init",
+    "description": "Make a ReactNative widgets st.secureTextEntry.rn.init widget",
+    "body": [
+      "secureTextEntry: true,",
+      "// boolean - ocultar texto (contrase\u00f1a)"
+    ]
+  },
+  "ReactNative widgets st.keyboardType.fb.init": {
+    "prefix": "st.keyboardType.fb.init",
+    "description": "Make a ReactNative widgets st.keyboardType.fb.init widget",
+    "body": [
+      "keyboardType=\"default\"",
+      "// 'default' | 'numeric' | 'email-address' | 'phone-pad' | 'url'"
+    ]
+  },
+  "ReactNative widgets st.keyboardType.nav.init": {
+    "prefix": "st.keyboardType.nav.init",
+    "description": "Make a ReactNative widgets st.keyboardType.nav.init widget",
+    "body": [
+      "keyboardType=\"default\"",
+      "// 'default' | 'numeric' | 'email-address' | 'phone-pad' | 'url'"
+    ]
+  },
+  "ReactNative widgets st.keyboardType.rn.init": {
+    "prefix": "st.keyboardType.rn.init",
+    "description": "Make a ReactNative widgets st.keyboardType.rn.init widget",
+    "body": [
+      "keyboardType: 'default',",
+      "// 'default' | 'numeric' | 'email-address' | 'phone-pad' | 'url' | 'decimal-pad' | 'number-pad'"
+    ]
+  },
+  "ReactNative widgets st.multiline.fb.init": {
+    "prefix": "st.multiline.fb.init",
+    "description": "Make a ReactNative widgets st.multiline.fb.init widget",
+    "body": [
+      "multiline={true}",
+      "// boolean - m\u00faltiples l\u00edneas"
+    ]
+  },
+  "ReactNative widgets st.multiline.nav.init": {
+    "prefix": "st.multiline.nav.init",
+    "description": "Make a ReactNative widgets st.multiline.nav.init widget",
+    "body": [
+      "multiline={true}",
+      "// boolean - m\u00faltiples l\u00edneas"
+    ]
+  },
+  "ReactNative widgets st.multiline.rn.init": {
+    "prefix": "st.multiline.rn.init",
+    "description": "Make a ReactNative widgets st.multiline.rn.init widget",
+    "body": [
+      "multiline: true,",
+      "// boolean - m\u00faltiples l\u00edneas"
+    ]
+  },
+  "ReactNative widgets st.error.fb.init": {
+    "prefix": "st.error.fb.init",
+    "description": "Make a ReactNative widgets st.error.fb.init widget",
+    "body": [
+      "error={true}",
+      "// boolean - estado de error"
+    ]
+  },
+  "ReactNative widgets st.error.nav.init": {
+    "prefix": "st.error.nav.init",
+    "description": "Make a ReactNative widgets st.error.nav.init widget",
+    "body": [
+      "error={true}",
+      "// boolean - estado de error"
+    ]
+  },
+  "ReactNative widgets st.errorText.fb.init": {
+    "prefix": "st.errorText.fb.init",
+    "description": "Make a ReactNative widgets st.errorText.fb.init widget",
+    "body": [
+      "errorText=\"Campo requerido\"",
+      "// string - mensaje de error"
+    ]
+  },
+  "ReactNative widgets st.errorText.nav.init": {
+    "prefix": "st.errorText.nav.init",
+    "description": "Make a ReactNative widgets st.errorText.nav.init widget",
+    "body": [
+      "errorText=\"Campo requerido\"",
+      "// string - mensaje de error"
+    ]
+  },
+  "ReactNative widgets st.activeColor.fb.init": {
+    "prefix": "st.activeColor.fb.init",
+    "description": "Make a ReactNative widgets st.activeColor.fb.init widget",
+    "body": [
+      "activeColor=\"#4caf50\"",
+      "// string - color cuando est\u00e1 activo"
+    ]
+  },
+  "ReactNative widgets st.activeColor.nav.init": {
+    "prefix": "st.activeColor.nav.init",
+    "description": "Make a ReactNative widgets st.activeColor.nav.init widget",
+    "body": [
+      "activeColor=\"#4caf50\"",
+      "// string - color cuando est\u00e1 activo"
+    ]
+  },
+  "ReactNative widgets st.inactiveColor.fb.init": {
+    "prefix": "st.inactiveColor.fb.init",
+    "description": "Make a ReactNative widgets st.inactiveColor.fb.init widget",
+    "body": [
+      "inactiveColor=\"#ccc\"",
+      "// string - color cuando est\u00e1 inactivo"
+    ]
+  },
+  "ReactNative widgets st.inactiveColor.nav.init": {
+    "prefix": "st.inactiveColor.nav.init",
+    "description": "Make a ReactNative widgets st.inactiveColor.nav.init widget",
+    "body": [
+      "inactiveColor=\"#ccc\"",
+      "// string - color cuando est\u00e1 inactivo"
+    ]
+  },
+  "ReactNative widgets st.thumbColor.fb.init": {
+    "prefix": "st.thumbColor.fb.init",
+    "description": "Make a ReactNative widgets st.thumbColor.fb.init widget",
+    "body": [
+      "thumbColor=\"#fff\"",
+      "// string - color del bot\u00f3n (switch/slider)"
+    ]
+  },
+  "ReactNative widgets st.thumbColor.nav.init": {
+    "prefix": "st.thumbColor.nav.init",
+    "description": "Make a ReactNative widgets st.thumbColor.nav.init widget",
+    "body": [
+      "thumbColor=\"#fff\"",
+      "// string - color del bot\u00f3n (switch/slider)"
+    ]
+  },
+  "ReactNative widgets st.min.fb.init": {
+    "prefix": "st.min.fb.init",
+    "description": "Make a ReactNative widgets st.min.fb.init widget",
+    "body": [
+      "min={0}",
+      "// number - valor m\u00ednimo"
+    ]
+  },
+  "ReactNative widgets st.min.nav.init": {
+    "prefix": "st.min.nav.init",
+    "description": "Make a ReactNative widgets st.min.nav.init widget",
+    "body": [
+      "min={0}",
+      "// number - valor m\u00ednimo"
+    ]
+  },
+  "ReactNative widgets st.max.fb.init": {
+    "prefix": "st.max.fb.init",
+    "description": "Make a ReactNative widgets st.max.fb.init widget",
+    "body": [
+      "max={100}",
+      "// number - valor m\u00e1ximo"
+    ]
+  },
+  "ReactNative widgets st.max.nav.init": {
+    "prefix": "st.max.nav.init",
+    "description": "Make a ReactNative widgets st.max.nav.init widget",
+    "body": [
+      "max={100}",
+      "// number - valor m\u00e1ximo"
+    ]
+  },
+  "ReactNative widgets st.step.fb.init": {
+    "prefix": "st.step.fb.init",
+    "description": "Make a ReactNative widgets st.step.fb.init widget",
+    "body": [
+      "step={1}",
+      "// number - incremento"
+    ]
+  },
+  "ReactNative widgets st.step.nav.init": {
+    "prefix": "st.step.nav.init",
+    "description": "Make a ReactNative widgets st.step.nav.init widget",
+    "body": [
+      "step={1}",
+      "// number - incremento"
+    ]
+  },
+  "ReactNative widgets st.showValue.fb.init": {
+    "prefix": "st.showValue.fb.init",
+    "description": "Make a ReactNative widgets st.showValue.fb.init widget",
+    "body": [
+      "showValue={true}",
+      "// boolean - mostrar valor actual"
+    ]
+  },
+  "ReactNative widgets st.showValue.nav.init": {
+    "prefix": "st.showValue.nav.init",
+    "description": "Make a ReactNative widgets st.showValue.nav.init widget",
+    "body": [
+      "showValue={true}",
+      "// boolean - mostrar valor actual"
+    ]
+  },
+  "ReactNative widgets st.valueFormat.fb.init": {
+    "prefix": "st.valueFormat.fb.init",
+    "description": "Make a ReactNative widgets st.valueFormat.fb.init widget",
+    "body": [
+      "valueFormat={(v) => `${v}%`}",
+      "// function - formato del valor"
+    ]
+  },
+  "ReactNative widgets st.valueFormat.nav.init": {
+    "prefix": "st.valueFormat.nav.init",
+    "description": "Make a ReactNative widgets st.valueFormat.nav.init widget",
+    "body": [
+      "valueFormat={(v) => `${v}%`}",
+      "// function - formato del valor"
+    ]
+  },
+  "ReactNative widgets st.options.fb.init": {
+    "prefix": "st.options.fb.init",
+    "description": "Make a ReactNative widgets st.options.fb.init widget",
+    "body": [
+      "options={[{ label: 'Opci\u00f3n', value: 'opt' }]}",
+      "// array - opciones del dropdown"
+    ]
+  },
+  "ReactNative widgets st.options.nav.init": {
+    "prefix": "st.options.nav.init",
+    "description": "Make a ReactNative widgets st.options.nav.init widget",
+    "body": [
+      "options={[{ label: 'Opci\u00f3n', value: 'opt' }]}",
+      "// array - opciones del dropdown"
+    ]
+  },
+  "ReactNative widgets st.online.fb.init": {
+    "prefix": "st.online.fb.init",
+    "description": "Make a ReactNative widgets st.online.fb.init widget",
+    "body": [
+      "online={true}",
+      "// boolean - mostrar estado online"
+    ]
+  },
+  "ReactNative widgets st.online.nav.init": {
+    "prefix": "st.online.nav.init",
+    "description": "Make a ReactNative widgets st.online.nav.init widget",
+    "body": [
+      "online={true}",
+      "// boolean - mostrar estado online"
+    ]
+  },
+  "ReactNative widgets st.onlineColor.fb.init": {
+    "prefix": "st.onlineColor.fb.init",
+    "description": "Make a ReactNative widgets st.onlineColor.fb.init widget",
+    "body": [
+      "onlineColor=\"#4caf50\"",
+      "// string - color del indicador online"
+    ]
+  },
+  "ReactNative widgets st.onlineColor.nav.init": {
+    "prefix": "st.onlineColor.nav.init",
+    "description": "Make a ReactNative widgets st.onlineColor.nav.init widget",
+    "body": [
+      "onlineColor=\"#4caf50\"",
+      "// string - color del indicador online"
+    ]
+  },
+  "ReactNative widgets st.onlineSize.fb.init": {
+    "prefix": "st.onlineSize.fb.init",
+    "description": "Make a ReactNative widgets st.onlineSize.fb.init widget",
+    "body": [
+      "onlineSize={12}",
+      "// number - tama\u00f1o del indicador online"
+    ]
+  },
+  "ReactNative widgets st.onlineSize.nav.init": {
+    "prefix": "st.onlineSize.nav.init",
+    "description": "Make a ReactNative widgets st.onlineSize.nav.init widget",
+    "body": [
+      "onlineSize={12}",
+      "// number - tama\u00f1o del indicador online"
+    ]
+  },
+  "ReactNative widgets st.initials.fb.init": {
+    "prefix": "st.initials.fb.init",
+    "description": "Make a ReactNative widgets st.initials.fb.init widget",
+    "body": [
+      "initials=\"JD\"",
+      "// string - iniciales cuando no hay imagen"
+    ]
+  },
+  "ReactNative widgets st.initials.nav.init": {
+    "prefix": "st.initials.nav.init",
+    "description": "Make a ReactNative widgets st.initials.nav.init widget",
+    "body": [
+      "initials=\"JD\"",
+      "// string - iniciales cuando no hay imagen"
+    ]
+  },
+  "ReactNative widgets st.closable.fb.init": {
+    "prefix": "st.closable.fb.init",
+    "description": "Make a ReactNative widgets st.closable.fb.init widget",
+    "body": [
+      "closable={true}",
+      "// boolean - mostrar bot\u00f3n de cerrar"
+    ]
+  },
+  "ReactNative widgets st.closable.nav.init": {
+    "prefix": "st.closable.nav.init",
+    "description": "Make a ReactNative widgets st.closable.nav.init widget",
+    "body": [
+      "closable={true}",
+      "// boolean - mostrar bot\u00f3n de cerrar"
+    ]
+  },
+  "ReactNative widgets st.selected.fb.init": {
+    "prefix": "st.selected.fb.init",
+    "description": "Make a ReactNative widgets st.selected.fb.init widget",
+    "body": [
+      "selected={true}",
+      "// boolean - estado seleccionado"
+    ]
+  },
+  "ReactNative widgets st.selected.nav.init": {
+    "prefix": "st.selected.nav.init",
+    "description": "Make a ReactNative widgets st.selected.nav.init widget",
+    "body": [
+      "selected={true}",
+      "// boolean - estado seleccionado"
+    ]
+  },
+  "ReactNative widgets st.selectedBgcolor.fb.init": {
+    "prefix": "st.selectedBgcolor.fb.init",
+    "description": "Make a ReactNative widgets st.selectedBgcolor.fb.init widget",
+    "body": [
+      "selectedBgcolor=\"#007aff\"",
+      "// string - color de fondo cuando seleccionado"
+    ]
+  },
+  "ReactNative widgets st.selectedBgcolor.nav.init": {
+    "prefix": "st.selectedBgcolor.nav.init",
+    "description": "Make a ReactNative widgets st.selectedBgcolor.nav.init widget",
+    "body": [
+      "selectedBgcolor=\"#007aff\"",
+      "// string - color de fondo cuando seleccionado"
+    ]
+  },
+  "ReactNative widgets st.selectedColor.fb.init": {
+    "prefix": "st.selectedColor.fb.init",
+    "description": "Make a ReactNative widgets st.selectedColor.fb.init widget",
+    "body": [
+      "selectedColor=\"#fff\"",
+      "// string - color del texto cuando seleccionado"
+    ]
+  },
+  "ReactNative widgets st.selectedColor.nav.init": {
+    "prefix": "st.selectedColor.nav.init",
+    "description": "Make a ReactNative widgets st.selectedColor.nav.init widget",
+    "body": [
+      "selectedColor=\"#fff\"",
+      "// string - color del texto cuando seleccionado"
+    ]
+  },
+  "ReactNative widgets st.title.fb.init": {
+    "prefix": "st.title.fb.init",
+    "description": "Make a ReactNative widgets st.title.fb.init widget",
+    "body": [
+      "title=\"T\u00edtulo\"",
+      "// string - t\u00edtulo principal"
+    ]
+  },
+  "ReactNative widgets st.title.nav.init": {
+    "prefix": "st.title.nav.init",
+    "description": "Make a ReactNative widgets st.title.nav.init widget",
+    "body": [
+      "title=\"T\u00edtulo\"",
+      "// string - t\u00edtulo principal"
+    ]
+  },
+  "ReactNative widgets st.subtitle.fb.init": {
+    "prefix": "st.subtitle.fb.init",
+    "description": "Make a ReactNative widgets st.subtitle.fb.init widget",
+    "body": [
+      "subtitle=\"Subt\u00edtulo\"",
+      "// string - subt\u00edtulo"
+    ]
+  },
+  "ReactNative widgets st.subtitle.nav.init": {
+    "prefix": "st.subtitle.nav.init",
+    "description": "Make a ReactNative widgets st.subtitle.nav.init widget",
+    "body": [
+      "subtitle=\"Subt\u00edtulo\"",
+      "// string - subt\u00edtulo"
+    ]
+  },
+  "ReactNative widgets st.leading.fb.init": {
+    "prefix": "st.leading.fb.init",
+    "description": "Make a ReactNative widgets st.leading.fb.init widget",
+    "body": [
+      "leading={<Avatar />}",
+      "// ReactNode - elemento izquierdo"
+    ]
+  },
+  "ReactNative widgets st.leading.nav.init": {
+    "prefix": "st.leading.nav.init",
+    "description": "Make a ReactNative widgets st.leading.nav.init widget",
+    "body": [
+      "leading={<Avatar />}",
+      "// ReactNode - elemento izquierdo"
+    ]
+  },
+  "ReactNative widgets st.trailing.fb.init": {
+    "prefix": "st.trailing.fb.init",
+    "description": "Make a ReactNative widgets st.trailing.fb.init widget",
+    "body": [
+      "trailing={<Icon name=\"chevron-right\" />}",
+      "// ReactNode - elemento derecho"
+    ]
+  },
+  "ReactNative widgets st.trailing.nav.init": {
+    "prefix": "st.trailing.nav.init",
+    "description": "Make a ReactNative widgets st.trailing.nav.init widget",
+    "body": [
+      "trailing={<Icon name=\"chevron-right\" />}",
+      "// ReactNode - elemento derecho"
+    ]
+  },
+  "ReactNative widgets st.borderBottom.listtile.fb.init": {
+    "prefix": "st.borderBottom.listtile.fb.init",
+    "description": "Make a ReactNative widgets st.borderBottom.listtile.fb.init widget",
+    "body": [
+      "borderBottom={true}",
+      "// boolean - mostrar borde inferior"
+    ]
+  },
+  "ReactNative widgets st.borderBottom.listtile.nav.init": {
+    "prefix": "st.borderBottom.listtile.nav.init",
+    "description": "Make a ReactNative widgets st.borderBottom.listtile.nav.init widget",
+    "body": [
+      "borderBottom={true}",
+      "// boolean - mostrar borde inferior"
+    ]
+  },
+  "ReactNative widgets st.variant.divider.fb.init": {
+    "prefix": "st.variant.divider.fb.init",
+    "description": "Make a ReactNative widgets st.variant.divider.fb.init widget",
+    "body": [
+      "variant=\"full\"",
+      "// 'full' | 'inset' | 'middle'"
+    ]
+  },
+  "ReactNative widgets st.variant.divider.nav.init": {
+    "prefix": "st.variant.divider.nav.init",
+    "description": "Make a ReactNative widgets st.variant.divider.nav.init widget",
+    "body": [
+      "variant=\"full\"",
+      "// 'full' | 'inset' | 'middle'"
+    ]
+  },
+  "ReactNative widgets st.inset.fb.init": {
+    "prefix": "st.inset.fb.init",
+    "description": "Make a ReactNative widgets st.inset.fb.init widget",
+    "body": [
+      "inset={16}",
+      "// number - margen izquierdo (para variant='inset')"
+    ]
+  },
+  "ReactNative widgets st.inset.nav.init": {
+    "prefix": "st.inset.nav.init",
+    "description": "Make a ReactNative widgets st.inset.nav.init widget",
+    "body": [
+      "inset={16}",
+      "// number - margen izquierdo (para variant='inset')"
+    ]
+  },
+  "ReactNative widgets st.height.divider.fb.init": {
+    "prefix": "st.height.divider.fb.init",
+    "description": "Make a ReactNative widgets st.height.divider.fb.init widget",
+    "body": [
+      "height={1}",
+      "// number - altura de la l\u00ednea"
+    ]
+  },
+  "ReactNative widgets st.height.divider.nav.init": {
+    "prefix": "st.height.divider.nav.init",
+    "description": "Make a ReactNative widgets st.height.divider.nav.init widget",
+    "body": [
+      "height={1}",
+      "// number - altura de la l\u00ednea"
+    ]
+  },
+  "ReactNative widgets st.position.fab.fb.init": {
+    "prefix": "st.position.fab.fb.init",
+    "description": "Make a ReactNative widgets st.position.fab.fb.init widget",
+    "body": [
+      "position=\"bottom-right\"",
+      "// 'bottom-right' | 'bottom-left' | 'bottom-center'"
+    ]
+  },
+  "ReactNative widgets st.position.fab.nav.init": {
+    "prefix": "st.position.fab.nav.init",
+    "description": "Make a ReactNative widgets st.position.fab.nav.init widget",
+    "body": [
+      "position=\"bottom-right\"",
+      "// 'bottom-right' | 'bottom-left' | 'bottom-center'"
+    ]
+  },
+  "ReactNative widgets st.mini.fb.init": {
+    "prefix": "st.mini.fb.init",
+    "description": "Make a ReactNative widgets st.mini.fb.init widget",
+    "body": [
+      "mini={true}",
+      "// boolean - versi\u00f3n peque\u00f1a"
+    ]
+  },
+  "ReactNative widgets st.mini.nav.init": {
+    "prefix": "st.mini.nav.init",
+    "description": "Make a ReactNative widgets st.mini.nav.init widget",
+    "body": [
+      "mini={true}",
+      "// boolean - versi\u00f3n peque\u00f1a"
+    ]
+  },
+  "ReactNative widgets st.on_tap.fb.init": {
+    "prefix": "st.on_tap.fb.init",
+    "description": "Make a ReactNative widgets st.on_tap.fb.init widget",
+    "body": [
+      "on_tap={() => console.log('tap')}",
+      "// function - evento al presionar"
+    ]
+  },
+  "ReactNative widgets st.on_tap.nav.init": {
+    "prefix": "st.on_tap.nav.init",
+    "description": "Make a ReactNative widgets st.on_tap.nav.init widget",
+    "body": [
+      "on_tap={() => console.log('tap')}",
+      "// function - evento al presionar"
+    ]
+  },
+  "ReactNative widgets st.on_double_tap.fb.init": {
+    "prefix": "st.on_double_tap.fb.init",
+    "description": "Make a ReactNative widgets st.on_double_tap.fb.init widget",
+    "body": [
+      "on_double_tap={() => console.log('doble tap')}",
+      "// function - evento al hacer doble tap"
+    ]
+  },
+  "ReactNative widgets st.on_double_tap.nav.init": {
+    "prefix": "st.on_double_tap.nav.init",
+    "description": "Make a ReactNative widgets st.on_double_tap.nav.init widget",
+    "body": [
+      "on_double_tap={() => console.log('doble tap')}",
+      "// function - evento al hacer doble tap"
+    ]
+  },
+  "ReactNative widgets st.on_long_press.fb.init": {
+    "prefix": "st.on_long_press.fb.init",
+    "description": "Make a ReactNative widgets st.on_long_press.fb.init widget",
+    "body": [
+      "on_long_press={() => console.log('long press')}",
+      "// function - evento al presionar largo"
+    ]
+  },
+  "ReactNative widgets st.on_long_press.nav.init": {
+    "prefix": "st.on_long_press.nav.init",
+    "description": "Make a ReactNative widgets st.on_long_press.nav.init widget",
+    "body": [
+      "on_long_press={() => console.log('long press')}",
+      "// function - evento al presionar largo"
+    ]
+  },
+  "ReactNative widgets st.inkColor.fb.init": {
+    "prefix": "st.inkColor.fb.init",
+    "description": "Make a ReactNative widgets st.inkColor.fb.init widget",
+    "body": [
+      "inkColor=\"rgba(0,0,0,0.1)\"",
+      "// string - color del efecto ripple"
+    ]
+  },
+  "ReactNative widgets st.inkColor.nav.init": {
+    "prefix": "st.inkColor.nav.init",
+    "description": "Make a ReactNative widgets st.inkColor.nav.init widget",
+    "body": [
+      "inkColor=\"rgba(0,0,0,0.1)\"",
+      "// string - color del efecto ripple"
+    ]
+  },
+  "ReactNative widgets st.visible.modal.fb.init": {
+    "prefix": "st.visible.modal.fb.init",
+    "description": "Make a ReactNative widgets st.visible.modal.fb.init widget",
+    "body": [
+      "visible={true}",
+      "// boolean - mostrar/ocultar modal"
+    ]
+  },
+  "ReactNative widgets st.visible.modal.nav.init": {
+    "prefix": "st.visible.modal.nav.init",
+    "description": "Make a ReactNative widgets st.visible.modal.nav.init widget",
+    "body": [
+      "visible={true}",
+      "// boolean - mostrar/ocultar modal"
+    ]
+  },
+  "ReactNative widgets st.on_close.fb.init": {
+    "prefix": "st.on_close.fb.init",
+    "description": "Make a ReactNative widgets st.on_close.fb.init widget",
+    "body": [
+      "on_close={() => setVisible(false)}",
+      "// function - cerrar modal"
+    ]
+  },
+  "ReactNative widgets st.on_close.nav.init": {
+    "prefix": "st.on_close.nav.init",
+    "description": "Make a ReactNative widgets st.on_close.nav.init widget",
+    "body": [
+      "on_close={() => setVisible(false)}",
+      "// function - cerrar modal"
+    ]
+  },
+  "ReactNative widgets st.animationType.modal.fb.init": {
+    "prefix": "st.animationType.modal.fb.init",
+    "description": "Make a ReactNative widgets st.animationType.modal.fb.init widget",
+    "body": [
+      "animationType=\"slide\"",
+      "// 'slide' | 'fade' | 'none'"
+    ]
+  },
+  "ReactNative widgets st.animationType.modal.nav.init": {
+    "prefix": "st.animationType.modal.nav.init",
+    "description": "Make a ReactNative widgets st.animationType.modal.nav.init widget",
+    "body": [
+      "animationType=\"slide\"",
+      "// 'slide' | 'fade' | 'none'"
+    ]
+  },
+  "ReactNative widgets st.transparent.modal.fb.init": {
+    "prefix": "st.transparent.modal.fb.init",
+    "description": "Make a ReactNative widgets st.transparent.modal.fb.init widget",
+    "body": [
+      "transparent={true}",
+      "// boolean - fondo transparente"
+    ]
+  },
+  "ReactNative widgets st.transparent.modal.nav.init": {
+    "prefix": "st.transparent.modal.nav.init",
+    "description": "Make a ReactNative widgets st.transparent.modal.nav.init widget",
+    "body": [
+      "transparent={true}",
+      "// boolean - fondo transparente"
+    ]
+  },
+  "ReactNative widgets st.backdropPressable.fb.init": {
+    "prefix": "st.backdropPressable.fb.init",
+    "description": "Make a ReactNative widgets st.backdropPressable.fb.init widget",
+    "body": [
+      "backdropPressable={true}",
+      "// boolean - cerrar al tocar fondo"
+    ]
+  },
+  "ReactNative widgets st.backdropPressable.nav.init": {
+    "prefix": "st.backdropPressable.nav.init",
+    "description": "Make a ReactNative widgets st.backdropPressable.nav.init widget",
+    "body": [
+      "backdropPressable={true}",
+      "// boolean - cerrar al tocar fondo"
+    ]
+  },
+  "ReactNative widgets st.message.fb.init": {
+    "prefix": "st.message.fb.init",
+    "description": "Make a ReactNative widgets st.message.fb.init widget",
+    "body": [
+      "message=\"Texto del mensaje\"",
+      "// string - mensaje a mostrar"
+    ]
+  },
+  "ReactNative widgets st.message.nav.init": {
+    "prefix": "st.message.nav.init",
+    "description": "Make a ReactNative widgets st.message.nav.init widget",
+    "body": [
+      "message=\"Texto del mensaje\"",
+      "// string - mensaje a mostrar"
+    ]
+  },
+  "ReactNative widgets st.duration.fb.init": {
+    "prefix": "st.duration.fb.init",
+    "description": "Make a ReactNative widgets st.duration.fb.init widget",
+    "body": [
+      "duration={3000}",
+      "// number - duraci\u00f3n en ms"
+    ]
+  },
+  "ReactNative widgets st.duration.nav.init": {
+    "prefix": "st.duration.nav.init",
+    "description": "Make a ReactNative widgets st.duration.nav.init widget",
+    "body": [
+      "duration={3000}",
+      "// number - duraci\u00f3n en ms"
+    ]
+  },
+  "ReactNative widgets st.actionLabel.fb.init": {
+    "prefix": "st.actionLabel.fb.init",
+    "description": "Make a ReactNative widgets st.actionLabel.fb.init widget",
+    "body": [
+      "actionLabel=\"Deshacer\"",
+      "// string - texto del bot\u00f3n de acci\u00f3n"
+    ]
+  },
+  "ReactNative widgets st.actionLabel.nav.init": {
+    "prefix": "st.actionLabel.nav.init",
+    "description": "Make a ReactNative widgets st.actionLabel.nav.init widget",
+    "body": [
+      "actionLabel=\"Deshacer\"",
+      "// string - texto del bot\u00f3n de acci\u00f3n"
+    ]
+  },
+  "ReactNative widgets st.on_action.fb.init": {
+    "prefix": "st.on_action.fb.init",
+    "description": "Make a ReactNative widgets st.on_action.fb.init widget",
+    "body": [
+      "on_action={() => {}}",
+      "// function - evento al presionar acci\u00f3n"
+    ]
+  },
+  "ReactNative widgets st.on_action.nav.init": {
+    "prefix": "st.on_action.nav.init",
+    "description": "Make a ReactNative widgets st.on_action.nav.init widget",
+    "body": [
+      "on_action={() => {}}",
+      "// function - evento al presionar acci\u00f3n"
+    ]
+  },
+  "ReactNative widgets st.title.alert.fb.init": {
+    "prefix": "st.title.alert.fb.init",
+    "description": "Make a ReactNative widgets st.title.alert.fb.init widget",
+    "body": [
+      "title=\"T\u00edtulo\"",
+      "// string - t\u00edtulo del di\u00e1logo"
+    ]
+  },
+  "ReactNative widgets st.title.alert.nav.init": {
+    "prefix": "st.title.alert.nav.init",
+    "description": "Make a ReactNative widgets st.title.alert.nav.init widget",
+    "body": [
+      "title=\"T\u00edtulo\"",
+      "// string - t\u00edtulo del di\u00e1logo"
+    ]
+  },
+  "ReactNative widgets st.message.alert.fb.init": {
+    "prefix": "st.message.alert.fb.init",
+    "description": "Make a ReactNative widgets st.message.alert.fb.init widget",
+    "body": [
+      "message=\"Mensaje\"",
+      "// string - mensaje del di\u00e1logo"
+    ]
+  },
+  "ReactNative widgets st.message.alert.nav.init": {
+    "prefix": "st.message.alert.nav.init",
+    "description": "Make a ReactNative widgets st.message.alert.nav.init widget",
+    "body": [
+      "message=\"Mensaje\"",
+      "// string - mensaje del di\u00e1logo"
+    ]
+  },
+  "ReactNative widgets st.confirmText.fb.init": {
+    "prefix": "st.confirmText.fb.init",
+    "description": "Make a ReactNative widgets st.confirmText.fb.init widget",
+    "body": [
+      "confirmText=\"Aceptar\"",
+      "// string - texto del bot\u00f3n confirmar"
+    ]
+  },
+  "ReactNative widgets st.confirmText.nav.init": {
+    "prefix": "st.confirmText.nav.init",
+    "description": "Make a ReactNative widgets st.confirmText.nav.init widget",
+    "body": [
+      "confirmText=\"Aceptar\"",
+      "// string - texto del bot\u00f3n confirmar"
+    ]
+  },
+  "ReactNative widgets st.cancelText.fb.init": {
+    "prefix": "st.cancelText.fb.init",
+    "description": "Make a ReactNative widgets st.cancelText.fb.init widget",
+    "body": [
+      "cancelText=\"Cancelar\"",
+      "// string - texto del bot\u00f3n cancelar"
+    ]
+  },
+  "ReactNative widgets st.cancelText.nav.init": {
+    "prefix": "st.cancelText.nav.init",
+    "description": "Make a ReactNative widgets st.cancelText.nav.init widget",
+    "body": [
+      "cancelText=\"Cancelar\"",
+      "// string - texto del bot\u00f3n cancelar"
+    ]
+  },
+  "ReactNative widgets st.confirmStyle.fb.init": {
+    "prefix": "st.confirmStyle.fb.init",
+    "description": "Make a ReactNative widgets st.confirmStyle.fb.init widget",
+    "body": [
+      "confirmStyle=\"default\"",
+      "// 'default' | 'destructive' | 'cancel'"
+    ]
+  },
+  "ReactNative widgets st.confirmStyle.nav.init": {
+    "prefix": "st.confirmStyle.nav.init",
+    "description": "Make a ReactNative widgets st.confirmStyle.nav.init widget",
+    "body": [
+      "confirmStyle=\"default\"",
+      "// 'default' | 'destructive' | 'cancel'"
+    ]
+  },
+  "ReactNative widgets st.transform.rn.init": {
+    "prefix": "st.transform.rn.init",
+    "description": "Make a ReactNative widgets st.transform.rn.init widget",
+    "body": [
+      "transform: [{ scale: 1.1 }],",
+      "// 'scale' | 'translateX' | 'translateY' | 'rotate' | 'skewX' | 'skewY'"
+    ]
+  },
+  "ReactNative widgets st.pointerEvents.rn.init": {
+    "prefix": "st.pointerEvents.rn.init",
+    "description": "Make a ReactNative widgets st.pointerEvents.rn.init widget",
+    "body": [
+      "pointerEvents: 'box-none',",
+      "// 'auto' | 'none' | 'box-none' | 'box-only'"
+    ]
+  },
+  "ReactNative widgets st.hitSlop.rn.init": {
+    "prefix": "st.hitSlop.rn.init",
+    "description": "Make a ReactNative widgets st.hitSlop.rn.init widget",
+    "body": [
+      "hitSlop: { top: 10, left: 10, bottom: 10, right: 10 },",
+      "// object - \u00e1rea t\u00e1ctil extendida"
+    ]
+  },
+  "ReactNative widgets st.backfaceVisibility.rn.init": {
+    "prefix": "st.backfaceVisibility.rn.init",
+    "description": "Make a ReactNative widgets st.backfaceVisibility.rn.init widget",
+    "body": [
+      "backfaceVisibility: 'visible',",
+      "// 'visible' | 'hidden'"
+    ]
+  },
+  "ReactNative widgets st.tintColor.rn.init": {
+    "prefix": "st.tintColor.rn.init",
+    "description": "Make a ReactNative widgets st.tintColor.rn.init widget",
+    "body": [
+      "tintColor: '#007aff',",
+      "// string - color de tinte para im\u00e1genes"
+    ]
+  },
+  "ReactNative widgets st.writingDirection.rn.init": {
+    "prefix": "st.writingDirection.rn.init",
+    "description": "Make a ReactNative widgets st.writingDirection.rn.init widget",
+    "body": [
+      "writingDirection: 'ltr',",
+      "// 'ltr' | 'rtl'"
+    ]
+  },
+  "ReactNative widgets st.includeFontPadding.rn.init": {
+    "prefix": "st.includeFontPadding.rn.init",
+    "description": "Make a ReactNative widgets st.includeFontPadding.rn.init widget",
+    "body": [
+      "includeFontPadding: false,",
+      "// boolean - eliminar padding extra en Android"
+    ]
+  },
+  "ReactNative widgets st.textShadow.rn.init": {
+    "prefix": "st.textShadow.rn.init",
+    "description": "Make a ReactNative widgets st.textShadow.rn.init widget",
+    "body": [
+      "textShadowColor: '#000',",
+      "textShadowOffset: { width: 1, height: 1 },",
+      "textShadowRadius: 2,",
+      "// sombra para texto"
+    ]
+  },
+  "ReactNative widgets st.returnKeyType.rn.init": {
+    "prefix": "st.returnKeyType.rn.init",
+    "description": "Make a ReactNative widgets st.returnKeyType.rn.init widget",
+    "body": [
+      "returnKeyType: 'done',",
+      "// 'done' | 'go' | 'next' | 'search' | 'send' | 'previous'"
+    ]
+  },
+  "ReactNative widgets st.autoCapitalize.rn.init": {
+    "prefix": "st.autoCapitalize.rn.init",
+    "description": "Make a ReactNative widgets st.autoCapitalize.rn.init widget",
+    "body": [
+      "autoCapitalize: 'none',",
+      "// 'none' | 'sentences' | 'words' | 'characters'"
+    ]
+  },
+  "ReactNative widgets st.autoCorrect.rn.init": {
+    "prefix": "st.autoCorrect.rn.init",
+    "description": "Make a ReactNative widgets st.autoCorrect.rn.init widget",
+    "body": [
+      "autoCorrect: false,",
+      "// boolean - corregir autom\u00e1ticamente"
+    ]
+  },
+  "ReactNative widgets st.clearButtonMode.rn.init": {
+    "prefix": "st.clearButtonMode.rn.init",
+    "description": "Make a ReactNative widgets st.clearButtonMode.rn.init widget",
+    "body": [
+      "clearButtonMode: 'while-editing',",
+      "// 'never' | 'while-editing' | 'unless-editing' | 'always'"
+    ]
+  },
+  "ReactNative widgets st.maxLength.rn.init": {
+    "prefix": "st.maxLength.rn.init",
+    "description": "Make a ReactNative widgets st.maxLength.rn.init widget",
+    "body": [
+      "maxLength: 100,",
+      "// number - longitud m\u00e1xima"
+    ]
+  },
+  "ReactNative widgets st.selectionColor.rn.init": {
+    "prefix": "st.selectionColor.rn.init",
+    "description": "Make a ReactNative widgets st.selectionColor.rn.init widget",
+    "body": [
+      "selectionColor: '#3498db',",
+      "// string - color de selecci\u00f3n"
+    ]
+  },
+  "ReactNative widgets st.cursorColor.rn.init": {
+    "prefix": "st.cursorColor.rn.init",
+    "description": "Make a ReactNative widgets st.cursorColor.rn.init widget",
+    "body": [
+      "cursorColor: '#3498db',",
+      "// string - color del cursor"
+    ]
+  },
+  "ReactNative widgets st.activityIndicatorSize.rn.init": {
+    "prefix": "st.activityIndicatorSize.rn.init",
+    "description": "Make a ReactNative widgets st.activityIndicatorSize.rn.init widget",
+    "body": [
+      "size: 'large',",
+      "// 'small' | 'large' | number"
+    ]
+  },
+  "ReactNative widgets st.animating.rn.init": {
+    "prefix": "st.animating.rn.init",
+    "description": "Make a ReactNative widgets st.animating.rn.init widget",
+    "body": [
+      "animating: true,",
+      "// boolean - animar indicador"
+    ]
+  },
+  "ReactNative widgets st.hidesWhenStopped.rn.init": {
+    "prefix": "st.hidesWhenStopped.rn.init",
+    "description": "Make a ReactNative widgets st.hidesWhenStopped.rn.init widget",
+    "body": [
+      "hidesWhenStopped: true,",
+      "// boolean - ocultar cuando no anima"
+    ]
+  },
+  "ReactNative widgets st.refreshColors.rn.init": {
+    "prefix": "st.refreshColors.rn.init",
+    "description": "Make a ReactNative widgets st.refreshColors.rn.init widget",
+    "body": [
+      "colors: ['#007aff', '#34c759', '#ff3b30'],",
+      "// array - colores del spinner"
+    ]
+  },
+  "ReactNative widgets st.progressBackgroundColor.rn.init": {
+    "prefix": "st.progressBackgroundColor.rn.init",
+    "description": "Make a ReactNative widgets st.progressBackgroundColor.rn.init widget",
+    "body": [
+      "progressBackgroundColor: '#fff',",
+      "// string - color de fondo"
+    ]
+  },
+  "ReactNative widgets st.refreshTintColor.rn.init": {
+    "prefix": "st.refreshTintColor.rn.init",
+    "description": "Make a ReactNative widgets st.refreshTintColor.rn.init widget",
+    "body": [
+      "tintColor: '#007aff',",
+      "// string - color del spinner"
+    ]
+  },
+  "ReactNative widgets st.keyboardBehavior.rn.init": {
+    "prefix": "st.keyboardBehavior.rn.init",
+    "description": "Make a ReactNative widgets st.keyboardBehavior.rn.init widget",
+    "body": [
+      "behavior: 'padding',",
+      "// 'height' | 'padding' | 'position'"
+    ]
+  },
+  "ReactNative widgets st.keyboardVerticalOffset.rn.init": {
+    "prefix": "st.keyboardVerticalOffset.rn.init",
+    "description": "Make a ReactNative widgets st.keyboardVerticalOffset.rn.init widget",
+    "body": [
+      "keyboardVerticalOffset: 100,",
+      "// number - desplazamiento vertical"
+    ]
+  },
+  "ReactNative widgets st.keyboardEnabled.rn.init": {
+    "prefix": "st.keyboardEnabled.rn.init",
+    "description": "Make a ReactNative widgets st.keyboardEnabled.rn.init widget",
+    "body": [
+      "enabled: true,",
+      "// boolean - habilitar KeyboardAvoidingView"
+    ]
+  },
+  "ReactNative widgets st.safeAreaEdges.rn.init": {
+    "prefix": "st.safeAreaEdges.rn.init",
+    "description": "Make a ReactNative widgets st.safeAreaEdges.rn.init widget",
+    "body": [
+      "edges: ['top', 'bottom', 'left', 'right'],",
+      "// array - 'top' | 'bottom' | 'left' | 'right'"
+    ]
+  },
+  "ReactNative widgets st.androidRipple.rn.init": {
+    "prefix": "st.androidRipple.rn.init",
+    "description": "Make a ReactNative widgets st.androidRipple.rn.init widget",
+    "body": [
+      "android_ripple: { color: 'rgba(0,0,0,0.2)', borderless: false, radius: 150 },",
+      "// object - efecto ripple en Android"
+    ]
+  },
+  "ReactNative widgets st.pressRetentionOffset.rn.init": {
+    "prefix": "st.pressRetentionOffset.rn.init",
+    "description": "Make a ReactNative widgets st.pressRetentionOffset.rn.init widget",
+    "body": [
+      "pressRetentionOffset: { top: 10, left: 10, bottom: 10, right: 10 },",
+      "// object - offset de retenci\u00f3n"
+    ]
+  },
+  "ReactNative widgets st.delayLongPress.rn.init": {
+    "prefix": "st.delayLongPress.rn.init",
+    "description": "Make a ReactNative widgets st.delayLongPress.rn.init widget",
+    "body": [
+      "delayLongPress: 500,",
+      "// number - retraso para long press"
+    ]
+  },
+  "ReactNative widgets st.activeOpacity.rn.init": {
+    "prefix": "st.activeOpacity.rn.init",
+    "description": "Make a ReactNative widgets st.activeOpacity.rn.init widget",
+    "body": [
+      "activeOpacity: 0.7,",
+      "// number (0-1) - opacidad al presionar"
+    ]
+  },
+  "ReactNative widgets st.delayPressIn.rn.init": {
+    "prefix": "st.delayPressIn.rn.init",
+    "description": "Make a ReactNative widgets st.delayPressIn.rn.init widget",
+    "body": [
+      "delayPressIn: 0,",
+      "// number - retraso al presionar"
+    ]
+  },
+  "ReactNative widgets st.delayPressOut.rn.init": {
+    "prefix": "st.delayPressOut.rn.init",
+    "description": "Make a ReactNative widgets st.delayPressOut.rn.init widget",
+    "body": [
+      "delayPressOut: 0,",
+      "// number - retraso al soltar"
+    ]
+  },
+  "ReactNative widgets st.checkboxBoxType.rn.ext.init": {
+    "prefix": "st.checkboxBoxType.rn.ext.init",
+    "description": "Make a ReactNative widgets st.checkboxBoxType.rn.ext.init widget",
+    "body": [
+      "boxType: 'square',",
+      "// 'square' | 'circle'"
+    ]
+  },
+  "ReactNative widgets st.checkboxLineWidth.rn.ext.init": {
+    "prefix": "st.checkboxLineWidth.rn.ext.init",
+    "description": "Make a ReactNative widgets st.checkboxLineWidth.rn.ext.init widget",
+    "body": [
+      "lineWidth: 1,",
+      "// number - ancho de l\u00ednea"
+    ]
+  },
+  "ReactNative widgets st.checkboxHideBox.rn.ext.init": {
+    "prefix": "st.checkboxHideBox.rn.ext.init",
+    "description": "Make a ReactNative widgets st.checkboxHideBox.rn.ext.init widget",
+    "body": [
+      "hideBox: false,",
+      "// boolean - ocultar caja"
+    ]
+  },
+  "ReactNative widgets st.pickerMode.rn.ext.init": {
+    "prefix": "st.pickerMode.rn.ext.init",
+    "description": "Make a ReactNative widgets st.pickerMode.rn.ext.init widget",
+    "body": [
+      "mode: 'dialog',",
+      "// 'dialog' | 'dropdown'"
+    ]
+  },
+  "ReactNative widgets st.pickerDropdownIconColor.rn.ext.init": {
+    "prefix": "st.pickerDropdownIconColor.rn.ext.init",
+    "description": "Make a ReactNative widgets st.pickerDropdownIconColor.rn.ext.init widget",
+    "body": [
+      "dropdownIconColor: '#000',",
+      "// string - color del icono"
+    ]
+  },
+  "ReactNative widgets st.pickerPrompt.rn.ext.init": {
+    "prefix": "st.pickerPrompt.rn.ext.init",
+    "description": "Make a ReactNative widgets st.pickerPrompt.rn.ext.init widget",
+    "body": [
+      "prompt: 'Selecciona una opci\u00f3n',",
+      "// string - texto de ayuda"
+    ]
+  },
+  "ReactNative widgets st.datetimeMinuteInterval.rn.ext.init": {
+    "prefix": "st.datetimeMinuteInterval.rn.ext.init",
+    "description": "Make a ReactNative widgets st.datetimeMinuteInterval.rn.ext.init widget",
+    "body": [
+      "minuteInterval: 1,",
+      "// number - intervalo de minutos (1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30)"
+    ]
+  },
+  "ReactNative widgets st.datetimeTimeZoneOffset.rn.ext.init": {
+    "prefix": "st.datetimeTimeZoneOffset.rn.ext.init",
+    "description": "Make a ReactNative widgets st.datetimeTimeZoneOffset.rn.ext.init widget",
+    "body": [
+      "timeZoneOffsetInMinutes: 0,",
+      "// number - offset de zona horaria"
+    ]
+  },
+  "ReactNative widgets st.datetimePositiveButton.rn.ext.init": {
+    "prefix": "st.datetimePositiveButton.rn.ext.init",
+    "description": "Make a ReactNative widgets st.datetimePositiveButton.rn.ext.init widget",
+    "body": [
+      "positiveButtonLabel: 'OK',",
+      "// string - texto bot\u00f3n positivo"
+    ]
+  },
+  "ReactNative widgets st.datetimeNegativeButton.rn.ext.init": {
+    "prefix": "st.datetimeNegativeButton.rn.ext.init",
+    "description": "Make a ReactNative widgets st.datetimeNegativeButton.rn.ext.init widget",
+    "body": [
+      "negativeButtonLabel: 'Cancelar',",
+      "// string - texto bot\u00f3n negativo"
+    ]
+  },
+  "ReactNative widgets st.progressIndeterminate.rn.ext.init": {
+    "prefix": "st.progressIndeterminate.rn.ext.init",
+    "description": "Make a ReactNative widgets st.progressIndeterminate.rn.ext.init widget",
+    "body": [
+      "indeterminate: false,",
+      "// boolean - modo indeterminado"
+    ]
+  },
+  "ReactNative widgets st.progressAnimated.rn.ext.init": {
+    "prefix": "st.progressAnimated.rn.ext.init",
+    "description": "Make a ReactNative widgets st.progressAnimated.rn.ext.init widget",
+    "body": [
+      "animated: true,",
+      "// boolean - animaci\u00f3n"
+    ]
+  },
+  "ReactNative widgets st.child.fb.init": {
+    "prefix": "st.child.fb.init",
+    "description": "Make a ReactNative widgets st.child.fb.init widget",
+    "body": [
+      "child={<Text label=\"Hijo\" />}",
+      "// ReactNode - hijo \u00fanico"
+    ]
+  },
+  "ReactNative widgets st.children.fb.init": {
+    "prefix": "st.children.fb.init",
+    "description": "Make a ReactNative widgets st.children.fb.init widget",
+    "body": [
+      "children={[<Text label=\"1\" />, <Text label=\"2\" />]}",
+      "// array - m\u00faltiples hijos"
+    ]
+  },
+  "ReactNative widgets st.blur.fb.init": {
+    "prefix": "st.blur.fb.init",
+    "description": "Make a ReactNative widgets st.blur.fb.init widget",
+    "body": [
+      "blur={10}",
+      "// number - intensidad de desenfoque (requiere expo-blur)"
+    ]
+  },
+  "ReactNative widgets st.on_press.fb.init": {
+    "prefix": "st.on_press.fb.init",
+    "description": "Make a ReactNative widgets st.on_press.fb.init widget",
+    "body": [
+      "on_press={() => console.log('press')}",
+      "// function - evento al presionar"
+    ]
+  },
+  "ReactNative widgets st.on_click.fb.init": {
+    "prefix": "st.on_click.fb.init",
+    "description": "Make a ReactNative widgets st.on_click.fb.init widget",
+    "body": [
+      "on_click={() => console.log('click')}",
+      "// function - evento al hacer click"
+    ]
+  },
+  "ReactNative widgets st.on_change.fb.init": {
+    "prefix": "st.on_change.fb.init",
+    "description": "Make a ReactNative widgets st.on_change.fb.init widget",
+    "body": [
+      "on_change={(value) => console.log(value)}",
+      "// function - evento al cambiar valor"
+    ]
+  },
+  "ReactNative widgets st.on_toggle.fb.init": {
+    "prefix": "st.on_toggle.fb.init",
+    "description": "Make a ReactNative widgets st.on_toggle.fb.init widget",
+    "body": [
+      "on_toggle={(value) => console.log(value)}",
+      "// function - evento al toggle"
+    ]
+  },
+  "ReactNative widgets st.on_submit.fb.init": {
+    "prefix": "st.on_submit.fb.init",
+    "description": "Make a ReactNative widgets st.on_submit.fb.init widget",
+    "body": [
+      "on_submit={() => console.log('submit')}",
+      "// function - evento al enviar"
+    ]
+  },
+  "ReactNative widgets st.drawerStyle.nav.init": {
+    "prefix": "st.drawerStyle.nav.init",
+    "description": "Make a ReactNative widgets st.drawerStyle.nav.init widget",
+    "body": [
+      "drawerStyle={{ width: 280, backgroundColor: '#1e293b' }}",
+      "// object - estilo del drawer"
+    ]
+  },
+  "ReactNative widgets st.drawerPosition.nav.init": {
+    "prefix": "st.drawerPosition.nav.init",
+    "description": "Make a ReactNative widgets st.drawerPosition.nav.init widget",
+    "body": [
+      "drawerPosition=\"left\"",
+      "// 'left' | 'right' - posici\u00f3n del drawer"
+    ]
+  },
+  "ReactNative widgets st.drawerType.nav.init": {
+    "prefix": "st.drawerType.nav.init",
+    "description": "Make a ReactNative widgets st.drawerType.nav.init widget",
+    "body": [
+      "drawerType=\"front\"",
+      "// 'front' | 'back' | 'slide' | 'permanent' - tipo de drawer"
+    ]
+  },
+  "ReactNative widgets st.drawerActiveTintColor.nav.init": {
+    "prefix": "st.drawerActiveTintColor.nav.init",
+    "description": "Make a ReactNative widgets st.drawerActiveTintColor.nav.init widget",
+    "body": [
+      "drawerActiveTintColor=\"#007aff\"",
+      "// string - color del item activo"
+    ]
+  },
+  "ReactNative widgets st.drawerInactiveTintColor.nav.init": {
+    "prefix": "st.drawerInactiveTintColor.nav.init",
+    "description": "Make a ReactNative widgets st.drawerInactiveTintColor.nav.init widget",
+    "body": [
+      "drawerInactiveTintColor=\"#999\"",
+      "// string - color del item inactivo"
+    ]
+  },
+  "ReactNative widgets st.drawerActiveBackgroundColor.nav.init": {
+    "prefix": "st.drawerActiveBackgroundColor.nav.init",
+    "description": "Make a ReactNative widgets st.drawerActiveBackgroundColor.nav.init widget",
+    "body": [
+      "drawerActiveBackgroundColor=\"rgba(0,0,0,0.04)\"",
+      "// string - fondo del item activo"
+    ]
+  },
+  "ReactNative widgets st.tabBarStyle.nav.init": {
+    "prefix": "st.tabBarStyle.nav.init",
+    "description": "Make a ReactNative widgets st.tabBarStyle.nav.init widget",
+    "body": [
+      "tabBarStyle={{ backgroundColor: '#fff' }}",
+      "// object - estilo de la barra de tabs"
+    ]
+  },
+  "ReactNative widgets st.tabBarLabelStyle.nav.init": {
+    "prefix": "st.tabBarLabelStyle.nav.init",
+    "description": "Make a ReactNative widgets st.tabBarLabelStyle.nav.init widget",
+    "body": [
+      "tabBarLabelStyle={{ fontWeight: 'bold' }}",
+      "// object - estilo de las etiquetas"
+    ]
+  },
+  "ReactNative widgets st.tabBarActiveTintColor.nav.init": {
+    "prefix": "st.tabBarActiveTintColor.nav.init",
+    "description": "Make a ReactNative widgets st.tabBarActiveTintColor.nav.init widget",
+    "body": [
+      "tabBarActiveTintColor=\"#007aff\"",
+      "// string - color del tab activo"
+    ]
+  },
+  "ReactNative widgets st.tabBarInactiveTintColor.nav.init": {
+    "prefix": "st.tabBarInactiveTintColor.nav.init",
+    "description": "Make a ReactNative widgets st.tabBarInactiveTintColor.nav.init widget",
+    "body": [
+      "tabBarInactiveTintColor=\"#999\"",
+      "// string - color del tab inactivo"
+    ]
+  },
+  "ReactNative widgets st.tabBarIndicatorStyle.nav.init": {
+    "prefix": "st.tabBarIndicatorStyle.nav.init",
+    "description": "Make a ReactNative widgets st.tabBarIndicatorStyle.nav.init widget",
+    "body": [
+      "tabBarIndicatorStyle={{ backgroundColor: '#007aff', height: 3 }}",
+      "// object - estilo del indicador"
+    ]
+  },
+  "ReactNative widgets st.tabBarPosition.nav.init": {
+    "prefix": "st.tabBarPosition.nav.init",
+    "description": "Make a ReactNative widgets st.tabBarPosition.nav.init widget",
+    "body": [
+      "tabBarPosition=\"bottom\"",
+      "// 'bottom' | 'top' - posici\u00f3n de la barra"
+    ]
+  },
+  "ReactNative widgets st.tabBarShowLabel.nav.init": {
+    "prefix": "st.tabBarShowLabel.nav.init",
+    "description": "Make a ReactNative widgets st.tabBarShowLabel.nav.init widget",
+    "body": [
+      "tabBarShowLabel={true}",
+      "// boolean - mostrar etiquetas"
+    ]
+  },
+  "ReactNative widgets st.tabBarShowIcon.nav.init": {
+    "prefix": "st.tabBarShowIcon.nav.init",
+    "description": "Make a ReactNative widgets st.tabBarShowIcon.nav.init widget",
+    "body": [
+      "tabBarShowIcon={true}",
+      "// boolean - mostrar iconos"
+    ]
+  },
+  "ReactNative widgets st.tabBarBadge.nav.init": {
+    "prefix": "st.tabBarBadge.nav.init",
+    "description": "Make a ReactNative widgets st.tabBarBadge.nav.init widget",
+    "body": [
+      "tabBarBadge={3}",
+      "// number | string - badge en el tab"
+    ]
+  },
+  "ReactNative widgets st.tabBarBadgeStyle.nav.init": {
+    "prefix": "st.tabBarBadgeStyle.nav.init",
+    "description": "Make a ReactNative widgets st.tabBarBadgeStyle.nav.init widget",
+    "body": [
+      "tabBarBadgeStyle={{ backgroundColor: 'red' }}",
+      "// object - estilo del badge"
+    ]
+  },
+  "ReactNative widgets st.headerStyle.nav.init": {
+    "prefix": "st.headerStyle.nav.init",
+    "description": "Make a ReactNative widgets st.headerStyle.nav.init widget",
+    "body": [
+      "headerStyle={{ backgroundColor: '#f4511e' }}",
+      "// object - estilo del header"
+    ]
+  },
+  "ReactNative widgets st.headerTintColor.nav.init": {
+    "prefix": "st.headerTintColor.nav.init",
+    "description": "Make a ReactNative widgets st.headerTintColor.nav.init widget",
+    "body": [
+      "headerTintColor=\"#fff\"",
+      "// string - color del texto en header"
+    ]
+  },
+  "ReactNative widgets st.headerTitleStyle.nav.init": {
+    "prefix": "st.headerTitleStyle.nav.init",
+    "description": "Make a ReactNative widgets st.headerTitleStyle.nav.init widget",
+    "body": [
+      "headerTitleStyle={{ fontWeight: 'bold', fontSize: 24 }}",
+      "// object - estilo del t\u00edtulo"
+    ]
+  },
+  "ReactNative widgets st.headerBackgroundColor.nav.init": {
+    "prefix": "st.headerBackgroundColor.nav.init",
+    "description": "Make a ReactNative widgets st.headerBackgroundColor.nav.init widget",
+    "body": [
+      "headerBackgroundColor=\"#f4511e\"",
+      "// string - color de fondo del header"
+    ]
+  },
+  "ReactNative widgets st.headerLeft.nav.init": {
+    "prefix": "st.headerLeft.nav.init",
+    "description": "Make a ReactNative widgets st.headerLeft.nav.init widget",
+    "body": [
+      "headerLeft={<Icon name=\"menu\" size={24} color=\"#fff\" />}",
+      "// ReactNode - elemento izquierdo"
+    ]
+  },
+  "ReactNative widgets st.headerRight.nav.init": {
+    "prefix": "st.headerRight.nav.init",
+    "description": "Make a ReactNative widgets st.headerRight.nav.init widget",
+    "body": [
+      "headerRight={<Icon name=\"person\" size={24} color=\"#fff\" />}",
+      "// ReactNode - elemento derecho"
+    ]
+  },
+  "ReactNative widgets st.headerShown.nav.init": {
+    "prefix": "st.headerShown.nav.init",
+    "description": "Make a ReactNative widgets st.headerShown.nav.init widget",
+    "body": [
+      "headerShown={true}",
+      "// boolean - mostrar/ocultar header"
+    ]
+  },
+  "ReactNative widgets st.titleAlign.nav.init": {
+    "prefix": "st.titleAlign.nav.init",
+    "description": "Make a ReactNative widgets st.titleAlign.nav.init widget",
+    "body": [
+      "titleAlign=\"center\"",
+      "// 'left' | 'center' | 'right' - alineaci\u00f3n del t\u00edtulo"
+    ]
+  },
+  "ReactNative widgets st.animation.nav.init": {
+    "prefix": "st.animation.nav.init",
+    "description": "Make a ReactNative widgets st.animation.nav.init widget",
+    "body": [
+      "animation=\"slide_from_right\"",
+      "// 'slide_from_right' | 'fade' | 'none' - animaci\u00f3n de transici\u00f3n"
+    ]
+  },
+  "ReactNative widgets st.gestureEnabled.nav.init": {
+    "prefix": "st.gestureEnabled.nav.init",
+    "description": "Make a ReactNative widgets st.gestureEnabled.nav.init widget",
+    "body": [
+      "gestureEnabled={true}",
+      "// boolean - habilitar gestos"
+    ]
+  },
+  "ReactNative widgets st.presentation.nav.init": {
+    "prefix": "st.presentation.nav.init",
+    "description": "Make a ReactNative widgets st.presentation.nav.init widget",
+    "body": [
+      "presentation=\"card\"",
+      "// 'card' | 'modal' | 'transparentModal' - tipo de presentaci\u00f3n"
+    ]
+  },
+  "ReactNative widgets st.headerBackVisible.nav.init": {
+    "prefix": "st.headerBackVisible.nav.init",
+    "description": "Make a ReactNative widgets st.headerBackVisible.nav.init widget",
+    "body": [
+      "headerBackVisible={true}",
+      "// boolean - mostrar bot\u00f3n de atr\u00e1s"
+    ]
+  },
+  "ReactNative widgets st.headerBackTitle.nav.init": {
+    "prefix": "st.headerBackTitle.nav.init",
+    "description": "Make a ReactNative widgets st.headerBackTitle.nav.init widget",
+    "body": [
+      "headerBackTitle=\"Atr\u00e1s\"",
+      "// string - texto del bot\u00f3n de atr\u00e1s"
+    ]
+  },
+  "ReactNative widgets st.swipeEnabled.nav.init": {
+    "prefix": "st.swipeEnabled.nav.init",
+    "description": "Make a ReactNative widgets st.swipeEnabled.nav.init widget",
+    "body": [
+      "swipeEnabled={true}",
+      "// boolean - permitir deslizamiento (Top Tabs)"
+    ]
+  },
+  "ReactNative widgets st.animationEnabled.nav.init": {
+    "prefix": "st.animationEnabled.nav.init",
+    "description": "Make a ReactNative widgets st.animationEnabled.nav.init widget",
+    "body": [
+      "animationEnabled={true}",
+      "// boolean - animaci\u00f3n al cambiar de tab"
+    ]
+  },
+  "ReactNative widgets st.lazy.nav.init": {
+    "prefix": "st.lazy.nav.init",
+    "description": "Make a ReactNative widgets st.lazy.nav.init widget",
+    "body": [
+      "lazy={true}",
+      "// boolean - carga perezosa de tabs"
+    ]
+  },
+  "ReactNative widgets st.scrollEnabled.nav.init": {
+    "prefix": "st.scrollEnabled.nav.init",
+    "description": "Make a ReactNative widgets st.scrollEnabled.nav.init widget",
+    "body": [
+      "scrollEnabled={true}",
+      "// boolean - permitir scroll en tabs"
+    ]
+  },
+  "ReactNative widgets st.initialRouteName.nav.init": {
+    "prefix": "st.initialRouteName.nav.init",
+    "description": "Make a ReactNative widgets st.initialRouteName.nav.init widget",
+    "body": [
+      "initialRouteName=\"Home\"",
+      "// string - nombre de la pantalla inicial"
+    ]
+  },
+  "ReactNative widgets st.backBehavior.nav.init": {
+    "prefix": "st.backBehavior.nav.init",
+    "description": "Make a ReactNative widgets st.backBehavior.nav.init widget",
+    "body": [
+      "backBehavior=\"history\"",
+      "// 'history' | 'initialRoute' | 'order' | 'none' - comportamiento al volver"
+    ]
+  },
+  "ReactNative widgets st.keyboardHidesTabBar.nav.init": {
+    "prefix": "st.keyboardHidesTabBar.nav.init",
+    "description": "Make a ReactNative widgets st.keyboardHidesTabBar.nav.init widget",
+    "body": [
+      "keyboardHidesTabBar={false}",
+      "// boolean - ocultar tab bar al abrir teclado (Android)"
+    ]
+  },
+  "ReactNative widgets st.drawerLabel.nav.init": {
+    "prefix": "st.drawerLabel.nav.init",
+    "description": "Make a ReactNative widgets st.drawerLabel.nav.init widget",
+    "body": [
+      "drawerLabel=\"Inicio\"",
+      "// string - etiqueta en el drawer"
+    ]
+  },
+  "ReactNative widgets st.drawerIcon.nav.init": {
+    "prefix": "st.drawerIcon.nav.init",
+    "description": "Make a ReactNative widgets st.drawerIcon.nav.init widget",
+    "body": [
+      "drawerIcon={<Icon name=\"home\" size={22} />}",
+      "// ReactNode - icono en el drawer"
+    ]
+  },
+  "ReactNative widgets st.drawerLabelStyle.nav.init": {
+    "prefix": "st.drawerLabelStyle.nav.init",
+    "description": "Make a ReactNative widgets st.drawerLabelStyle.nav.init widget",
+    "body": [
+      "drawerLabelStyle={{ color: '#fff' }}",
+      "// object - estilo de la etiqueta"
+    ]
+  },
+  "ReactNative widgets st.drawerItemStyle.nav.init": {
+    "prefix": "st.drawerItemStyle.nav.init",
+    "description": "Make a ReactNative widgets st.drawerItemStyle.nav.init widget",
+    "body": [
+      "drawerItemStyle={{ borderRadius: 8 }}",
+      "// object - estilo del item"
+    ]
+  },
+  "ReactNative widgets st.drawerAllowFontScaling.nav.init": {
+    "prefix": "st.drawerAllowFontScaling.nav.init",
+    "description": "Make a ReactNative widgets st.drawerAllowFontScaling.nav.init widget",
+    "body": [
+      "drawerAllowFontScaling={true}",
+      "// boolean - escalar fuente"
+    ]
+  },
+  "ReactNative widgets st.tabBarButton.nav.init": {
+    "prefix": "st.tabBarButton.nav.init",
+    "description": "Make a ReactNative widgets st.tabBarButton.nav.init widget",
+    "body": [
+      "tabBarButton={(props) => <TouchableOpacity {...props} />}",
+      "// function - bot\u00f3n personalizado"
+    ]
+  },
+  "ReactNative widgets st.tabBarAccessibilityLabel.nav.init": {
+    "prefix": "st.tabBarAccessibilityLabel.nav.init",
+    "description": "Make a ReactNative widgets st.tabBarAccessibilityLabel.nav.init widget",
+    "body": [
+      "tabBarAccessibilityLabel=\"Inicio\"",
+      "// string - etiqueta de accesibilidad"
+    ]
+  },
+  "ReactNative widgets st.tabBarHideOnKeyboard.nav.init": {
+    "prefix": "st.tabBarHideOnKeyboard.nav.init",
+    "description": "Make a ReactNative widgets st.tabBarHideOnKeyboard.nav.init widget",
+    "body": [
+      "tabBarHideOnKeyboard={false}",
+      "// boolean - ocultar tab bar al abrir teclado"
+    ]
+  },
+  "ReactNative widgets st.unmountOnBlur.nav.init": {
+    "prefix": "st.unmountOnBlur.nav.init",
+    "description": "Make a ReactNative widgets st.unmountOnBlur.nav.init widget",
+    "body": [
+      "unmountOnBlur={false}",
+      "// boolean - desmontar pantalla al perder foco"
+    ]
+  },
+  "ReactNative widgets st.freezeOnBlur.nav.init": {
+    "prefix": "st.freezeOnBlur.nav.init",
+    "description": "Make a ReactNative widgets st.freezeOnBlur.nav.init widget",
+    "body": [
+      "freezeOnBlur={false}",
+      "// boolean - congelar pantalla al perder foco"
+    ]
+  }
+}

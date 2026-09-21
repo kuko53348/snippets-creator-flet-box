@@ -1,0 +1,3546 @@
+{
+  "ReactNative widgets fb.interpolate": {
+    "prefix": "fb.interpolate",
+    "description": "Make a ReactNative widgets fb.interpolate widget",
+    "body": [
+      "",
+      "const valor = useRef(new Animated.Value(0)).current; ",
+      "",
+      "// const nuevoValor = valor._value === 0 ? 1 : 0;",
+      "const rotacionFrontal = valor.interpolate({",
+      "    inputRange: [0, 1],",
+      "    outputRange: ['0deg', '180deg'],",
+      "});"
+    ]
+  },
+  "ReactNative widgets fb.useEffect": {
+    "prefix": "fb.useEffect",
+    "description": "Make a ReactNative widgets fb.useEffect widget",
+    "body": [
+      "",
+      "  useEffect(() => {",
+      "    Animated.timing(rotateValue, {",
+      "      toValue: 360,",
+      "      duration: 1000,",
+      "      usenativeDriver: true",
+      "    }).start();",
+      "  }, []);"
+    ]
+  },
+  "ReactNative widgets fb.animated.useRef": {
+    "prefix": "fb.animated.useRef",
+    "description": "Make a ReactNative widgets fb.animated.useRef widget",
+    "body": [
+      "",
+      "  const rotateValue = useRef(new Animated.Value(0)).current;",
+      "  // const nuevoValor = valor._value === 0 ? 1 : 0;"
+    ]
+  },
+  "ReactNative widgets fb.animated.scrollEvent": {
+    "prefix": "fb.animated.scrollEvent",
+    "description": "Make a ReactNative widgets fb.animated.scrollEvent widget",
+    "body": [
+      "",
+      "const ScrollExample = () => {",
+      "  const scrollY = useRef(new Animated.Value(0)).current;",
+      "",
+      "  const inputRange = [0, 200];",
+      "  const outputRange = [1, 0];",
+      "  const opacity = scrollY.interpolate({ ",
+      "    inputRange, ",
+      "    outputRange ",
+      "  });",
+      "",
+      "  return (",
+      "    <Animated.ScrollView",
+      "      onScroll={Animated.event(",
+      "        [{ nativeEvent: { contentOffset: { y: scrollY , } } }],",
+      "        { useNativeDriver: true }",
+      "      )}",
+      "      scrollEventThrottle={16}",
+      "    >",
+      "      <Animated.View style={{ height: 300, backgroundColor: 'purple', opacity }}>",
+      "        <Text>Header con fade al hacer scroll</Text>",
+      "      </Animated.View>",
+      "      {[...Array(20)].map((_, i) => (",
+      "        <View key={i} style={{ height: 80, margin: 10, backgroundColor: '#ddd' }} />",
+      "      ))}",
+      "    </Animated.ScrollView>",
+      "  );",
+      "};"
+    ]
+  },
+  "ReactNative widgets fb.array.init": {
+    "prefix": "fb.array.init",
+    "description": "Make a ReactNative widgets fb.array.init widget",
+    "body": [
+      "",
+      "      {",
+      "      [...Array(20)].map((_, i) => (",
+      "        <View key={i} style={{ height: 80, margin: 10, backgroundColor: '#ddd' }} />",
+      "      ))",
+      "      }"
+    ]
+  },
+  "ReactNative widgets fb.animated.init": {
+    "prefix": "fb.animated.init",
+    "description": "Make a ReactNative widgets fb.animated.init widget",
+    "body": [
+      "",
+      "import { Animated, useRef, useEffect } from 'react';",
+      "",
+      "const MyComponent = () => {",
+      "  // \u2705 FORMA CORRECTA",
+      "  const rotateValue = useRef(new Animated.Value(0)).current;",
+      "  const scaleValue = useRef(new Animated.Value(1)).current;",
+      "  const opacityValue = useRef(new Animated.Value(1)).current;",
+      "",
+      "  // run first time automaticly",
+      "  useeffect(() => {",
+      "    animated.timing(rotatevalue, {",
+      "      tovalue: 360,",
+      "      duration: 1000,",
+      "      usenativedriver: true",
+      "    }).start();",
+      "  }, []);",
+      "",
+      "  // run as function",
+      "  const runEffect = () => {",
+      "    // const nuevoValor = rotateValue._value === 0 ? 1 : 0;",
+      "    animated.timing(rotatevalue, {",
+      "      tovalue: 360,",
+      "      duration: 1000,",
+      "      usenativedriver: true",
+      "    }).start();",
+      "  };",
+      "",
+      "  return (",
+      "    <Animated.View",
+      "      style={{",
+      "        transform: [",
+      "          { rotate: rotateValue },",
+      "          { scale: scaleValue }",
+      "        ],",
+      "        opacity: opacityValue",
+      "      }}",
+      "    />",
+      "  );",
+      "};"
+    ]
+  },
+  "ReactNative widgets fb.animated.view.init": {
+    "prefix": "fb.animated.view.init",
+    "description": "Make a ReactNative widgets fb.animated.view.init widget",
+    "body": [
+      "",
+      "",
+      "    <Animated.View",
+      "      style={{",
+      "        opacity,",
+      "        backgroundColor,",
+      "        width, hight,",
+      "        margin, padding,",
+      "        borderRadius,",
+      "        transform: [",
+      "          { rotate: rotateValue },",
+      "          { rotateX: rotateValueX },",
+      "          { rotateY: rotateValueY },",
+      "          { translateX: translateX },",
+      "          { translateY: translateY },",
+      "          { scale: scaleValue }",
+      "        ],",
+      "        // backfaceVisibility: 'hidden',",
+      "        // justifyContent: 'center',",
+      "        // position: 'absolute',",
+      "        // alignItems: 'center',",
+      "        // shadowColor: '#000',",
+      "        // shadowOffset: { width: 0, height: 2 },",
+      "        // shadowOpacity: 0.3,",
+      "        // shadowRadius: 4,",
+      "        // elevation: 5,",
+      "      }}",
+      "    />"
+    ]
+  },
+  "ReactNative widgets fb.animatedBox.db": {
+    "prefix": "fb.animatedBox.db",
+    "description": "Make a ReactNative widgets fb.animatedBox.db widget",
+    "body": [
+      "",
+      "import { AnimatedBox, getAnimation } from '../components/FletBox';",
+      "",
+      "export const AnimatedBoxExample = () => {",
+      "  const fadeIn = getAnimation('fadeIn');",
+      "  const bounceIn = getAnimation('bounceIn');",
+      "  const pulse = getAnimation('pulse');",
+      "  const spin = getAnimation('spin');",
+      "",
+      "  const allAnimations = [",
+      "    ..fadein, ...bounceIn, ...pulse, ...spin",
+      "  ]",
+      "",
+      "  return (",
+      "    <AnimatedBox",
+      "      animations={fadeIn.code}",
+      "      child={",
+      "        <Text label=\"Fade In\" />",
+      "      }",
+      "    />",
+      "  );",
+      "};"
+    ]
+  },
+  "ReactNative widgets fb.animatedBox.db.all": {
+    "prefix": "fb.animatedBox.db.all",
+    "description": "Make a ReactNative widgets fb.animatedBox.db.all widget",
+    "body": [
+      "",
+      "// 1. ENTRADAS",
+      "// fadeIn, fadeUp, fadeDown, fadeLeft, fadeRight",
+      "// slideInRight, slideInLeft, slideInTop, slideInBottom",
+      "// zoomIn, zoomOut, pop, bounceIn, swingIn, rotateIn, flipIn",
+      "",
+      "// 2. SALIDAS",
+      "// fadeOut, slideOutRight, slideOutLeft, slideOutTop, slideOutBottom",
+      "// zoomOut, bounceOut, flipOut",
+      "",
+      "// 3. LOOPS (infinitos)",
+      "// spin, slowSpin, fastSpin, pulse, heartbeat, float, wave, breathe",
+      "",
+      "// 4. ATENCI\u00d3N",
+      "// shake, wobble, flash, highlight, rumble",
+      "",
+      "// 5. AVANZADOS",
+      "// bounce, confetti, doorOpen, doorClose, tilt, stretch, compress, elasticBand, backEffect",
+      "",
+      "// 6. TRANSICIONES",
+      "// slideTransition, fadeTransition, zoomTransition, crossfade"
+    ]
+  },
+  "ReactNative widgets fb.animatedBox": {
+    "prefix": "fb.animatedBox",
+    "description": "Make a ReactNative widgets fb.animatedBox widget",
+    "body": [
+      "",
+      "<AnimatedBox",
+      "  animations={[",
+      "    { type: \"timing\", effect: \"opacity\", from: 0, to: 1, duration: 500, loop: true, iterations: 3 },",
+      "    { type: \"spring\", effect: \"scale\", from: 0.5, to: 1, friction: 4, tension: 120, loop: true, iterations: 3 },",
+      "    { type: \"decay\", effect: \"translateX\", velocity: 2, deceleration: 0.99, loop: true, iterations: 3 }",
+      "  ]}",
+      "  animationGroup=\"parallel\" // sequence stagger",
+      "  child={<Text label=\"Animaci\u00f3n completa - 3 loops\" />}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.animatedBox.init": {
+    "prefix": "fb.animatedBox.init",
+    "description": "Make a ReactNative widgets fb.animatedBox.init widget",
+    "body": [
+      "",
+      "<AnimatedBox",
+      "  index={0}",
+      "  animations={[",
+      "    { type: \"timing\", effect: \"opacity\", from: 0, to: 1, duration: 500 }",
+      "  ]}",
+      "  animationGroup=\"parallel\"",
+      "  child={<Text label=\"Hola\" />}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.animatedBox.full": {
+    "prefix": "fb.animatedBox.full",
+    "description": "Make a ReactNative widgets fb.animatedBox.full widget",
+    "body": [
+      "",
+      "<AnimatedBox",
+      "  animations={[",
+      "    // type: timing , spring , decay",
+      "    // effect: opacity , scale , translateX , translateY , rotate",
+      "    // numTimes loop iterations",
+      "    { type: \"spring\", effect: \"scale\", ",
+      "      from: 0.5, to: 1, friction: 4, tension: 120, ",
+      "      loop: true, iterations: 3 },",
+      "    ",
+      "    { type: \"decay\", effect: \"translateX\",",
+      "      velocity: 2, deceleration: 0.99, ",
+      "      loop: true, iterations: 3 },",
+      "    ",
+      "    { type: \"timing\", effect: \"rotate\", ",
+      "      from: 0, to: 360, duration: 1000, ",
+      "      loop: true, iterations: 3 },",
+      "",
+      "    { type: \"timing\", effect: \"translateY\", ",
+      "      from: -50, to: 0, duration: 500, ",
+      "      loop: true, iterations: 3 }",
+      "  ]}",
+      "  ",
+      "  // ========== TIPOS DE GRUPO ==========",
+      "  // parallel , sequence , stagger",
+      "  animationGroup=\"parallel\"",
+      "  ",
+      "  child={<Text label=\"M\u00faltiples animaciones - 3 loops\" />}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.animateBox.animation": {
+    "prefix": "fb.animateBox.animation",
+    "description": "Make a ReactNative widgets fb.animateBox.animation widget",
+    "body": [
+      "",
+      "// type: timing , spring , decay",
+      "// effect: opacity , scale , translateX , translateY , rotate",
+      "// numTimes loop iterations",
+      "{ type: \"spring\", effect: \"scale\", ",
+      "  from: 0.5, to: 1, friction: 4, tension: 120, ",
+      "  loop: true, iterations: 3 },",
+      "",
+      "{ type: \"decay\", effect: \"translateX\",",
+      "  velocity: 2, deceleration: 0.99, ",
+      "  loop: true, iterations: 3 },",
+      "",
+      "{ type: \"timing\", effect: \"rotate\", ",
+      "  from: 0, to: 360, duration: 1000, ",
+      "  loop: true, iterations: 3 },",
+      "",
+      "{ type: \"timing\", effect: \"translateY\", ",
+      "  from: -50, to: 0, duration: 500, ",
+      "  loop: true, iterations: 3 }"
+    ]
+  },
+  "ReactNative widgets fb.navigation.": {
+    "prefix": "fb.navigation.",
+    "description": "Make a ReactNative widgets fb.navigation. widget",
+    "body": [
+      "",
+      "{ navigation, route }"
+    ]
+  },
+  "ReactNative widgets fb.navigation.goTo": {
+    "prefix": "fb.navigation.goTo",
+    "description": "Make a ReactNative widgets fb.navigation.goTo widget",
+    "body": [
+      "",
+      "// const { id, params } = route.params || {};",
+      "// navigation.navigate('Profile');",
+      "// on_click={()=> goTo(navigation, 'Profile', {'id': 'myId'}); }"
+    ]
+  },
+  "ReactNative widgets fb.json": {
+    "prefix": "fb.json",
+    "description": "Make a ReactNative widgets fb.json widget",
+    "body": [
+      "",
+      "JSON.stringify(dataObject);"
+    ]
+  },
+  "ReactNative widgets fb.database": {
+    "prefix": "fb.database",
+    "description": "Make a ReactNative widgets fb.database widget",
+    "body": [
+      "",
+      "const database = {",
+      "    'demo': 'flet-box database',",
+      "};",
+      "",
+      "const getItem = (item) => {",
+      "  if (!item) return undefined;",
+      "  ",
+      "  const items = {",
+      "    'noFound': `No exist ${item} in database!!`,",
+      "    ...database,",
+      "  };",
+      "  ",
+      "  return items[item] || items.noFound;",
+      "};"
+    ]
+  },
+  "ReactNative widgets fb.animated.flatList": {
+    "prefix": "fb.animated.flatList",
+    "description": "Make a ReactNative widgets fb.animated.flatList widget",
+    "body": [
+      "",
+      "const flatListRef = useRef(null);",
+      "const scrollY = useRef(new Animated.Value(0)).current;",
+      "",
+      "<Animated.FlatList",
+      "  // ref={flatListRef}",
+      "  // ItemSeparatorComponent={() => <Divider />}",
+      "  data={data}",
+      "  keyExtractor={(item) => item.id}",
+      "  renderItem={({ item , index }) => ",
+      "    <Item />",
+      "   }",
+      "",
+      "  contentContainerStyle={{ ",
+      "    opacity,",
+      "    backgroundColor,",
+      "    width, hight,",
+      "    margin, padding,",
+      "    borderRadius,",
+      "    transform: [",
+      "      { rotate: rotateValue },",
+      "      { rotateX: rotateValueX },",
+      "      { rotateY: rotateValueY },",
+      "      { translateX: translateX },",
+      "      { translateY: translateY },",
+      "      { scale: scaleValue }",
+      "    ],",
+      "    // backfaceVisibility: 'hidden',",
+      "    // justifyContent: 'center',",
+      "    // position: 'absolute',",
+      "    // alignItems: 'center',",
+      "    // shadowColor: '#000',",
+      "    // shadowOffset: { width: 0, height: 2 },",
+      "    // shadowOpacity: 0.3,",
+      "    // shadowRadius: 4,",
+      "    // elevation: 5,",
+      "  }}",
+      "",
+      "  scrollEventThrottle={16}",
+      "",
+      "  paginEnabled={true}",
+      "  horizontal={false}",
+      "  showsVerticalScrollIndicator={true}",
+      "",
+      "  // necessary",
+      "  onScroll={Animated.event(",
+      "    // vertical",
+      "    [{ nativeEvent: { contentOffset: { x: scrollX } } }],",
+      "    // horizontal",
+      "    // [{ nativeEvent: { contentOffset: { y: scrollY } } }],",
+      "    { useNativeDriver: true }",
+      "  )}",
+      "",
+      "  // initialNumToRender={10}",
+      "  // maxToRenderPerBatch={10}",
+      "  // removeClippedSubviews={true}",
+      "  // initialNumToRender={10}",
+      "  // onEndReached={cargarMas}",
+      "  // onRefresh={recargar}",
+      "  // refreshing={refreshing}",
+      "  // ListHeaderComponent={<Header />}",
+      "  // ListEmptyComponent={<Empty />}",
+      "  // maxToRenderPerBatch={10}",
+      "  // removeClippedSubviews={true}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.animation.interpolate.help": {
+    "prefix": "fb.animation.interpolate.help",
+    "description": "Make a ReactNative widgets fb.animation.interpolate.help widget",
+    "body": [
+      "",
+      "// \ud83d\udd25 PARALLEL (basado en TIEMPO)",
+      "Animated.parallel([",
+      "  Animated.timing(opacity, { toValue: 0, duration: 1000 }),",
+      "  Animated.timing(scale, { toValue: 0.5, duration: 1000 }),",
+      "  Animated.timing(translateY, { toValue: -50, duration: 1000 }),",
+      "]).start();",
+      "// \u2192 Todo cambia al mismo tiempo DURANTE 1 segundo",
+      "",
+      "// \ud83d\udd25 INTERPOLATE (basado en SCROLL)",
+      "const opacity = scrollY.interpolate({...});     // \u2190 cambia con scroll",
+      "const scale = scrollY.interpolate({...});       // \u2190 cambia con scroll",
+      "const translateY = scrollY.interpolate({...});  // \u2190 cambia con scroll",
+      "// \u2192 Todo cambia al mismo tiempo CUANDO scrolleas"
+    ]
+  },
+  "ReactNative widgets fb.animated.stagger": {
+    "prefix": "fb.animated.stagger",
+    "description": "Make a ReactNative widgets fb.animated.stagger widget",
+    "body": [
+      "",
+      "const valor = useRef(new Animated.Value(0)).current;",
+      "",
+      "const animacionCompleta = () => {",
+      "    // setValue(!value)",
+      "    // const value = demo._value === 1 ? 0 : 1;",
+      "    Animated.stagger(",
+      "    100, // delay",
+      "    [",
+      "      Animated.timing(opacidad, { toValue: 1, duration: 1000, useNativeDriver: true }),",
+      "      Animated.timing(mover, { toValue: 150, duration: 1000, useNativeDriver: true }),",
+      "      Animated.timing(escala, { toValue: 1.3, duration: 1000, useNativeDriver: true }),",
+      "    ]).start();",
+      "    };"
+    ]
+  },
+  "ReactNative widgets fb.animated.sequence": {
+    "prefix": "fb.animated.sequence",
+    "description": "Make a ReactNative widgets fb.animated.sequence widget",
+    "body": [
+      "",
+      "const valor = useRef(new Animated.Value(0)).current;",
+      "",
+      "const animacionCompleta = () => {",
+      "    // setValue(!value)",
+      "    // const value = demo._value === 1 ? 0 : 1;",
+      "    Animated.sequence([     // \u2190 todas al mismo tiempo",
+      "      Animated.timing(opacidad, { toValue: 1, duration: 1000, useNativeDriver: true }),",
+      "      Animated.timing(mover, { toValue: 150, duration: 1000, useNativeDriver: true }),",
+      "      Animated.timing(escala, { toValue: 1.3, duration: 1000, useNativeDriver: true }),",
+      "    ]).start();",
+      "    };"
+    ]
+  },
+  "ReactNative widgets fb.animated.loop": {
+    "prefix": "fb.animated.loop",
+    "description": "Make a ReactNative widgets fb.animated.loop widget",
+    "body": [
+      "",
+      "Animated.loop(",
+      "  Animated.sequence([",
+      "    Animated.timing(...),",
+      "    Animated.timing(...)",
+      "  ])",
+      ")"
+    ]
+  },
+  "ReactNative widgets fb.animated.parallel": {
+    "prefix": "fb.animated.parallel",
+    "description": "Make a ReactNative widgets fb.animated.parallel widget",
+    "body": [
+      "",
+      "const demo = useRef(new Animated.Value(0)).current;",
+      "",
+      "const animacionCompleta = () => {",
+      "    // const value = demo._value === 1 ? 0 : 1;",
+      "    Animated.parallel([     // \u2190 todas al mismo tiempo",
+      "      Animated.timing(opacidad, { toValue: 1, duration: 1000, useNativeDriver: true }),",
+      "      Animated.timing(mover, { toValue: 150, duration: 1000, useNativeDriver: true }),",
+      "      Animated.timing(escala, { toValue: 1.3, duration: 1000, useNativeDriver: true }),",
+      "    ]).start();",
+      "    };"
+    ]
+  },
+  "ReactNative widgets fb.animated.imports": {
+    "prefix": "fb.animated.imports",
+    "description": "Make a ReactNative widgets fb.animated.imports widget",
+    "body": [
+      "",
+      "// import React, { useState , useRef} from 'react';",
+      "// import { View , Animated} from 'react-native';",
+      "const [ value, setValue ] = useState('red');",
+      "const demo = useRef(new Animated.Value(1)).current;",
+      "// setValue(!value)"
+    ]
+  },
+  "ReactNative widgets fb.animated.interpolate": {
+    "prefix": "fb.animated.interpolate",
+    "description": "Make a ReactNative widgets fb.animated.interpolate widget",
+    "body": [
+      "",
+      "const demo = useRef(new Animated.Value(0)).current;",
+      "// const value = demo._value === 1 ? 0 : 1;",
+      "// setValue(!value)",
+      "",
+      "const rotate = demo.interpolate({",
+      "    inputRange: [0,1],",
+      "    outputRange: ['100deg','0deg']",
+      "});",
+      ""
+    ]
+  },
+  "ReactNative widgets fb.animated.spring.": {
+    "prefix": "fb.animated.spring.",
+    "description": "Make a ReactNative widgets fb.animated.spring. widget",
+    "body": [
+      "",
+      "const demo = useRef(new Animated.Value(0)).current;",
+      "// const value = demo._value === 1 ? 0 : 1;",
+      "// setValue(!value)",
+      "",
+      "// inside useEffect or fuction",
+      "Animated.spring(",
+      "    // setValue(!value)",
+      "    // width, height, backgroundColor",
+      "    // margin, padding, borderRadius",
+      "    opacity: opacity",
+      "    { ",
+      "        toValue: 100, ",
+      "        friction: 2, ",
+      "        tension: 40, ",
+      "        useNativeDriver: true ",
+      "    }",
+      ").start();"
+    ]
+  },
+  "ReactNative widgets fb.animated.timing.": {
+    "prefix": "fb.animated.timing.",
+    "description": "Make a ReactNative widgets fb.animated.timing. widget",
+    "body": [
+      "",
+      "const demo = useRef(new Animated.Value(0)).current;",
+      "// const value = demo._value === 1 ? 0 : 1;",
+      "// setValue(!value)",
+      "",
+      "// inside useEffect or fuction",
+      "Animated.timing(",
+      "    // width, height, backgroundColor",
+      "    // margin, padding, borderRadius",
+      "    opacity: opacity",
+      "    { ",
+      "        toValue: 1, ",
+      "        duration: 500, ",
+      "        useNativeDriver: true ",
+      "    }",
+      ").start();"
+    ]
+  },
+  "ReactNative widgets fb.animated.decay.": {
+    "prefix": "fb.animated.decay.",
+    "description": "Make a ReactNative widgets fb.animated.decay. widget",
+    "body": [
+      "",
+      "const demo = useRef(new Animated.Value(0)).current;",
+      "// const value = demo._value === 1 ? 0 : 1;",
+      "",
+      "// inside useEffect or fuction",
+      "Animated.decay(",
+      "    // width, height, backgroundColor",
+      "    // margin, padding, borderRadius",
+      "    opacity: opacity",
+      "    { ",
+      "        toValue: 1, ",
+      "        friction: 2,",
+      "        velocity: 0.5, ",
+      "        deceleration: 0.599,",
+      "        useNativeDriver: true ",
+      "    }",
+      ").start();"
+    ]
+  },
+  "ReactNative widgets fb.animated.variable": {
+    "prefix": "fb.animated.variable",
+    "description": "Make a ReactNative widgets fb.animated.variable widget",
+    "body": [
+      "",
+      "const valor = useRef(new Animated.Value(0)).current;",
+      "// const value = demo._value === 1 ? 0 : 1;",
+      "",
+      "// 3 valores: agranda y vuelve",
+      "const escala = valor.interpolate({",
+      "    inputRange: [0, 0.5, 1],",
+      "    outputRange: [1, 1.8, 1]",
+      "});",
+      ""
+    ]
+  },
+  "ReactNative widgets fb.animated.style": {
+    "prefix": "fb.animated.style",
+    "description": "Make a ReactNative widgets fb.animated.style widget",
+    "body": [
+      "",
+      "<Animated.View",
+      "  style={{",
+      "    // Estilos NORMALES (sin transform)",
+      "    width: 100,",
+      "    height: 100,",
+      "    backgroundColor: colorAnimado,",
+      "    borderRadius: 10,",
+      "    opacity: valorOpacidad,",
+      "    ",
+      "    // Estilos de TRANSFORM (dentro del array)",
+      "    transform: [",
+      "          { translateX: moverX },",
+      "          { translateY: moverY },",
+      "          { scale: escala },",
+      "          { rotate: rotacion }",
+      "        ]",
+      "      }}",
+      "    />",
+      "",
+      "    {/* component inside */}",
+      "",
+      "</Animated.view>"
+    ]
+  },
+  "ReactNative widgets fb.animated.interpolate.exemple": {
+    "prefix": "fb.animated.interpolate.exemple",
+    "description": "Make a ReactNative widgets fb.animated.interpolate.exemple widget",
+    "body": [
+      "",
+      "import React, { useRef } from 'react';",
+      "import { View, Text, TouchableOpacity, Animated } from 'react-native';",
+      "",
+      "const App = () => {",
+      "  const valor = useRef(new Animated.Value(0)).current;",
+      "",
+      "  // 3 valores: agranda y vuelve",
+      "  const escala = valor.interpolate({",
+      "    inputRange: [0, 0.5, 1],",
+      "    outputRange: [1, 1.8, 1]",
+      "  });",
+      "",
+      "  // 4 valores: gira por etapas",
+      "  const rotacion = valor.interpolate({",
+      "    inputRange: [0, 0.3, 0.6, 1],",
+      "    outputRange: ['0deg', '120deg', '240deg', '360deg']",
+      "  });",
+      "",
+      "  // 5 valores: va, vuelve, va atr\u00e1s, vuelve",
+      "  const moverX = valor.interpolate({",
+      "    inputRange: [0, 0.25, 0.5, 0.75, 1],",
+      "    outputRange: [0, 80, 0, -80, 0]",
+      "  });",
+      "",
+      "  const iniciar = () => {",
+      "    valor.setValue(0);",
+      "    Animated.timing(valor, {",
+      "      toValue: 1,",
+      "      duration: 2000,",
+      "      useNativeDriver: true,",
+      "    }).start();",
+      "  };",
+      "",
+      "  return (",
+      "    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>",
+      "      ",
+      "      <Animated.View",
+      "        style={{",
+      "          width: 80,",
+      "          height: 80,",
+      "          backgroundColor: 'red',",
+      "          transform: [",
+      "            { translateX: moverX },",
+      "            { rotate: rotacion },",
+      "            { scale: escala }",
+      "          ]",
+      "        }}",
+      "      />",
+      "",
+      "      <TouchableOpacity onPress={iniciar} style={{ marginTop: 100 }}>",
+      "        <Text style={{ backgroundColor: 'blue', color: 'white', padding: 10 }}>",
+      "          ANIMAR",
+      "        </Text>",
+      "      </TouchableOpacity>",
+      "",
+      "      <View style={{ marginTop: 50 }}>",
+      "        <Text>Scale: 3 valores [1, 1.8, 1]</Text>",
+      "        <Text>Rotate: 4 valores [0,120,240,360]\u00b0</Text>",
+      "        <Text>TranslateX: 5 valores [0,80,0,-80,0]</Text>",
+      "      </View>",
+      "",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default App;"
+    ]
+  },
+  "ReactNative widgets fb.animated.parallel.exemple": {
+    "prefix": "fb.animated.parallel.exemple",
+    "description": "Make a ReactNative widgets fb.animated.parallel.exemple widget",
+    "body": [
+      "",
+      "import React, { useRef } from 'react';",
+      "import { View, Text, TouchableOpacity, Animated } from 'react-native';",
+      "",
+      "const App = () => {",
+      "  const opacidad = useRef(new Animated.Value(0)).current;",
+      "  const mover = useRef(new Animated.Value(0)).current;",
+      "  const escala = useRef(new Animated.Value(1)).current;",
+      "",
+      "  const animacionCompleta = () => {",
+      "    Animated.parallel([     // \u2190 todas al mismo tiempo",
+      "      Animated.timing(opacidad, { toValue: 1, duration: 1000, useNativeDriver: true }),",
+      "      Animated.timing(mover, { toValue: 150, duration: 1000, useNativeDriver: true }),",
+      "      Animated.timing(escala, { toValue: 1.3, duration: 1000, useNativeDriver: true }),",
+      "    ]).start();",
+      "  };",
+      "",
+      "  const resetear = () => {",
+      "    Animated.parallel([",
+      "      Animated.timing(opacidad, { toValue: 0, duration: 500, useNativeDriver: true }),",
+      "      Animated.timing(mover, { toValue: 0, duration: 500, useNativeDriver: true }),",
+      "      Animated.timing(escala, { toValue: 1, duration: 500, useNativeDriver: true }),",
+      "    ]).start();",
+      "  };",
+      "",
+      "  return (",
+      "    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', gap: 20 }}>",
+      "      ",
+      "      <Animated.View ",
+      "        style={{ ",
+      "          width: 100, ",
+      "          height: 100, ",
+      "          backgroundColor: 'orange',",
+      "          opacity: opacidad,",
+      "          transform: [",
+      "            { translateX: mover },",
+      "            { scale: escala }",
+      "          ]",
+      "        }} ",
+      "      />",
+      "",
+      "      <TouchableOpacity onPress={animacionCompleta}>",
+      "        <Text style={{ backgroundColor: 'blue', color: 'white', padding: 10 }}>ANIMACI\u00d3N COMPLETA</Text>",
+      "      </TouchableOpacity>",
+      "",
+      "      <TouchableOpacity onPress={resetear}>",
+      "        <Text style={{ backgroundColor: 'gray', color: 'white', padding: 10 }}>RESETEAR</Text>",
+      "      </TouchableOpacity>",
+      "",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default App;"
+    ]
+  },
+  "ReactNative widgets fb.animated.move.exemple": {
+    "prefix": "fb.animated.move.exemple",
+    "description": "Make a ReactNative widgets fb.animated.move.exemple widget",
+    "body": [
+      "",
+      "import React, { useRef } from 'react';",
+      "import { View, Text, TouchableOpacity, Animated } from 'react-native';",
+      "",
+      "const App = () => {",
+      "  const mover = useRef(new Animated.Value(0)).current;",
+      "",
+      "  return (",
+      "    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', gap: 20 }}>",
+      "      ",
+      "      <Animated.View ",
+      "        style={{ ",
+      "          width: 100, ",
+      "          height: 100, ",
+      "          backgroundColor: 'green',",
+      "          transform: [{ translateX: mover }]   // \u2190 movimiento horizontal",
+      "        }} ",
+      "      />",
+      "",
+      "      <TouchableOpacity onPress={() => {",
+      "        Animated.timing(mover, {",
+      "          toValue: 200,      // se mueve 200px a la derecha",
+      "          duration: 800,",
+      "          useNativeDriver: true",
+      "        }).start();",
+      "      }}>",
+      "        <Text style={{ backgroundColor: 'blue', color: 'white', padding: 10 }}>MOVER DERECHA</Text>",
+      "      </TouchableOpacity>",
+      "",
+      "      <TouchableOpacity onPress={() => {",
+      "        Animated.timing(mover, {",
+      "          toValue: 0,        // vuelve a la posici\u00f3n original",
+      "          duration: 800,",
+      "          useNativeDriver: true",
+      "        }).start();",
+      "      }}>",
+      "        <Text style={{ backgroundColor: 'gray', color: 'white', padding: 10 }}>REGRESAR</Text>",
+      "      </TouchableOpacity>",
+      "",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default App;"
+    ]
+  },
+  "ReactNative widgets fb.animated.scale.exemple": {
+    "prefix": "fb.animated.scale.exemple",
+    "description": "Make a ReactNative widgets fb.animated.scale.exemple widget",
+    "body": [
+      "",
+      "import React, { useRef } from 'react';",
+      "import { View, Text, TouchableOpacity, Animated } from 'react-native';",
+      "",
+      "const App = () => {",
+      "  const opacidad = useRef(new Animated.Value(0)).current;",
+      "",
+      "  return (",
+      "    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', gap: 20 }}>",
+      "      ",
+      "      <Animated.View ",
+      "        style={{ ",
+      "          width: 100, ",
+      "          height: 100, ",
+      "          backgroundColor: 'red',",
+      "          opacity: opacidad     // \u2190 valor animado conectado",
+      "        }} ",
+      "      />",
+      "",
+      "      <TouchableOpacity onPress={() => {",
+      "        Animated.timing(opacidad, {",
+      "          toValue: 1,",
+      "          duration: 1000,",
+      "          useNativeDriver: true",
+      "        }).start();",
+      "      }}>",
+      "        <Text style={{ backgroundColor: 'blue', color: 'white', padding: 10 }}>APARECER</Text>",
+      "      </TouchableOpacity>",
+      "",
+      "      <TouchableOpacity onPress={() => {",
+      "        Animated.timing(opacidad, {",
+      "          toValue: 0,",
+      "          duration: 1000,",
+      "          useNativeDriver: true",
+      "        }).start();",
+      "      }}>",
+      "        <Text style={{ backgroundColor: 'gray', color: 'white', padding: 10 }}>DESAPARECER</Text>",
+      "      </TouchableOpacity>",
+      "",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default App;"
+    ]
+  },
+  "ReactNative widgets fb.createPage": {
+    "prefix": "fb.createPage",
+    "description": "Make a ReactNative widgets fb.createPage widget",
+    "body": [
+      "",
+      "import React from 'react';",
+      "import {",
+      "    Container,",
+      "    Text,",
+      "    width,",
+      "    height,",
+      "    goTo,",
+      "    backTo,",
+      "} from \"./components/FletBox\";",
+      "",
+      "const LobbyPage = ({ navigation, route }) => {",
+      "// \u2705 En todas tus p\u00e1ginas",
+      "export default function LobbyPage({ navigation, route }) {",
+      "    // const { id, params } = route.params || {};",
+      "    // navigation.navigate('Profile');",
+      "    // on_click={()=> goTo(navigation, 'Profile', {'id': 'myId'}); }",
+      "    return (",
+      "        <Container",
+      "            expand={true}",
+      "            bgcolor=\"red\"",
+      "            alignItems=\"center\"",
+      "            justifyContent=\"center\"",
+      "            width={ width / 2 }",
+      "            // height={ height / 2 }",
+      "",
+      "            child={",
+      "                <Text",
+      "                    color='white'",
+      "                    textAlign='center'",
+      "                    label='hello world'",
+      "                    size={37}",
+      "                    weight='bold'",
+      "                />",
+      "            }",
+      "        />",
+      "    )",
+      "};",
+      "",
+      "export default LobbyPage;"
+    ]
+  },
+  "ReactNative widgets fb.components": {
+    "prefix": "fb.components",
+    "description": "Make a ReactNative widgets fb.components widget",
+    "body": [
+      "",
+      "const Component = ({params: ''}) => (",
+      "    {/* components */}",
+      ")",
+      "// export default Component;"
+    ]
+  },
+  "ReactNative widgets fb.container.init": {
+    "prefix": "fb.container.init",
+    "description": "Make a ReactNative widgets fb.container.init widget",
+    "body": [
+      "",
+      "<Container ",
+      "    padding={20}",
+      "    bgcolor=\"blue\"",
+      "    borderRadius={12}",
+      "    border={2}",
+      "    borderColor=\"#f4511e\"",
+      "    overflow=\"hidden\"",
+      "    justifyContent=\"flex-end\"",
+      "    alignItems=\"center\"",
+      "    padding={20}",
+      "    // bgImage={require('../assets/icon.png')}",
+      "    // bgImageStyle={{ ",
+      "    //   resizeMode: 'cover',",
+      "    //   opacity:1,",
+      "    //   width: 202*2,  // M\u00e1s ancha que el contenedor",
+      "    //   height: 400,",
+      "    // }}",
+      "    // bgImageTransform={[ { translateX: slideValueX }, { translateY: slideValueY },",
+      "    child={",
+      "        <Text label=\"Hola mundo\" />",
+      "    }",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.row.init": {
+    "prefix": "fb.row.init",
+    "description": "Make a ReactNative widgets fb.row.init widget",
+    "body": [
+      "",
+      "<Row ",
+      "    gap={12} ",
+      "    justifyContent=\"center\"",
+      "    // arrallax effect",
+      "    // translateX={slideValue}",
+      "    // translateY={slideValue}",
+      "    children={[",
+      "        <Text label=\"A\" />,",
+      "        <Text label=\"B\" />,",
+      "        <Text label=\"C\" />",
+      "   ]} ",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.column.init": {
+    "prefix": "fb.column.init",
+    "description": "Make a ReactNative widgets fb.column.init widget",
+    "body": [
+      "",
+      "<Column ",
+      "    gap={12}",
+      "    // arrallax effect",
+      "    // translateX={slideValue}",
+      "    // translateY={slideValue}",
+      "    children={[",
+      "        <Text label=\"1\" />,",
+      "        <Text label=\"2\" />,",
+      "        <Text label=\"3\" />",
+      "   ]} ",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.spacer.init": {
+    "prefix": "fb.spacer.init",
+    "description": "Make a ReactNative widgets fb.spacer.init widget",
+    "body": [
+      "",
+      "<Spacer />"
+    ]
+  },
+  "ReactNative widgets fb.sizedbox.init": {
+    "prefix": "fb.sizedbox.init",
+    "description": "Make a ReactNative widgets fb.sizedbox.init widget",
+    "body": [
+      "",
+      "<SizedBox size={50} />"
+    ]
+  },
+  "ReactNative widgets fb.divider.init": {
+    "prefix": "fb.divider.init",
+    "description": "Make a ReactNative widgets fb.divider.init widget",
+    "body": [
+      "",
+      "<Divider />"
+    ]
+  },
+  "ReactNative widgets fb.safearea.init": {
+    "prefix": "fb.safearea.init",
+    "description": "Make a ReactNative widgets fb.safearea.init widget",
+    "body": [
+      "",
+      "<SafeArea child={<Text label=\"Contenido seguro\" />} />"
+    ]
+  },
+  "ReactNative widgets fb.statusbar.init": {
+    "prefix": "fb.statusbar.init",
+    "description": "Make a ReactNative widgets fb.statusbar.init widget",
+    "body": [
+      "",
+      "<StatusBar backgroundColor=\"#007aff\" barStyle=\"light-content\" />"
+    ]
+  },
+  "ReactNative widgets fb.text.init": {
+    "prefix": "fb.text.init",
+    "description": "Make a ReactNative widgets fb.text.init widget",
+    "body": [
+      "",
+      "<Text label=\"Welcome to FletBox\" size={20} color=\"blue\" weight=\"bold\" />"
+    ]
+  },
+  "ReactNative widgets fb.button.init": {
+    "prefix": "fb.button.init",
+    "description": "Make a ReactNative widgets fb.button.init widget",
+    "body": [
+      "",
+      "<Button label=\"Click me\" bgcolor=\"#007aff\" on_click={() => console.log('click')} />"
+    ]
+  },
+  "ReactNative widgets fb.floatingactionbutton.init": {
+    "prefix": "fb.floatingactionbutton.init",
+    "description": "Make a ReactNative widgets fb.floatingactionbutton.init widget",
+    "body": [
+      "",
+      "<FloatingActionButton icon=\"add\" on_click={() => console.log('FAB pressed')} />"
+    ]
+  },
+  "ReactNative widgets fb.card.init": {
+    "prefix": "fb.card.init",
+    "description": "Make a ReactNative widgets fb.card.init widget",
+    "body": [
+      "",
+      "<Card ",
+      "    elevation={2}",
+      "    child={",
+      "        <Container ",
+      "            padding={16}",
+      "            children={[",
+      "                <Text label=\"Card Title\" weight=\"bold\" />,",
+      "                <Text label=\"Card content\" color=\"#666\" />",
+      "            ]}",
+      "        />",
+      "    } ",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.avatar.init": {
+    "prefix": "fb.avatar.init",
+    "description": "Make a ReactNative widgets fb.avatar.init widget",
+    "body": [
+      "",
+      "<Avatar source={require('./avatar.jpg')} size={50} rounded={true} border={2} borderColor=\"white\" />"
+    ]
+  },
+  "ReactNative widgets fb.image.init": {
+    "prefix": "fb.image.init",
+    "description": "Make a ReactNative widgets fb.image.init widget",
+    "body": [
+      "",
+      "<Image source={require('./image.jpg')} width={200} height={200} fit=\"cover\" />"
+    ]
+  },
+  "ReactNative widgets fb.icon.init": {
+    "prefix": "fb.icon.init",
+    "description": "Make a ReactNative widgets fb.icon.init widget",
+    "body": [
+      "",
+      "<Icon name=\"home\" size={24} color=\"#007aff\" />"
+    ]
+  },
+  "ReactNative widgets fb.chip.init": {
+    "prefix": "fb.chip.init",
+    "description": "Make a ReactNative widgets fb.chip.init widget",
+    "body": [
+      "",
+      "<Chip label=\"React\" on_click={() => console.log('chip clicked')} />"
+    ]
+  },
+  "ReactNative widgets fb.listtile.init": {
+    "prefix": "fb.listtile.init",
+    "description": "Make a ReactNative widgets fb.listtile.init widget",
+    "body": [
+      "",
+      "<ListTile ",
+      "    leading={<Avatar label=\"JD\" size={40} />}",
+      "    title=\"Juan D\u00edaz\"",
+      "    subtitle=\"juan@email.com\"",
+      "    trailing={<Icon name=\"chevron-forward\" size={20} />}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.textfield.init": {
+    "prefix": "fb.textfield.init",
+    "description": "Make a ReactNative widgets fb.textfield.init widget",
+    "body": [
+      "",
+      "<TextField label=\"Email\" placeholder=\"user@email.com\" on_change={setEmail} />"
+    ]
+  },
+  "ReactNative widgets fb.checkbox.init": {
+    "prefix": "fb.checkbox.init",
+    "description": "Make a ReactNative widgets fb.checkbox.init widget",
+    "body": [
+      "",
+      "<Checkbox label=\"Acepto t\u00e9rminos y condiciones\" value={accepted} on_change={setAccepted} />"
+    ]
+  },
+  "ReactNative widgets fb.switch.init": {
+    "prefix": "fb.switch.init",
+    "description": "Make a ReactNative widgets fb.switch.init widget",
+    "body": [
+      "",
+      "<Switch label=\"Notificaciones\" value={enabled} on_change={setEnabled} />"
+    ]
+  },
+  "ReactNative widgets fb.slider.init": {
+    "prefix": "fb.slider.init",
+    "description": "Make a ReactNative widgets fb.slider.init widget",
+    "body": [
+      "",
+      "<Slider label=\"Brillo\" value={brightness} on_change={setBrightness} showValue={true} valueFormat={(v) => `${v}%`} />"
+    ]
+  },
+  "ReactNative widgets fb.rating.init": {
+    "prefix": "fb.rating.init",
+    "description": "Make a ReactNative widgets fb.rating.init widget",
+    "body": [
+      "",
+      "<Rating value={rating} on_change={setRating} max={5} size={28} activeColor=\"#ffc107\" />"
+    ]
+  },
+  "ReactNative widgets fb.dropdown.init": {
+    "prefix": "fb.dropdown.init",
+    "description": "Make a ReactNative widgets fb.dropdown.init widget",
+    "body": [
+      "",
+      "<Dropdown ",
+      "    label=\"Pa\u00eds\" ",
+      "    value={country} ",
+      "    options={[",
+      "        { label: 'Espa\u00f1a', value: 'es' },",
+      "        { label: 'M\u00e9xico', value: 'mx' },",
+      "        { label: 'Argentina', value: 'ar' }",
+      "    ]} ",
+      "    on_change={setCountry} ",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.modalview.init": {
+    "prefix": "fb.modalview.init",
+    "description": "Make a ReactNative widgets fb.modalview.init widget",
+    "body": [
+      "",
+      "<ModalView ",
+      "    visible={modalVisible} ",
+      "    on_close={() => setModalVisible(false)}",
+      "    child={",
+      "        <Card>",
+      "            <Text label=\"Modal Content\" />",
+      "            <Button label=\"Close\" on_click={() => setModalVisible(false)} />",
+      "        </Card>",
+      "    }",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.progressbar.init": {
+    "prefix": "fb.progressbar.init",
+    "description": "Make a ReactNative widgets fb.progressbar.init widget",
+    "body": [
+      "",
+      "<ProgressBar value={50} label=\"Cargando...\" showValue={true} />"
+    ]
+  },
+  "ReactNative widgets fb.snackbar.init": {
+    "prefix": "fb.snackbar.init",
+    "description": "Make a ReactNative widgets fb.snackbar.init widget",
+    "body": [
+      "",
+      "<SnackBar visible={showSnack} message=\"Archivo guardado\" on_close={() => setShowSnack(false)} />"
+    ]
+  },
+  "ReactNative widgets fb.alert.init": {
+    "prefix": "fb.alert.init",
+    "description": "Make a ReactNative widgets fb.alert.init widget",
+    "body": [
+      "",
+      "<Alert visible={showAlert} title=\"Confirmar\" message=\"\u00bfEst\u00e1s seguro?\" onConfirm={handleConfirm} onCancel={() => setShowAlert(false)} />"
+    ]
+  },
+  "ReactNative widgets fb.gesturedetector.init": {
+    "prefix": "fb.gesturedetector.init",
+    "description": "Make a ReactNative widgets fb.gesturedetector.init widget",
+    "body": [
+      "",
+      "<GestureDetector on_tap={() => console.log('tap')} child={<Card child={<Text label=\"T\u00f3came\" />} />} />"
+    ]
+  },
+  "ReactNative widgets fb.listview.init": {
+    "prefix": "fb.listview.init",
+    "description": "Make a ReactNative widgets fb.listview.init widget",
+    "body": [
+      "",
+      "<ListView ",
+      "    data={products}",
+      "    // pagingEnabled={true}",
+      "    // horizontal={true}",
+      "    renderItem={({ item }) => (",
+      "        <Card child={<Text label={item.name} />} />",
+      "    )}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.gridview.init": {
+    "prefix": "fb.gridview.init",
+    "description": "Make a ReactNative widgets fb.gridview.init widget",
+    "body": [
+      "",
+      "<GridView ",
+      "    data={products}",
+      "    smallColumns={2}",
+      "    spacing={12}",
+      "    renderItem={({ item }) => (",
+      "        <Card child={<Text label={item.name} />} />",
+      "    )}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.container.default": {
+    "prefix": "fb.container.default",
+    "description": "Make a ReactNative widgets fb.container.default widget",
+    "body": [
+      "",
+      "<Container",
+      "    padding={16}",
+      "    bgcolor=\"#fff\"",
+      "    borderRadius={8}",
+      "    shadow={false}",
+      "    children = {[",
+      "",
+      "    ]}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.row.default": {
+    "prefix": "fb.row.default",
+    "description": "Make a ReactNative widgets fb.row.default widget",
+    "body": [
+      "",
+      "<Row ",
+      "    gap={8} ",
+      "    justifyContent=\"flex-start\" ",
+      "    alignItems=\"center\"",
+      "    children={[",
+      "    ]}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.column.default": {
+    "prefix": "fb.column.default",
+    "description": "Make a ReactNative widgets fb.column.default widget",
+    "body": [
+      "",
+      "<Column ",
+      "    gap={8}",
+      "    justifyContent=\"flex-start\"",
+      "    alignItems=\"stretch\"",
+      "    children={[",
+      "",
+      "    ]}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.spacer.default": {
+    "prefix": "fb.spacer.default",
+    "description": "Make a ReactNative widgets fb.spacer.default widget",
+    "body": [
+      "",
+      "<Spacer flex={1} />"
+    ]
+  },
+  "ReactNative widgets fb.sizedbox.default": {
+    "prefix": "fb.sizedbox.default",
+    "description": "Make a ReactNative widgets fb.sizedbox.default widget",
+    "body": [
+      "",
+      "<SizedBox size={50} />"
+    ]
+  },
+  "ReactNative widgets fb.divider.default": {
+    "prefix": "fb.divider.default",
+    "description": "Make a ReactNative widgets fb.divider.default widget",
+    "body": [
+      "",
+      "<Divider color=\"#e0e0e0\" height={1} marginVertical={8} />"
+    ]
+  },
+  "ReactNative widgets fb.safearea.default": {
+    "prefix": "fb.safearea.default",
+    "description": "Make a ReactNative widgets fb.safearea.default widget",
+    "body": [
+      "",
+      "<SafeArea ",
+      "    edges={['top', 'bottom', 'left', 'right']}",
+      "    bgcolor=\"#fff\"",
+      "    child={<Text label=\"Safe Area\" />}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.statusbar.default": {
+    "prefix": "fb.statusbar.default",
+    "description": "Make a ReactNative widgets fb.statusbar.default widget",
+    "body": [
+      "",
+      "<StatusBar backgroundColor=\"#fff\" barStyle=\"dark-content\" />"
+    ]
+  },
+  "ReactNative widgets fb.text.default": {
+    "prefix": "fb.text.default",
+    "description": "Make a ReactNative widgets fb.text.default widget",
+    "body": [
+      "",
+      "<Text label=\"Text\" size={16} color=\"#000\" weight=\"normal\" />"
+    ]
+  },
+  "ReactNative widgets fb.button.default": {
+    "prefix": "fb.button.default",
+    "description": "Make a ReactNative widgets fb.button.default widget",
+    "body": [
+      "",
+      "<Button ",
+      "    label=\"Button\" ",
+      "    bgcolor=\"#007aff\" ",
+      "    color=\"#fff\" ",
+      "    padding={12} ",
+      "    borderRadius={8} ",
+      "    on_click={()=> ",
+      "      // { navigation, route } <= add in component page",
+      "      // navigation.navigate('Profile')",
+      "      // goTo(navigation, 'Profile')",
+      "      alert('flet-Box')",
+      "    }",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.button.filled": {
+    "prefix": "fb.button.filled",
+    "description": "Make a ReactNative widgets fb.button.filled widget",
+    "body": [
+      "",
+      "<Button ",
+      "    label=\"Click me\" ",
+      "    bgcolor=\"#007aff\" ",
+      "    on_click={()=> ",
+      "      // { navigation, route } <= add in component page",
+      "      // navigation.navigate('Profile')",
+      "      // goTo(navigation, 'Profile')",
+      "      alert('flet-Box')",
+      "    }",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.button.Elevated": {
+    "prefix": "fb.button.Elevated",
+    "description": "Make a ReactNative widgets fb.button.Elevated widget",
+    "body": [
+      "",
+      "<Button",
+      "    label=\"Enviar\"",
+      "    variant=\"elevated\"",
+      "    bgcolor=\"#007aff\"",
+      "    elevation={4}",
+      "    on_click={()=> ",
+      "      // navigation.navigate('Profile')",
+      "      // goTo(navigation, 'Profile')",
+      "      alert('flet-Box')",
+      "    }",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.button.Outlined": {
+    "prefix": "fb.button.Outlined",
+    "description": "Make a ReactNative widgets fb.button.Outlined widget",
+    "body": [
+      "",
+      "<Button",
+      "    label=\"Cancelar\"",
+      "    variant=\"outlined\"",
+      "    borderColor=\"red\"",
+      "    color=\"red\"",
+      "    on_click={()=> ",
+      "      // navigation.navigate('Profile')",
+      "      // goTo(navigation, 'Profile')",
+      "      alert('flet-Box')",
+      "    }",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.button.Text": {
+    "prefix": "fb.button.Text",
+    "description": "Make a ReactNative widgets fb.button.Text widget",
+    "body": [
+      "",
+      "<Button",
+      "    label=\"Olvid\u00e9 contrase\u00f1a\"",
+      "    variant=\"text\"",
+      "    color=\"#007aff\"",
+      "    on_click={()=> ",
+      "      // { navigation, route } <= add in component page",
+      "      // navigation.navigate('Profile')",
+      "      // goTo(navigation, 'Profile')",
+      "      alert('flet-Box')",
+      "    }",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.button.Icon": {
+    "prefix": "fb.button.Icon",
+    "description": "Make a ReactNative widgets fb.button.Icon widget",
+    "body": [
+      "",
+      "<Button",
+      "    icon=\"heart\"",
+      "    variant=\"icon\"",
+      "    iconColor=\"red\"",
+      "    on_click={()=> ",
+      "      // { navigation, route } <= add in component page",
+      "      // navigation.navigate('Profile')",
+      "      // goTo(navigation, 'Profile')",
+      "      alert('flet-Box')",
+      "    }",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.floatingactionbutton.default": {
+    "prefix": "fb.floatingactionbutton.default",
+    "description": "Make a ReactNative widgets fb.floatingactionbutton.default widget",
+    "body": [
+      "",
+      "<FloatingActionButton ",
+      "    icon=\"add\" ",
+      "    bgcolor=\"#007aff\" ",
+      "    size={56} ",
+      "    on_click={()=> ",
+      "      // { navigation, route } <= add in component page",
+      "      // navigation.navigate('Profile')",
+      "      // goTo(navigation, 'Profile')",
+      "      alert('flet-Box')",
+      "    }",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.card.default": {
+    "prefix": "fb.card.default",
+    "description": "Make a ReactNative widgets fb.card.default widget",
+    "body": [
+      "",
+      "<Card ",
+      "    elevation={2} ",
+      "    borderRadius={12} ",
+      "    bgcolor=\"#fff\" ",
+      "    padding={16}",
+      "    child={<Text label=\"Card Content\" />}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.avatar.default": {
+    "prefix": "fb.avatar.default",
+    "description": "Make a ReactNative widgets fb.avatar.default widget",
+    "body": [
+      "",
+      "<Avatar ",
+      "    size={48} ",
+      "    rounded={true} ",
+      "    bgcolor=\"#007aff\" ",
+      "    color=\"#fff\" ",
+      "    label=\"JD\"",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.image.default": {
+    "prefix": "fb.image.default",
+    "description": "Make a ReactNative widgets fb.image.default widget",
+    "body": [
+      "",
+      "<Image ",
+      "    source={require('./image.jpg')} ",
+      "    width={100} ",
+      "    height={100} ",
+      "    fit=\"cover\" ",
+      "    borderRadius={8}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.icon.default": {
+    "prefix": "fb.icon.default",
+    "description": "Make a ReactNative widgets fb.icon.default widget",
+    "body": [
+      "",
+      "<Icon name=\"home\" size={24} color=\"#000\" />"
+    ]
+  },
+  "ReactNative widgets fb.chip.default": {
+    "prefix": "fb.chip.default",
+    "description": "Make a ReactNative widgets fb.chip.default widget",
+    "body": [
+      "",
+      "<Chip ",
+      "    label=\"Chip\" ",
+      "    bgcolor=\"#f0f0f0\" ",
+      "    color=\"#000\" ",
+      "    on_click={() => {}}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.listtile.default": {
+    "prefix": "fb.listtile.default",
+    "description": "Make a ReactNative widgets fb.listtile.default widget",
+    "body": [
+      "",
+      "<ListTile ",
+      "    title=\"Title\"",
+      "    subtitle=\"Subtitle\"",
+      "    on_click={() => {}}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.textfield.default": {
+    "prefix": "fb.textfield.default",
+    "description": "Make a ReactNative widgets fb.textfield.default widget",
+    "body": [
+      "",
+      "<TextField ",
+      "    label=\"Label\" ",
+      "    placeholder=\"Enter text\" ",
+      "    bgcolor=\"#f5f5f5\" ",
+      "    borderRadius={8}",
+      "    on_change={() => {}}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.checkbox.default": {
+    "prefix": "fb.checkbox.default",
+    "description": "Make a ReactNative widgets fb.checkbox.default widget",
+    "body": [
+      "",
+      "<Checkbox ",
+      "    label=\"Checkbox\" ",
+      "    value={false} ",
+      "    on_change={() => {}}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.switch.default": {
+    "prefix": "fb.switch.default",
+    "description": "Make a ReactNative widgets fb.switch.default widget",
+    "body": [
+      "",
+      "<Switch ",
+      "    label=\"Switch\" ",
+      "    value={false} ",
+      "    on_change={() => {}}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.slider.default": {
+    "prefix": "fb.slider.default",
+    "description": "Make a ReactNative widgets fb.slider.default widget",
+    "body": [
+      "",
+      "<Slider ",
+      "    label=\"Slider\" ",
+      "    value={50} ",
+      "    min={0} ",
+      "    max={100} ",
+      "    on_change={() => {}}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.rating.default": {
+    "prefix": "fb.rating.default",
+    "description": "Make a ReactNative widgets fb.rating.default widget",
+    "body": [
+      "",
+      "<Rating ",
+      "    value={0} ",
+      "    max={5} ",
+      "    size={32} ",
+      "    on_change={() => {}}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.dropdown.default": {
+    "prefix": "fb.dropdown.default",
+    "description": "Make a ReactNative widgets fb.dropdown.default widget",
+    "body": [
+      "",
+      "<Dropdown ",
+      "    label=\"Dropdown\" ",
+      "    value={null} ",
+      "    options={[]} ",
+      "    on_change={() => {}}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.modalview.default": {
+    "prefix": "fb.modalview.default",
+    "description": "Make a ReactNative widgets fb.modalview.default widget",
+    "body": [
+      "",
+      "<ModalView ",
+      "    visible={false} ",
+      "    on_close={() => {}}",
+      "    child={<Card child={<Text label=\"Modal Content\" />} />}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.progressbar.default": {
+    "prefix": "fb.progressbar.default",
+    "description": "Make a ReactNative widgets fb.progressbar.default widget",
+    "body": [
+      "",
+      "<ProgressBar ",
+      "    value={50} ",
+      "    height={8} ",
+      "    activeColor=\"#007aff\" ",
+      "    inactiveColor=\"#e0e0e0\"",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.snackbar.default": {
+    "prefix": "fb.snackbar.default",
+    "description": "Make a ReactNative widgets fb.snackbar.default widget",
+    "body": [
+      "",
+      "<SnackBar ",
+      "    visible={false} ",
+      "    message=\"Message\" ",
+      "    duration={3000}",
+      "    on_close={() => {}}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.alert.default": {
+    "prefix": "fb.alert.default",
+    "description": "Make a ReactNative widgets fb.alert.default widget",
+    "body": [
+      "",
+      "<Alert ",
+      "    visible={false} ",
+      "    title=\"Title\" ",
+      "    message=\"Message\" ",
+      "    confirmText=\"OK\"",
+      "    onConfirm={() => {}}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.gesturedetector.default": {
+    "prefix": "fb.gesturedetector.default",
+    "description": "Make a ReactNative widgets fb.gesturedetector.default widget",
+    "body": [
+      "",
+      "<GestureDetector ",
+      "    on_tap={() => {}} ",
+      "    child={<Text label=\"Tap me\" />}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.listview.default": {
+    "prefix": "fb.listview.default",
+    "description": "Make a ReactNative widgets fb.listview.default widget",
+    "body": [
+      "",
+      "<ListView ",
+      "    // pagingEnabled={true}",
+      "    // horizontal={true}",
+      "    data={[]}",
+      "    renderItem={({ item }) => <Text label={item} />}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.gridview.default": {
+    "prefix": "fb.gridview.default",
+    "description": "Make a ReactNative widgets fb.gridview.default widget",
+    "body": [
+      "",
+      "<GridView ",
+      "    data={[]}",
+      "    smallColumns={2}",
+      "    spacing={8}",
+      "    renderItem={({ item }) => <Text label={item} />}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets fb.container.props.full": {
+    "prefix": "fb.container.props.full",
+    "description": "Make a ReactNative widgets fb.container.props.full widget",
+    "body": [
+      "",
+      "// CONTAINER - Propiedades completas",
+      "direction=\"column\"              // 'column' | 'row'",
+      "padding={8}                     // number | object",
+      "paddingLeft, paddingRight, paddingTop, paddingBottom",
+      "margin={8}                      // number | object",
+      "marginLeft, marginRight, marginTop, marginBottom",
+      "border={1}                      // number",
+      "borderLeft, borderRight, borderTop, borderBottom",
+      "borderColor=\"red\"               // string",
+      "borderLeftColor, borderRightColor, borderTopColor, borderBottomColor",
+      "borderRadius={8}                // number",
+      "borderTopLeftRadius, borderTopRightRadius, borderBottomLeftRadius, borderBottomRightRadius",
+      "bgcolor=\"#007aff\"               // string",
+      "bgImage={require('./bg.jpg')}   // object",
+      "bgImageStyle={{ resizeMode: 'cover' }}",
+      "expand={true}                   // boolean",
+      "justifyContent=\"center\"         // 'flex-start' | 'center' | 'flex-end' | 'space-between'",
+      "alignItems=\"center\"             // 'flex-start' | 'center' | 'flex-end' | 'stretch'",
+      "width={100}                     // number | string",
+      "height={100}                    // number | string",
+      "shadow={true}                   // boolean",
+      "shadowColor=\"#000\"              // string",
+      "shadowOffsetWidth={0}           // number",
+      "shadowOffsetHeight={2}          // number",
+      "shadowOpacity={0.25}            // number",
+      "shadowRadius={3.84}             // number",
+      "elevation={5}                   // number",
+      "child={<Text />}                // ReactNode",
+      "children={[<Text />]}           // array",
+      "",
+      "// bgImage={require('../assets/icon.png')}",
+      "// bgImageStyle={{ ",
+      "//   resizeMode: 'cover',",
+      "//   opacity:1,",
+      "//   width: 202*2,  // M\u00e1s ancha que el contenedor",
+      "//   height: 400,",
+      "// }}",
+      "// bgImageTransform={[ { translateX: slideValueX }, { translateY: slideValueY },"
+    ]
+  },
+  "ReactNative widgets fb.row.props.full": {
+    "prefix": "fb.row.props.full",
+    "description": "Make a ReactNative widgets fb.row.props.full widget",
+    "body": [
+      "",
+      "// ROW - Propiedades completas (hereda de Container)",
+      "direction=\"row\"                 // fijo",
+      "gap={8}                         // number - espacio entre hijos",
+      "justifyContent=\"center\"         // 'flex-start' | 'center' | 'flex-end' | 'space-between'",
+      "alignItems=\"center\"             // 'flex-start' | 'center' | 'flex-end' | 'stretch'",
+      "padding={8}                     // number | object",
+      "margin={8}                      // number | object",
+      "bgcolor=\"#fff\"                  // string",
+      "borderRadius={8}                // number",
+      "expand={true}                   // boolean",
+      "// bgImage={require('../assets/icon.png')}",
+      "// bgImageStyle={{ ",
+      "//   resizeMode: 'cover',",
+      "//   opacity:1,",
+      "//   width: 202*2,  // M\u00e1s ancha que el contenedor",
+      "//   height: 400,",
+      "// }}",
+      "// bgImageTransform={[ { translateX: slideValueX }, { translateY: slideValueY },",
+      "child={<Text />}                // ReactNode",
+      "children={[<Text />]}           // array"
+    ]
+  },
+  "ReactNative widgets fb.column.props.full": {
+    "prefix": "fb.column.props.full",
+    "description": "Make a ReactNative widgets fb.column.props.full widget",
+    "body": [
+      "",
+      "// COLUMN - Propiedades completas (hereda de Container)",
+      "direction=\"column\"              // fijo",
+      "gap={8}                         // number - espacio entre hijos",
+      "justifyContent=\"center\"         // 'flex-start' | 'center' | 'flex-end' | 'space-between'",
+      "alignItems=\"center\"             // 'flex-start' | 'center' | 'flex-end' | 'stretch'",
+      "padding={8}                     // number | object",
+      "margin={8}                      // number | object",
+      "bgcolor=\"#fff\"                  // string",
+      "borderRadius={8}                // number",
+      "expand={true}                   // boolean",
+      "// bgImage={require('../assets/icon.png')}",
+      "// bgImageStyle={{ ",
+      "//   resizeMode: 'cover',",
+      "//   opacity:1,",
+      "//   width: 202*2,  // M\u00e1s ancha que el contenedor",
+      "//   height: 400,",
+      "// }}",
+      "// bgImageTransform={[ { translateX: slideValueX }, { translateY: slideValueY },",
+      "child={<Text />}                // ReactNode",
+      "children={[<Text />]}           // array"
+    ]
+  },
+  "ReactNative widgets fb.spacer.props.full": {
+    "prefix": "fb.spacer.props.full",
+    "description": "Make a ReactNative widgets fb.spacer.props.full widget",
+    "body": [
+      "",
+      "// SPACER - Propiedades completas",
+      "flex={1}                        // number - factor de crecimiento",
+      "minSize={20}                    // number - tama\u00f1o m\u00ednimo",
+      "expand={true}                   // boolean - flex: 1"
+    ]
+  },
+  "ReactNative widgets fb.sizedbox.props.full": {
+    "prefix": "fb.sizedbox.props.full",
+    "description": "Make a ReactNative widgets fb.sizedbox.props.full widget",
+    "body": [
+      "",
+      "// SIZEDBOX - Propiedades completas",
+      "width={100}                     // number - ancho fijo",
+      "height={50}                     // number - alto fijo",
+      "size={50}                       // number - ancho y alto (cuadrado)",
+      "expand={true}                   // boolean - flex: 1"
+    ]
+  },
+  "ReactNative widgets fb.divider.props.full": {
+    "prefix": "fb.divider.props.full",
+    "description": "Make a ReactNative widgets fb.divider.props.full widget",
+    "body": [
+      "",
+      "// DIVIDER - Propiedades completas",
+      "height={1}                      // number - altura de la l\u00ednea",
+      "color=\"#e0e0e0\"                 // string - color de la l\u00ednea",
+      "marginVertical={8}              // number - margen vertical",
+      "marginHorizontal={0}            // number - margen horizontal",
+      "variant=\"full\"                  // 'full' | 'inset' | 'middle'",
+      "inset={16}                      // number - margen izquierdo (variant='inset')",
+      "expand={true}                   // boolean - flex: 1"
+    ]
+  },
+  "ReactNative widgets fb.safearea.props.full": {
+    "prefix": "fb.safearea.props.full",
+    "description": "Make a ReactNative widgets fb.safearea.props.full widget",
+    "body": [
+      "",
+      "// SAFEAREA - Propiedades completas",
+      "child={<Text />}                // ReactNode - hijo \u00fanico",
+      "children={[<Text />]}           // array - m\u00faltiples hijos",
+      "edges={['top', 'bottom']}       // array - 'top', 'bottom', 'left', 'right'",
+      "enabled={true}                  // boolean - habilitar safe area",
+      "bgcolor=\"#fff\"                  // string - color de fondo",
+      "expand={true}                   // boolean - flex: 1",
+      "paddingTop={0}                  // number - padding superior manual",
+      "paddingBottom={0}               // number - padding inferior manual",
+      "paddingLeft={0}                 // number - padding izquierdo manual",
+      "paddingRight={0}                // number - padding derecho manual"
+    ]
+  },
+  "ReactNative widgets fb.statusbar.props.full": {
+    "prefix": "fb.statusbar.props.full",
+    "description": "Make a ReactNative widgets fb.statusbar.props.full widget",
+    "body": [
+      "",
+      "// STATUSBAR - Propiedades completas",
+      "barStyle=\"dark-content\"         // 'dark-content' | 'light-content' | 'default'",
+      "backgroundColor=\"#fff\"          // string - color de fondo (Android)",
+      "translucent={false}             // boolean - fondo transparente",
+      "hidden={false}                  // boolean - ocultar barra",
+      "animated={true}                 // boolean - animaci\u00f3n al mostrar/ocultar",
+      "networkActivityIndicatorVisible // boolean - indicador de red (iOS)"
+    ]
+  },
+  "ReactNative widgets fb.text.props.full": {
+    "prefix": "fb.text.props.full",
+    "description": "Make a ReactNative widgets fb.text.props.full widget",
+    "body": [
+      "",
+      "// TEXT - Propiedades completas",
+      "label=\"Texto aqu\u00ed\"              // string - contenido",
+      "child={<Text />}                // ReactNode - hijo \u00fanico",
+      "children={[<Text />]}           // array - m\u00faltiples hijos",
+      "size={16}                       // number - tama\u00f1o de fuente",
+      "fontSize={16}                   // number - tama\u00f1o de fuente",
+      "color=\"#007aff\"                 // string - color del texto",
+      "weight=\"bold\"                   // 'normal' | 'bold' | '100'-'900'",
+      "fontWeight=\"bold\"               // string",
+      "align=\"center\"                  // 'left' | 'center' | 'right' | 'justify'",
+      "textAlign=\"center\"              // string",
+      "decoration=\"underline\"          // 'none' | 'underline' | 'line-through'",
+      "textDecorationLine=\"underline\"  // string",
+      "transform=\"uppercase\"           // 'none' | 'uppercase' | 'lowercase' | 'capitalize'",
+      "textTransform=\"uppercase\"       // string",
+      "letterSpacing={1}               // number",
+      "lineHeight={24}                 // number",
+      "italic={true}                   // boolean",
+      "fontStyle=\"italic\"              // 'normal' | 'italic'",
+      "numberOfLines={2}               // number",
+      "ellipsizeMode=\"tail\"            // 'head' | 'middle' | 'tail' | 'clip'",
+      "expand={true}                   // boolean",
+      "selectable={true}               // boolean",
+      "on_click={() => {}}             // function"
+    ]
+  },
+  "ReactNative widgets fb.button.props.full": {
+    "prefix": "fb.button.props.full",
+    "description": "Make a ReactNative widgets fb.button.props.full widget",
+    "body": [
+      "",
+      "// BUTTON - Propiedades completas",
+      "label=\"Bot\u00f3n\"                   // string",
+      "child={<Text />}                // ReactNode",
+      "children={[<Text />]}           // array",
+      "icon=\"home\"                     // string (Ionicons)",
+      "iconPosition=\"left\"             // 'left' | 'right'",
+      "iconSize={20}                   // number",
+      "iconColor=\"#fff\"                // string",
+      "variant=\"filled\"                // 'filled' | 'elevated' | 'outlined' | 'text' | 'icon'",
+      "bgcolor=\"#007aff\"               // string",
+      "color=\"#fff\"                    // string (text color)",
+      "size={16}                       // number",
+      "weight=\"500\"                    // string",
+      "padding={12}                    // number",
+      "paddingLeft, paddingRight, paddingTop, paddingBottom",
+      "borderRadius={23}               // number",
+      "borderColor=\"red\"               // string (para outlined)",
+      "borderWidth={1}                 // number",
+      "elevation={4}                   // number (para elevated)",
+      "shadowColor=\"#000\"              // string",
+      "loading={false}                 // boolean",
+      "disabled={false}                // boolean",
+      "expand={true}                   // boolean",
+      "on_click={() => {}}             // function",
+      "on_press={() => {}}             // function",
+      "on_long_press={() => {}}        // function"
+    ]
+  },
+  "ReactNative widgets fb.floatingactionbutton.props.full": {
+    "prefix": "fb.floatingactionbutton.props.full",
+    "description": "Make a ReactNative widgets fb.floatingactionbutton.props.full widget",
+    "body": [
+      "",
+      "// FLOATINGACTIONBUTTON - Propiedades completas",
+      "icon=\"add\"                      // string",
+      "iconSize={24}                   // number",
+      "iconColor=\"#fff\"                // string",
+      "bgcolor=\"#2196f3\"               // string",
+      "size={56}                       // number",
+      "elevation={6}                   // number",
+      "borderRadius={28}               // number",
+      "mini={false}                    // boolean",
+      "position=\"bottom-right\"         // 'bottom-right' | 'bottom-left' | 'bottom-center'",
+      "margin={16}                     // number",
+      "disabled={false}                // boolean",
+      "loading={false}                 // boolean",
+      "on_click={() => {}}             // function"
+    ]
+  },
+  "ReactNative widgets fb.card.props.full": {
+    "prefix": "fb.card.props.full",
+    "description": "Make a ReactNative widgets fb.card.props.full widget",
+    "body": [
+      "",
+      "// CARD - Propiedades completas",
+      "child={<Text />}                // ReactNode - hijo \u00fanico",
+      "children={[<Text />]}           // array - m\u00faltiples hijos",
+      "elevation={2}                   // number",
+      "borderRadius={12}               // number",
+      "bgcolor=\"#fff\"                  // string",
+      "padding={16}                    // number",
+      "paddingLeft, paddingRight, paddingTop, paddingBottom",
+      "border={1}                      // number",
+      "borderColor=\"#ddd\"              // string",
+      "shadowColor=\"#000\"              // string",
+      "shadowOpacity={0.1}             // number",
+      "shadowRadius={4}                // number",
+      "expand={true}                   // boolean",
+      "on_click={() => {}}             // function"
+    ]
+  },
+  "ReactNative widgets fb.avatar.props.full": {
+    "prefix": "fb.avatar.props.full",
+    "description": "Make a ReactNative widgets fb.avatar.props.full widget",
+    "body": [
+      "",
+      "// AVATAR - Propiedades completas",
+      "src=\"https://ejemplo.com/avatar.jpg\"  // string",
+      "source={require('./avatar.png')}      // object",
+      "label=\"John Doe\"                      // string",
+      "initials=\"JD\"                         // string",
+      "size={48}                             // number",
+      "bgcolor=\"#ccc\"                        // string",
+      "color=\"#fff\"                          // string",
+      "rounded={true}                        // boolean",
+      "radius={8}                            // number",
+      "border={2}                            // number",
+      "borderColor=\"white\"                   // string",
+      "online={true}                         // boolean",
+      "onlineColor=\"#4caf50\"                 // string",
+      "onlineSize={12}                       // number",
+      "on_click={() => {}}                   // function"
+    ]
+  },
+  "ReactNative widgets fb.image.props.full": {
+    "prefix": "fb.image.props.full",
+    "description": "Make a ReactNative widgets fb.image.props.full widget",
+    "body": [
+      "",
+      "// IMAGE - Propiedades completas",
+      "src=\"https://ejemplo.com/img.jpg\"  // string (URL)",
+      "source={require('./img.png')}      // object",
+      "width={100}                         // number",
+      "height={100}                        // number",
+      "radius={8}                          // number",
+      "borderRadius={8}                    // number",
+      "fit=\"cover\"                         // 'cover' | 'contain' | 'stretch' | 'repeat' | 'center'",
+      "resizeMode=\"cover\"                  // string",
+      "opacity={1}                         // number",
+      "bgcolor=\"#f0f0f0\"                   // string",
+      "border={1}                          // number",
+      "borderColor=\"#ddd\"                  // string",
+      "circular={true}                     // boolean",
+      "loading={false}                     // boolean",
+      "placeholder={<Text />}              // ReactNode",
+      "expand={true}                       // boolean",
+      "on_load={() => {}}                  // function",
+      "on_error={() => {}}                 // function",
+      "on_click={() => {}}                 // function"
+    ]
+  },
+  "ReactNative widgets fb.icon.props.full": {
+    "prefix": "fb.icon.props.full",
+    "description": "Make a ReactNative widgets fb.icon.props.full widget",
+    "body": [
+      "",
+      "// ICON - Propiedades completas",
+      "name=\"home\"                     // string - nombre del icono (Ionicons)",
+      "size={24}                       // number - tama\u00f1o",
+      "color=\"#007aff\"                 // string - color",
+      "opacity={1}                     // number - opacidad (0-1)",
+      "expand={true}                   // boolean - flex: 1"
+    ]
+  },
+  "ReactNative widgets fb.chip.props.full": {
+    "prefix": "fb.chip.props.full",
+    "description": "Make a ReactNative widgets fb.chip.props.full widget",
+    "body": [
+      "",
+      "// CHIP - Propiedades completas",
+      "label=\"Chip\"                    // string",
+      "child={<Text />}                // ReactNode",
+      "children={[<Text />]}           // array",
+      "avatar={<Avatar />}             // ReactNode - avatar",
+      "icon=\"settings\"                 // string - icono (Ionicons)",
+      "iconPosition=\"left\"             // 'left' | 'right'",
+      "selected={false}                // boolean",
+      "disabled={false}                // boolean",
+      "closable={false}                // boolean",
+      "bgcolor=\"#f0f0f0\"               // string",
+      "selectedBgcolor=\"#007aff\"       // string",
+      "disabledBgcolor=\"#e0e0e0\"       // string",
+      "color=\"#000\"                    // string",
+      "selectedColor=\"#fff\"            // string",
+      "disabledColor=\"#999\"            // string",
+      "size={14}                       // number",
+      "padding={8}                     // number",
+      "paddingHorizontal={12}          // number",
+      "paddingVertical={6}             // number",
+      "borderRadius={16}               // number",
+      "expand={true}                   // boolean",
+      "on_click={() => {}}             // function",
+      "on_close={() => {}}             // function"
+    ]
+  },
+  "ReactNative widgets fb.listtile.props.full": {
+    "prefix": "fb.listtile.props.full",
+    "description": "Make a ReactNative widgets fb.listtile.props.full widget",
+    "body": [
+      "",
+      "// LISTTILE - Propiedades completas",
+      "title=\"T\u00edtulo\"                      // string",
+      "subtitle=\"Subt\u00edtulo\"                // string",
+      "leading={<Icon />}                  // ReactNode",
+      "trailing={<Icon />}                 // ReactNode",
+      "titleColor=\"#000\"                   // string",
+      "titleSize={16}                      // number",
+      "titleWeight=\"500\"                   // string",
+      "subtitleColor=\"#666\"                // string",
+      "subtitleSize={14}                   // number",
+      "subtitleWeight=\"normal\"             // string",
+      "padding={12}                        // number",
+      "paddingLeft, paddingRight, paddingTop, paddingBottom",
+      "height={60}                         // number",
+      "bgcolor=\"#fff\"                      // string",
+      "borderBottom={true}                 // boolean",
+      "borderBottomColor=\"#e0e0e0\"         // string",
+      "disabled={false}                    // boolean",
+      "selected={true}                     // boolean",
+      "selectedColor=\"#f0f0f0\"             // string",
+      "expand={true}                       // boolean",
+      "on_click={() => {}}                 // function",
+      "on_long_press={() => {}}            // function"
+    ]
+  },
+  "ReactNative widgets fb.textfield.props.full": {
+    "prefix": "fb.textfield.props.full",
+    "description": "Make a ReactNative widgets fb.textfield.props.full widget",
+    "body": [
+      "",
+      "// TEXTFIELD - Propiedades completas",
+      "value={text}                        // string",
+      "label=\"Email\"                       // string",
+      "placeholder=\"Escribe aqu\u00ed\"          // string",
+      "bgcolor=\"#f5f5f5\"                   // string",
+      "color=\"#000\"                        // string",
+      "size={16}                           // number",
+      "weight=\"normal\"                     // string",
+      "padding={12}                        // number",
+      "borderRadius={8}                    // number",
+      "borderWidth={1}                     // number",
+      "borderColor=\"#ddd\"                  // string",
+      "focusBorderColor=\"#007aff\"          // string",
+      "width={200}                         // number | string",
+      "height={50}                         // number",
+      "expand={true}                       // boolean",
+      "multiline={false}                   // boolean",
+      "numberOfLines={1}                   // number",
+      "secureText={false}                  // boolean",
+      "keyboardType=\"default\"              // 'default' | 'numeric' | 'email-address' | 'phone-pad'",
+      "secureTextEntry={false}             // boolean",
+      "disabled={false}                    // boolean",
+      "error={false}                       // boolean",
+      "errorText=\"Campo requerido\"         // string",
+      "on_change={(text) => {}}            // function",
+      "on_submit={() => {}}                // function",
+      "on_focus={() => {}}                 // function",
+      "on_blur={() => {}}                  // function"
+    ]
+  },
+  "ReactNative widgets fb.checkbox.props.full": {
+    "prefix": "fb.checkbox.props.full",
+    "description": "Make a ReactNative widgets fb.checkbox.props.full widget",
+    "body": [
+      "",
+      "// CHECKBOX - Propiedades completas",
+      "value={true}                        // boolean",
+      "label=\"Acepto t\u00e9rminos\"             // string",
+      "disabled={false}                    // boolean",
+      "expand={true}                       // boolean",
+      "activeColor=\"#4caf50\"               // string",
+      "inactiveColor=\"#ccc\"                // string",
+      "size={24}                           // number",
+      "labelColor=\"#000\"                   // string",
+      "width={200}                         // number",
+      "labelSize={16}                      // number",
+      "labelWeight=\"normal\"                // string",
+      "on_change={(value) => {}}           // function",
+      "on_toggle={(value) => {}}           // function"
+    ]
+  },
+  "ReactNative widgets fb.switch.props.full": {
+    "prefix": "fb.switch.props.full",
+    "description": "Make a ReactNative widgets fb.switch.props.full widget",
+    "body": [
+      "",
+      "// SWITCH - Propiedades completas",
+      "value={true}                        // boolean",
+      "label=\"Notificaciones\"              // string",
+      "disabled={false}                    // boolean",
+      "expand={true}                       // boolean",
+      "activeColor=\"#4caf50\"               // string",
+      "inactiveColor=\"#2196f3\"             // string",
+      "thumbColor=\"#fff\"                   // string",
+      "width={80}                          // number",
+      "size={50}                           // number",
+      "labelColor=\"#000\"                   // string",
+      "labelSize={16}                      // number",
+      "labelWeight=\"bold\"                  // string",
+      "on_change={(value) => {}}           // function",
+      "on_toggle={(value) => {}}           // function"
+    ]
+  },
+  "ReactNative widgets fb.slider.props.full": {
+    "prefix": "fb.slider.props.full",
+    "description": "Make a ReactNative widgets fb.slider.props.full widget",
+    "body": [
+      "",
+      "// SLIDER - Propiedades completas",
+      "value={50}                          // number",
+      "min={0}                             // number",
+      "max={100}                           // number",
+      "step={1}                            // number",
+      "label=\"Brillo\"                      // string",
+      "disabled={false}                    // boolean",
+      "expand={true}                       // boolean",
+      "activeColor=\"#4caf50\"               // string",
+      "inactiveColor=\"#ccc\"                // string",
+      "thumbColor=\"#fff\"                   // string",
+      "width={200}                         // number",
+      "height={4}                          // number",
+      "thumbSize={20}                      // number",
+      "showValue={true}                    // boolean",
+      "valueFormat={(v) => `${v}%`}        // function",
+      "labelColor=\"#000\"                   // string",
+      "labelSize={16}                      // number",
+      "labelWeight=\"normal\"                // string",
+      "on_change={(value) => {}}           // function",
+      "on_change_end={(value) => {}}       // function"
+    ]
+  },
+  "ReactNative widgets fb.rating.props.full": {
+    "prefix": "fb.rating.props.full",
+    "description": "Make a ReactNative widgets fb.rating.props.full widget",
+    "body": [
+      "",
+      "// RATING - Propiedades completas",
+      "value={4}                           // number",
+      "max={5}                             // number",
+      "size={32}                           // number",
+      "spacing={4}                         // number",
+      "disabled={false}                    // boolean",
+      "activeColor=\"#ffc107\"               // string",
+      "inactiveColor=\"#e4e5e9\"             // string",
+      "activeIcon=\"star\"                   // string",
+      "inactiveIcon=\"star-outline\"         // string",
+      "label=\"Calificaci\u00f3n\"                // string",
+      "labelColor=\"#000\"                   // string",
+      "labelSize={16}                      // number",
+      "labelWeight=\"normal\"                // string",
+      "expand={true}                       // boolean",
+      "on_change={(value) => {}}           // function"
+    ]
+  },
+  "ReactNative widgets fb.dropdown.props.full": {
+    "prefix": "fb.dropdown.props.full",
+    "description": "Make a ReactNative widgets fb.dropdown.props.full widget",
+    "body": [
+      "",
+      "// DROPDOWN - Propiedades completas",
+      "value={value}                       // any",
+      "options={[{ label: 'Opci\u00f3n', value: 'opt' }]}  // array",
+      "label=\"Pa\u00eds\"                        // string",
+      "placeholder=\"Selecciona\"            // string",
+      "disabled={false}                    // boolean",
+      "expand={true}                       // boolean",
+      "width={200}                         // number",
+      "height={50}                         // number",
+      "bgcolor=\"#f5f5f5\"                   // string",
+      "color=\"#000\"                        // string",
+      "borderColor=\"#ddd\"                  // string",
+      "focusBorderColor=\"#007aff\"          // string",
+      "borderRadius={8}                    // number",
+      "labelColor=\"#000\"                   // string",
+      "labelSize={16}                      // number",
+      "labelWeight=\"normal\"                // string",
+      "on_change={(value) => {}}           // function"
+    ]
+  },
+  "ReactNative widgets fb.modalview.props.full": {
+    "prefix": "fb.modalview.props.full",
+    "description": "Make a ReactNative widgets fb.modalview.props.full widget",
+    "body": [
+      "",
+      "// MODALVIEW - Propiedades completas",
+      "visible={true}                      // boolean",
+      "on_close={() => {}}                 // function",
+      "child={<Text />}                    // ReactNode",
+      "children={[<Text />]}               // array",
+      "transparent={true}                  // boolean",
+      "animationType=\"slide\"               // 'slide' | 'fade' | 'none'",
+      "backgroundColor=\"transparent\"       // string",
+      "bgcolor=\"red\"                       // string",
+      "backdropPressable={true}            // boolean",
+      "justifyContent=\"center\"             // string",
+      "alignItems=\"center\"                 // string",
+      "on_show={() => {}}                  // function",
+      "on_hide={() => {}}                  // function"
+    ]
+  },
+  "ReactNative widgets fb.progressbar.props.full": {
+    "prefix": "fb.progressbar.props.full",
+    "description": "Make a ReactNative widgets fb.progressbar.props.full widget",
+    "body": [
+      "",
+      "// PROGRESSBAR - Propiedades completas",
+      "value={50}                          // number",
+      "min={0}                             // number",
+      "max={100}                           // number",
+      "label=\"Cargando\"                    // string",
+      "showValue={true}                    // boolean",
+      "valueFormat={(v) => `${v}%`}        // function",
+      "height={8}                          // number",
+      "activeColor=\"#4caf50\"               // string",
+      "inactiveColor=\"#e0e0e0\"             // string",
+      "labelColor=\"#000\"                   // string",
+      "labelSize={14}                      // number",
+      "labelWeight=\"normal\"                // string",
+      "expand={true}                       // boolean",
+      "width={200}                         // number"
+    ]
+  },
+  "ReactNative widgets fb.snackbar.props.full": {
+    "prefix": "fb.snackbar.props.full",
+    "description": "Make a ReactNative widgets fb.snackbar.props.full widget",
+    "body": [
+      "",
+      "// SNACKBAR - Propiedades completas",
+      "visible={true}                  // boolean",
+      "message=\"Texto del mensaje\"     // string",
+      "child={<Text />}                // ReactNode",
+      "children={[<Text />]}           // array",
+      "icon=\"checkmark\"                // string",
+      "iconColor=\"#fff\"                // string",
+      "actionLabel=\"Deshacer\"          // string",
+      "actionTextColor=\"#4caf50\"       // string",
+      "on_action={() => {}}            // function",
+      "on_close={() => {}}             // function",
+      "bgcolor=\"#333333\"               // string",
+      "textColor=\"#ffffff\"             // string",
+      "borderRadius={8}                // number",
+      "margin={16}                     // number",
+      "marginBottom={16}               // number",
+      "duration={4000}                 // number",
+      "position=\"bottom\"               // 'bottom' | 'top'"
+    ]
+  },
+  "ReactNative widgets fb.alert.props.full": {
+    "prefix": "fb.alert.props.full",
+    "description": "Make a ReactNative widgets fb.alert.props.full widget",
+    "body": [
+      "",
+      "// ALERT - Propiedades completas",
+      "visible={true}                  // boolean",
+      "title=\"T\u00edtulo\"                  // string",
+      "message=\"Mensaje\"               // string",
+      "confirmText=\"Aceptar\"           // string",
+      "cancelText=\"Cancelar\"           // string",
+      "confirmStyle=\"default\"          // 'default' | 'destructive' | 'cancel'",
+      "onConfirm={() => {}}            // function",
+      "onCancel={() => {}}             // function"
+    ]
+  },
+  "ReactNative widgets fb.gesturedetector.props.full": {
+    "prefix": "fb.gesturedetector.props.full",
+    "description": "Make a ReactNative widgets fb.gesturedetector.props.full widget",
+    "body": [
+      "",
+      "// GESTUREDETECTOR - Propiedades completas",
+      "child={<Text />}                    // ReactNode",
+      "children={[<Text />]}               // array",
+      "on_tap={() => {}}                   // function",
+      "on_double_tap={() => {}}            // function",
+      "on_long_press={() => {}}            // function",
+      "on_press_in={() => {}}              // function",
+      "on_press_out={() => {}}             // function",
+      "inkColor=\"rgba(0,0,0,0.1)\"          // string",
+      "borderRadius={0}                    // number",
+      "disabled={false}                    // boolean",
+      "delayLongPress={500}                // number"
+    ]
+  },
+  "ReactNative widgets fb.listview.props.full": {
+    "prefix": "fb.listview.props.full",
+    "description": "Make a ReactNative widgets fb.listview.props.full widget",
+    "body": [
+      "",
+      "// LISTVIEW - Propiedades completas",
+      "data={[]}                           // array",
+      "// pagingEnabled={true}",
+      "horizontal={false}                  // boolean",
+      "itemWidth={150}                     // number (para horizontal)",
+      "spacing={8}                         // number",
+      "padding={spacing / 2}               // number",
+      "renderItem={({ item }) => <Text />} // function",
+      "keyExtractor={(item, index) => index.toString()}  // function",
+      "loading={false}                     // boolean",
+      "emptyText=\"No items\"                // string",
+      "ListEmptyComponent={<Text />}       // ReactNode",
+      "showsHorizontalScrollIndicator={false}  // boolean",
+      "showsVerticalScrollIndicator={true}     // boolean"
+    ]
+  },
+  "ReactNative widgets fb.gridview.props.full": {
+    "prefix": "fb.gridview.props.full",
+    "description": "Make a ReactNative widgets fb.gridview.props.full widget",
+    "body": [
+      "",
+      "// GRIDVIEW - Propiedades completas",
+      "data={[]}                           // array",
+      "smallColumns={2}                    // number (< 600px)",
+      "mediumColumns={4}                   // number (600-900px)",
+      "largeColumns={6}                    // number (> 900px)",
+      "columns={2}                         // number (fijo)",
+      "spacing={8}                         // number",
+      "renderItem={({ item }) => <Text />} // function",
+      "keyExtractor={(item, index) => index.toString()}  // function",
+      "loading={false}                     // boolean",
+      "emptyText=\"No items\"                // string",
+      "ListEmptyComponent={<Text />}       // ReactNode",
+      "showsVerticalScrollIndicator={false} // boolean"
+    ]
+  },
+  "ReactNative widgets rn.view.init": {
+    "prefix": "rn.view.init",
+    "description": "Make a ReactNative widgets rn.view.init widget",
+    "body": [
+      "",
+      "<View style={styles.container}>",
+      "    <Text>Contenido aqu\u00ed</Text>",
+      "</View>"
+    ]
+  },
+  "ReactNative widgets rn.text.init": {
+    "prefix": "rn.text.init",
+    "description": "Make a ReactNative widgets rn.text.init widget",
+    "body": [
+      "",
+      "<Text style={styles.text}>Texto aqu\u00ed</Text>"
+    ]
+  },
+  "ReactNative widgets rn.image.init": {
+    "prefix": "rn.image.init",
+    "description": "Make a ReactNative widgets rn.image.init widget",
+    "body": [
+      "",
+      "<Image ",
+      "    source={{uri: 'https://ejemplo.com/imagen.jpg'}} ",
+      "    style={{width: 100, height: 100}} ",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.scrollview.init": {
+    "prefix": "rn.scrollview.init",
+    "description": "Make a ReactNative widgets rn.scrollview.init widget",
+    "body": [
+      "",
+      "<ScrollView>",
+      "    <Text>Contenido desplazable</Text>",
+      "    <Text>M\u00e1s contenido</Text>",
+      "</ScrollView>"
+    ]
+  },
+  "ReactNative widgets rn.flatlist.init": {
+    "prefix": "rn.flatlist.init",
+    "description": "Make a ReactNative widgets rn.flatlist.init widget",
+    "body": [
+      "",
+      "<FlatList",
+      "    data={data}",
+      "    renderItem={({item}) => <Text>{item}</Text>}",
+      "    keyExtractor={(item, index) => index.toString()}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.sectionlist.init": {
+    "prefix": "rn.sectionlist.init",
+    "description": "Make a ReactNative widgets rn.sectionlist.init widget",
+    "body": [
+      "",
+      "<SectionList",
+      "    sections={sections}",
+      "    renderItem={({item}) => <Text>{item}</Text>}",
+      "    renderSectionHeader={({section}) => <Text>{section.title}</Text>}",
+      "    keyExtractor={(item, index) => index.toString()}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.textinput.init": {
+    "prefix": "rn.textinput.init",
+    "description": "Make a ReactNative widgets rn.textinput.init widget",
+    "body": [
+      "",
+      "<TextInput",
+      "    style={styles.input}",
+      "    value={value}",
+      "    onChangeText={setValue}",
+      "    placeholder=\"Escribe aqu\u00ed\"",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.switch.init": {
+    "prefix": "rn.switch.init",
+    "description": "Make a ReactNative widgets rn.switch.init widget",
+    "body": [
+      "",
+      "<Switch",
+      "    value={value}",
+      "    onValueChange={setValue}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.modal.init": {
+    "prefix": "rn.modal.init",
+    "description": "Make a ReactNative widgets rn.modal.init widget",
+    "body": [
+      "",
+      "<Modal",
+      "    animationType=\"slide\"",
+      "    transparent={true}",
+      "    visible={modalVisible}",
+      "    onRequestClose={() => setModalVisible(false)}",
+      ">",
+      "    <View style={styles.modalContainer}>",
+      "        <Text>Contenido del modal</Text>",
+      "        <Button title=\"Cerrar\" onPress={() => setModalVisible(false)} />",
+      "    </View>",
+      "</Modal>"
+    ]
+  },
+  "ReactNative widgets rn.activityindicator.init": {
+    "prefix": "rn.activityindicator.init",
+    "description": "Make a ReactNative widgets rn.activityindicator.init widget",
+    "body": [
+      "",
+      "<ActivityIndicator size=\"large\" color=\"#0000ff\" />"
+    ]
+  },
+  "ReactNative widgets rn.refreshcontrol.init": {
+    "prefix": "rn.refreshcontrol.init",
+    "description": "Make a ReactNative widgets rn.refreshcontrol.init widget",
+    "body": [
+      "",
+      "<RefreshControl",
+      "    refreshing={refreshing}",
+      "    onRefresh={onRefresh}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.keyboardavoidingview.init": {
+    "prefix": "rn.keyboardavoidingview.init",
+    "description": "Make a ReactNative widgets rn.keyboardavoidingview.init widget",
+    "body": [
+      "",
+      "<KeyboardAvoidingView ",
+      "    behavior={Platform.OS === 'ios' ? 'padding' : 'height'}",
+      "    style={{flex: 1}}",
+      ">",
+      "    <TextInput placeholder=\"Input aqu\u00ed\" />",
+      "</KeyboardAvoidingView>"
+    ]
+  },
+  "ReactNative widgets rn.safeareaview.init": {
+    "prefix": "rn.safeareaview.init",
+    "description": "Make a ReactNative widgets rn.safeareaview.init widget",
+    "body": [
+      "",
+      "<SafeAreaView style={{flex: 1}}>",
+      "    <Text>Contenido en \u00e1rea segura</Text>",
+      "</SafeAreaView>"
+    ]
+  },
+  "ReactNative widgets rn.pressable.init": {
+    "prefix": "rn.pressable.init",
+    "description": "Make a ReactNative widgets rn.pressable.init widget",
+    "body": [
+      "",
+      "<Pressable onPress={() => console.log('pressed')}>",
+      "    <Text>Presiona aqu\u00ed</Text>",
+      "</Pressable>"
+    ]
+  },
+  "ReactNative widgets rn.touchableopacity.init": {
+    "prefix": "rn.touchableopacity.init",
+    "description": "Make a ReactNative widgets rn.touchableopacity.init widget",
+    "body": [
+      "",
+      "<TouchableOpacity onPress={() => console.log('pressed')}>",
+      "    <Text>Bot\u00f3n</Text>",
+      "</TouchableOpacity>"
+    ]
+  },
+  "ReactNative widgets rn.ext.checkbox.init": {
+    "prefix": "rn.ext.checkbox.init",
+    "description": "Make a ReactNative widgets rn.ext.checkbox.init widget",
+    "body": [
+      "",
+      "import { CheckBox } from '@react-native-community/checkbox';",
+      "",
+      "// \ud83d\udce6 Instalaci\u00f3n:",
+      "// npm install @react-native-community/checkbox",
+      "// npx expo install @react-native-community/checkbox",
+      "// cd ios && pod install",
+      "",
+      "<CheckBox",
+      "    value={isSelected}",
+      "    onValueChange={setIsSelected}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.ext.radio.init": {
+    "prefix": "rn.ext.radio.init",
+    "description": "Make a ReactNative widgets rn.ext.radio.init widget",
+    "body": [
+      "",
+      "import { RadioButton } from 'react-native-paper';",
+      "",
+      "// \ud83d\udce6 Instalaci\u00f3n:",
+      "// npm install react-native-paper",
+      "// npx expo install react-native-paper",
+      "",
+      "<RadioButton",
+      "    value={value}",
+      "    status={checked === value ? 'checked' : 'unchecked'}",
+      "    onPress={() => setChecked(value)}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.ext.picker.init": {
+    "prefix": "rn.ext.picker.init",
+    "description": "Make a ReactNative widgets rn.ext.picker.init widget",
+    "body": [
+      "",
+      "import { Picker } from '@react-native-picker/picker';",
+      "",
+      "// \ud83d\udce6 Instalaci\u00f3n:",
+      "// npm install @react-native-picker/picker",
+      "// npx expo install @react-native-picker/picker",
+      "// cd ios && pod install",
+      "",
+      "<Picker",
+      "    selectedValue={selectedValue}",
+      "    onValueChange={(itemValue) => setSelectedValue(itemValue)}",
+      ">",
+      "    <Picker.Item label=\"Opci\u00f3n 1\" value=\"option1\" />",
+      "    <Picker.Item label=\"Opci\u00f3n 2\" value=\"option2\" />",
+      "</Picker>"
+    ]
+  },
+  "ReactNative widgets rn.ext.datetimepicker.init": {
+    "prefix": "rn.ext.datetimepicker.init",
+    "description": "Make a ReactNative widgets rn.ext.datetimepicker.init widget",
+    "body": [
+      "",
+      "import DateTimePicker from '@react-native-community/datetimepicker';",
+      "",
+      "// \ud83d\udce6 Instalaci\u00f3n:",
+      "// npm install @react-native-community/datetimepicker",
+      "// npx expo install @react-native-community/datetimepicker",
+      "// cd ios && pod install",
+      "",
+      "<DateTimePicker",
+      "    value={date}",
+      "    mode=\"date\"",
+      "    display=\"default\"",
+      "    onChange={(event, selectedDate) => {}}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.ext.snackbar.init": {
+    "prefix": "rn.ext.snackbar.init",
+    "description": "Make a ReactNative widgets rn.ext.snackbar.init widget",
+    "body": [
+      "",
+      "import { Snackbar } from 'react-native-paper';",
+      "",
+      "// \ud83d\udce6 Instalaci\u00f3n:",
+      "// npm install react-native-paper",
+      "// npx expo install react-native-paper",
+      "",
+      "<Snackbar",
+      "    visible={visible}",
+      "    onDismiss={() => {}}",
+      "    duration={3000}",
+      "    action={{",
+      "        label: 'Cerrar',",
+      "        onPress: () => {},",
+      "    }}",
+      ">",
+      "    Mensaje del snackbar",
+      "</Snackbar>"
+    ]
+  },
+  "ReactNative widgets rn.ext.progress.init": {
+    "prefix": "rn.ext.progress.init",
+    "description": "Make a ReactNative widgets rn.ext.progress.init widget",
+    "body": [
+      "",
+      "import { ProgressBar } from 'react-native-paper';",
+      "",
+      "// \ud83d\udce6 Instalaci\u00f3n:",
+      "// npm install react-native-paper",
+      "// npx expo install react-native-paper",
+      "",
+      "<ProgressBar progress={0.5} color=\"#007aff\" />"
+    ]
+  },
+  "ReactNative widgets rn.ext.markdown.init": {
+    "prefix": "rn.ext.markdown.init",
+    "description": "Make a ReactNative widgets rn.ext.markdown.init widget",
+    "body": [
+      "",
+      "import Markdown from 'react-native-markdown-display';",
+      "",
+      "// \ud83d\udce6 Instalaci\u00f3n:",
+      "// npm install react-native-markdown-display",
+      "// npx expo install react-native-markdown-display",
+      "",
+      "<Markdown>",
+      "    {`",
+      "# T\u00edtulo",
+      "**negrita** *cursiva*",
+      "- Lista",
+      "- Items",
+      "    `}",
+      "</Markdown>"
+    ]
+  },
+  "ReactNative widgets rn.view.default": {
+    "prefix": "rn.view.default",
+    "description": "Make a ReactNative widgets rn.view.default widget",
+    "body": [
+      "",
+      "<View style={{flex: 1, backgroundColor: '#fff', padding: 16}}>",
+      "    {children}",
+      "</View>"
+    ]
+  },
+  "ReactNative widgets rn.text.default": {
+    "prefix": "rn.text.default",
+    "description": "Make a ReactNative widgets rn.text.default widget",
+    "body": [
+      "",
+      "<Text style={{fontSize: 16, color: '#000'}}>",
+      "    {children}",
+      "</Text>"
+    ]
+  },
+  "ReactNative widgets rn.image.default": {
+    "prefix": "rn.image.default",
+    "description": "Make a ReactNative widgets rn.image.default widget",
+    "body": [
+      "",
+      "<Image ",
+      "    source={{uri: 'https://via.placeholder.com/100'}} ",
+      "    style={{width: 100, height: 100, borderRadius: 8}} ",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.scrollview.default": {
+    "prefix": "rn.scrollview.default",
+    "description": "Make a ReactNative widgets rn.scrollview.default widget",
+    "body": [
+      "",
+      "<ScrollView showsVerticalScrollIndicator={false}>",
+      "    {children}",
+      "</ScrollView>"
+    ]
+  },
+  "ReactNative widgets rn.flatlist.default": {
+    "prefix": "rn.flatlist.default",
+    "description": "Make a ReactNative widgets rn.flatlist.default widget",
+    "body": [
+      "",
+      "<FlatList",
+      "    data={[]}",
+      "    renderItem={({item}) => <Text>{item}</Text>}",
+      "    keyExtractor={(item, index) => index.toString()}",
+      "    showsVerticalScrollIndicator={false}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.sectionlist.default": {
+    "prefix": "rn.sectionlist.default",
+    "description": "Make a ReactNative widgets rn.sectionlist.default widget",
+    "body": [
+      "",
+      "<SectionList",
+      "    sections={[]}",
+      "    renderItem={({item}) => <Text>{item}</Text>}",
+      "    renderSectionHeader={({section}) => <Text style={{fontWeight: 'bold'}}>{section.title}</Text>}",
+      "    keyExtractor={(item, index) => index.toString()}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.textinput.default": {
+    "prefix": "rn.textinput.default",
+    "description": "Make a ReactNative widgets rn.textinput.default widget",
+    "body": [
+      "",
+      "<TextInput",
+      "    style={{",
+      "        height: 48,",
+      "        borderWidth: 1,",
+      "        borderColor: '#ddd',",
+      "        borderRadius: 8,",
+      "        paddingHorizontal: 16,",
+      "        fontSize: 16,",
+      "        backgroundColor: '#fff'",
+      "    }}",
+      "    placeholder=\"Enter text\"",
+      "    value={value}",
+      "    onChangeText={onChangeText}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.switch.default": {
+    "prefix": "rn.switch.default",
+    "description": "Make a ReactNative widgets rn.switch.default widget",
+    "body": [
+      "",
+      "<Switch",
+      "    value={false}",
+      "    onValueChange={() => {}}",
+      "    trackColor={{false: '#767577', true: '#81b0ff'}}",
+      "    thumbColor={value ? '#f5dd4b' : '#f4f3f4'}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.modal.default": {
+    "prefix": "rn.modal.default",
+    "description": "Make a ReactNative widgets rn.modal.default widget",
+    "body": [
+      "",
+      "<Modal",
+      "    animationType=\"slide\"",
+      "    transparent={true}",
+      "    visible={false}",
+      "    onRequestClose={() => {}}",
+      ">",
+      "    <View style={{",
+      "        flex: 1,",
+      "        justifyContent: 'center',",
+      "        alignItems: 'center',",
+      "        backgroundColor: 'rgba(0,0,0,0.5)'",
+      "    }}>",
+      "        <View style={{",
+      "            backgroundColor: '#fff',",
+      "            padding: 20,",
+      "            borderRadius: 12,",
+      "            width: '80%'",
+      "        }}>",
+      "            <Text>Modal Content</Text>",
+      "            <Button title=\"Close\" onPress={() => {}} />",
+      "        </View>",
+      "    </View>",
+      "</Modal>"
+    ]
+  },
+  "ReactNative widgets rn.activityindicator.default": {
+    "prefix": "rn.activityindicator.default",
+    "description": "Make a ReactNative widgets rn.activityindicator.default widget",
+    "body": [
+      "",
+      "<ActivityIndicator size=\"large\" color=\"#007aff\" />"
+    ]
+  },
+  "ReactNative widgets rn.refreshcontrol.default": {
+    "prefix": "rn.refreshcontrol.default",
+    "description": "Make a ReactNative widgets rn.refreshcontrol.default widget",
+    "body": [
+      "",
+      "<RefreshControl",
+      "    refreshing={false}",
+      "    onRefresh={() => {}}",
+      "    colors={[\"#007aff\"]}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.keyboardavoidingview.default": {
+    "prefix": "rn.keyboardavoidingview.default",
+    "description": "Make a ReactNative widgets rn.keyboardavoidingview.default widget",
+    "body": [
+      "",
+      "<KeyboardAvoidingView ",
+      "    behavior={Platform.OS === 'ios' ? 'padding' : 'height'}",
+      "    style={{flex: 1}}",
+      ">",
+      "    {children}",
+      "</KeyboardAvoidingView>"
+    ]
+  },
+  "ReactNative widgets rn.safeareaview.default": {
+    "prefix": "rn.safeareaview.default",
+    "description": "Make a ReactNative widgets rn.safeareaview.default widget",
+    "body": [
+      "",
+      "<SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>",
+      "    {children}",
+      "</SafeAreaView>"
+    ]
+  },
+  "ReactNative widgets rn.pressable.default": {
+    "prefix": "rn.pressable.default",
+    "description": "Make a ReactNative widgets rn.pressable.default widget",
+    "body": [
+      "",
+      "<Pressable ",
+      "    onPress={() => {}}",
+      "    style={({pressed}) => [{opacity: pressed ? 0.7 : 1}]}",
+      ">",
+      "    <Text>Press me</Text>",
+      "</Pressable>"
+    ]
+  },
+  "ReactNative widgets rn.touchableopacity.default": {
+    "prefix": "rn.touchableopacity.default",
+    "description": "Make a ReactNative widgets rn.touchableopacity.default widget",
+    "body": [
+      "",
+      "<TouchableOpacity ",
+      "    onPress={() => {}}",
+      "    activeOpacity={0.7}",
+      "    style={{padding: 12, backgroundColor: '#007aff', borderRadius: 8}}",
+      ">",
+      "    <Text style={{color: '#fff'}}>Button</Text>",
+      "</TouchableOpacity>"
+    ]
+  },
+  "ReactNative widgets rn.ext.checkbox.default": {
+    "prefix": "rn.ext.checkbox.default",
+    "description": "Make a ReactNative widgets rn.ext.checkbox.default widget",
+    "body": [
+      "",
+      "<CheckBox",
+      "    value={false}",
+      "    onValueChange={() => {}}",
+      "    tintColor=\"#ccc\"",
+      "    onTintColor=\"#007aff\"",
+      "    onFillColor=\"#007aff\"",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.ext.radio.default": {
+    "prefix": "rn.ext.radio.default",
+    "description": "Make a ReactNative widgets rn.ext.radio.default widget",
+    "body": [
+      "",
+      "<RadioButton",
+      "    value=\"option1\"",
+      "    status={selected === 'option1' ? 'checked' : 'unchecked'}",
+      "    onPress={() => setSelected('option1')}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.ext.picker.default": {
+    "prefix": "rn.ext.picker.default",
+    "description": "Make a ReactNative widgets rn.ext.picker.default widget",
+    "body": [
+      "",
+      "<Picker",
+      "    selectedValue={value}",
+      "    onValueChange={setValue}",
+      "    style={{height: 50, width: 200}}",
+      ">",
+      "    <Picker.Item label=\"Option 1\" value=\"option1\" />",
+      "    <Picker.Item label=\"Option 2\" value=\"option2\" />",
+      "</Picker>"
+    ]
+  },
+  "ReactNative widgets rn.ext.datetimepicker.default": {
+    "prefix": "rn.ext.datetimepicker.default",
+    "description": "Make a ReactNative widgets rn.ext.datetimepicker.default widget",
+    "body": [
+      "",
+      "<DateTimePicker",
+      "    value={new Date()}",
+      "    mode=\"date\"",
+      "    display=\"default\"",
+      "    onChange={() => {}}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.ext.snackbar.default": {
+    "prefix": "rn.ext.snackbar.default",
+    "description": "Make a ReactNative widgets rn.ext.snackbar.default widget",
+    "body": [
+      "",
+      "<Snackbar",
+      "    visible={false}",
+      "    onDismiss={() => {}}",
+      "    duration={3000}",
+      "    action={{label: 'Close', onPress: () => {}}}",
+      ">",
+      "    Message here",
+      "</Snackbar>"
+    ]
+  },
+  "ReactNative widgets rn.ext.progress.default": {
+    "prefix": "rn.ext.progress.default",
+    "description": "Make a ReactNative widgets rn.ext.progress.default widget",
+    "body": [
+      "",
+      "<ProgressBar progress={0.5} color=\"#007aff\" style={{height: 8, borderRadius: 4}} />"
+    ]
+  },
+  "ReactNative widgets rn.ext.markdown.default": {
+    "prefix": "rn.ext.markdown.default",
+    "description": "Make a ReactNative widgets rn.ext.markdown.default widget",
+    "body": [
+      "",
+      "<Markdown>",
+      "    {content}",
+      "</Markdown>"
+    ]
+  },
+  "ReactNative widgets rn.view.attributes": {
+    "prefix": "rn.view.attributes",
+    "description": "Make a ReactNative widgets rn.view.attributes widget",
+    "body": [
+      "",
+      "// VIEW - Propiedades completas",
+      "//: [flex,position] ,[opacity,transform] ,[visible,pointerEvents]",
+      "// accessible={true}",
+      "// accessibilityLabel=\"View\"",
+      "// collapsable={true}",
+      "// needsOffscreenAlphaCompositing={false}",
+      "// renderToHardwareTextureAndroid={false}",
+      "// shouldRasterizeIOS={false}",
+      "// elevation={4}",
+      "// hitSlop={{top:10,left:10,bottom:10,right:10}}",
+      "// nativeID=\"view1\"",
+      "// testID=\"view-test\"",
+      "<View style={styles.view}>",
+      "    {/* Contenido aqu\u00ed */}",
+      "</View>"
+    ]
+  },
+  "ReactNative widgets rn.text.attributes": {
+    "prefix": "rn.text.attributes",
+    "description": "Make a ReactNative widgets rn.text.attributes widget",
+    "body": [
+      "",
+      "// TEXT - Propiedades completas",
+      "//: [fontSize,fontWeight] ,[color,textAlign] ,[numberOfLines,ellipsizeMode]",
+      "// selectable={true}",
+      "// selectionColor=\"#3498db\"",
+      "// suppressHighlighting={false}",
+      "// allowFontScaling={true}",
+      "// maxFontSizeMultiplier={1.5}",
+      "// numberOfLines={2}",
+      "// ellipsizeMode=\"tail\" // head, middle, tail, clip",
+      "// onPress={() => {}}",
+      "// onLongPress={() => {}}",
+      "<Text style={styles.text}>",
+      "    {/* Texto aqu\u00ed */}",
+      "</Text>"
+    ]
+  },
+  "ReactNative widgets rn.image.attributes": {
+    "prefix": "rn.image.attributes",
+    "description": "Make a ReactNative widgets rn.image.attributes widget",
+    "body": [
+      "",
+      "// IMAGE - Propiedades completas",
+      "//: [source,resizeMode] ,[width,height] ,[borderRadius,borderWidth]",
+      "// source={{uri: 'https://ejemplo.com/imagen.jpg'}}",
+      "// source={require('./assets/imagen.png')}",
+      "// resizeMode=\"cover\" // cover, contain, stretch, repeat, center",
+      "// fadeDuration={300}",
+      "// blurRadius={0}",
+      "// progressiveRenderingEnabled={false}",
+      "// loadingIndicatorSource={require('./assets/loader.gif')}",
+      "// onLoad={() => {}}",
+      "// onLoadStart={() => {}}",
+      "// onLoadEnd={() => {}}",
+      "// onError={() => {}}",
+      "// onProgress={() => {}}",
+      "// defaultSource={require('./assets/placeholder.png')}",
+      "<Image",
+      "    style={styles.image}",
+      "    source={{uri: 'https://ejemplo.com/imagen.jpg'}}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.flatlist.attributes": {
+    "prefix": "rn.flatlist.attributes",
+    "description": "Make a ReactNative widgets rn.flatlist.attributes widget",
+    "body": [
+      "",
+      "// FLATLIST - Propiedades completas",
+      "//: [data,renderItem] ,[horizontal,showsScrollIndicator] ,[numColumns,columnWrapperStyle]",
+      "// data={[]}",
+      "// renderItem={({item, index, separators}) => <Text>{item}</Text>}",
+      "// keyExtractor={(item, index) => index.toString()}",
+      "// ListHeaderComponent={<Text>Header</Text>}",
+      "// ListFooterComponent={<Text>Footer</Text>}",
+      "// ListEmptyComponent={<Text>No hay datos</Text>}",
+      "// ItemSeparatorComponent={() => <View style={{height:1,backgroundColor:'#ccc'}} />}",
+      "// horizontal={false}",
+      "// showsHorizontalScrollIndicator={true}",
+      "// showsVerticalScrollIndicator={true}",
+      "// numColumns={1}",
+      "// columnWrapperStyle={null}",
+      "// initialNumToRender={10}",
+      "// maxToRenderPerBatch={10}",
+      "// windowSize={21}",
+      "// removeClippedSubviews={true}",
+      "// getItemLayout={(data, index) => ({length: 50, offset: 50 * index, index})}",
+      "// onRefresh={() => {}}",
+      "// refreshing={false}",
+      "// onEndReached={() => {}}",
+      "// onEndReachedThreshold={0.5}",
+      "// onScroll={() => {}}",
+      "// scrollEventThrottle={50}",
+      "// pagingEnabled={false}",
+      "// snapToAlignment=\"start\" // start, center, end",
+      "// snapToInterval={100}",
+      "<FlatList",
+      "    style={styles.list}",
+      "    data={data}",
+      "    renderItem={({item}) => (",
+      "        <Text style={styles.item}>{/* {item} */}</Text>",
+      "    )}",
+      "    keyExtractor={(item, index) => index.toString()}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.textinput.attributes": {
+    "prefix": "rn.textinput.attributes",
+    "description": "Make a ReactNative widgets rn.textinput.attributes widget",
+    "body": [
+      "",
+      "// TEXTINPUT - Propiedades completas",
+      "//: [placeholder,value] ,[keyboardType,secureTextEntry] ,[autoCapitalize,autoCorrect]",
+      "// editable={true}",
+      "// multiline={false}",
+      "// numberOfLines={1}",
+      "// maxLength={100}",
+      "// placeholderTextColor=\"#999\"",
+      "// selectionColor=\"#3498db\"",
+      "// cursorColor=\"#3498db\"",
+      "// keyboardType=\"default\" // default, email-address, numeric, phone-pad, etc.",
+      "// returnKeyType=\"done\" // done, go, next, search, send, etc.",
+      "// secureTextEntry={false}",
+      "// autoCapitalize=\"none\" // none, sentences, words, characters",
+      "// autoCorrect={true}",
+      "// autoComplete=\"off\"",
+      "// textContentType=\"none\"",
+      "// enablesReturnKeyAutomatically={true}",
+      "// clearButtonMode=\"never\"",
+      "// clearTextOnFocus={false}",
+      "// selectTextOnFocus={false}",
+      "// spellCheck={true}",
+      "// blurOnSubmit={true}",
+      "// onFocus={() => {}}",
+      "// onBlur={() => {}}",
+      "// onSubmitEditing={() => {}}",
+      "// onKeyPress={() => {}}",
+      "<TextInput",
+      "    style={styles.input}",
+      "    value={value}",
+      "    onChangeText={setValue}",
+      "    placeholder=\"Escribe aqu\u00ed\"",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.switch.attributes": {
+    "prefix": "rn.switch.attributes",
+    "description": "Make a ReactNative widgets rn.switch.attributes widget",
+    "body": [
+      "",
+      "// SWITCH - Propiedades completas",
+      "//: [value,onValueChange] ,[disabled,trackColor] ,[thumbColor,ios_backgroundColor]",
+      "// value={false}",
+      "// onValueChange={() => {}}",
+      "// disabled={false}",
+      "// trackColor={{false: '#767577', true: '#81b0ff'}}",
+      "// thumbColor={value ? '#f5dd4b' : '#f4f3f4'}",
+      "// ios_backgroundColor=\"#3e3e3e\"",
+      "<Switch",
+      "    style={styles.switch}",
+      "    value={value}",
+      "    onValueChange={setValue}",
+      "/>"
+    ]
+  },
+  "ReactNative widgets rn.modal.attributes": {
+    "prefix": "rn.modal.attributes",
+    "description": "Make a ReactNative widgets rn.modal.attributes widget",
+    "body": [
+      "",
+      "// MODAL - Propiedades completas",
+      "// animationType=\"slide\" // 'slide' | 'fade' | 'none'",
+      "// transparent={false}",
+      "// visible={false}",
+      "// onRequestClose={() => {}}",
+      "// onShow={() => {}}",
+      "// presentationStyle=\"fullScreen\" // 'fullScreen' | 'pageSheet' | 'formSheet' | 'overFullScreen'",
+      "// supportedOrientations={['portrait', 'landscape']}",
+      "// hardwareAccelerated={true}",
+      "// statusBarTranslucent={false}",
+      "<Modal",
+      "    animationType=\"slide\"",
+      "    transparent={true}",
+      "    visible={modalVisible}",
+      "    onRequestClose={() => {}}",
+      ">",
+      "    {/* Contenido del modal */}",
+      "</Modal>"
+    ]
+  },
+  "ReactNative widgets rn.pressable.attributes": {
+    "prefix": "rn.pressable.attributes",
+    "description": "Make a ReactNative widgets rn.pressable.attributes widget",
+    "body": [
+      "",
+      "// PRESSABLE - Propiedades completas",
+      "//: [onPress,onLongPress] ,[disabled,hitSlop] ,[delayLongPress,android_ripple]",
+      "// onPress={() => {}}",
+      "// onLongPress={() => {}}",
+      "// onPressIn={() => {}}",
+      "// onPressOut={() => {}}",
+      "// disabled={false}",
+      "// hitSlop={{top:10,left:10,bottom:10,right:10}}",
+      "// pressRetentionOffset={{top:10,left:10,bottom:10,right:10}}",
+      "// delayLongPress={500}",
+      "// android_ripple={{color: '#rgba(0,0,0,0.2)', borderless: false, radius: 150}}",
+      "<Pressable style={styles.pressable} onPress={() => {}}>",
+      "    <Text style={styles.pressableText}>{/* Texto aqu\u00ed */}</Text>",
+      "</Pressable>"
+    ]
+  },
+  "ReactNative widgets rn.touchableopacity.attributes": {
+    "prefix": "rn.touchableopacity.attributes",
+    "description": "Make a ReactNative widgets rn.touchableopacity.attributes widget",
+    "body": [
+      "",
+      "// TOUCHABLEOPACITY - Propiedades completas",
+      "//: [activeOpacity,disabled] ,[onPress,onLongPress] ,[delayPressIn,delayPressOut]",
+      "// activeOpacity={0.7}",
+      "// disabled={false}",
+      "// hitSlop={{top:10,left:10,bottom:10,right:10}}",
+      "// pressRetentionOffset={{top:10,left:10,bottom:10,right:10}}",
+      "// onPress={() => {}}",
+      "// onLongPress={() => {}}",
+      "// onPressIn={() => {}}",
+      "// onPressOut={() => {}}",
+      "// onLayout={() => {}}",
+      "// delayPressIn={0}",
+      "// delayPressOut={0}",
+      "// delayLongPress={500}",
+      "<TouchableOpacity style={styles.button} onPress={() => {}}>",
+      "    {/* Contenido del bot\u00f3n */}",
+      "</TouchableOpacity>"
+    ]
+  },
+  "ReactNative widgets rn.ext.checkbox.attributes": {
+    "prefix": "rn.ext.checkbox.attributes",
+    "description": "Make a ReactNative widgets rn.ext.checkbox.attributes widget",
+    "body": [
+      "",
+      "// CHECKBOX - Propiedades completas (requiere @react-native-community/checkbox)",
+      "//: [value,onValueChange] ,[disabled,tintColor] ,[onFillColor,onTintColor]",
+      "// value={false}",
+      "// onValueChange={() => {}}",
+      "// disabled={false}",
+      "// tintColor=\"#ccc\"",
+      "// onTintColor=\"#007aff\"",
+      "// onFillColor=\"#007aff\"",
+      "// boxType=\"square\" // square, circle",
+      "// lineWidth={1}",
+      "// hideBox={false}"
+    ]
+  },
+  "ReactNative widgets rn.ext.radio.attributes": {
+    "prefix": "rn.ext.radio.attributes",
+    "description": "Make a ReactNative widgets rn.ext.radio.attributes widget",
+    "body": [
+      "",
+      "// RADIO - Propiedades completas (requiere react-native-paper)",
+      "//: [value,status] ,[onPress,disabled] ,[color,uncheckedColor]",
+      "// value=\"option1\"",
+      "// status=\"checked\" // 'checked' | 'unchecked'",
+      "// onPress={() => {}}",
+      "// disabled={false}",
+      "// color=\"#007aff\"",
+      "// uncheckedColor=\"#999\""
+    ]
+  },
+  "ReactNative widgets rn.ext.picker.attributes": {
+    "prefix": "rn.ext.picker.attributes",
+    "description": "Make a ReactNative widgets rn.ext.picker.attributes widget",
+    "body": [
+      "",
+      "// PICKER - Propiedades completas (requiere @react-native-picker/picker)",
+      "//: [selectedValue,onValueChange] ,[enabled,style] ,[mode,dropdownIconColor]",
+      "// selectedValue={value}",
+      "// onValueChange={() => {}}",
+      "// enabled={true}",
+      "// mode=\"dialog\" // 'dialog' | 'dropdown'",
+      "// dropdownIconColor=\"#000\"",
+      "// dropdownIconRippleColor=\"rgba(0,0,0,0.1)\"",
+      "// numberOfLines={1}"
+    ]
+  },
+  "ReactNative widgets rn.ext.datetimepicker.attributes": {
+    "prefix": "rn.ext.datetimepicker.attributes",
+    "description": "Make a ReactNative widgets rn.ext.datetimepicker.attributes widget",
+    "body": [
+      "",
+      "// DATETIMEPICKER - Propiedades completas (requiere @react-native-community/datetimepicker)",
+      "//: [value,onChange] ,[mode,display] ,[minimumDate,maximumDate]",
+      "// value={new Date()}",
+      "// onChange={() => {}}",
+      "// mode=\"date\" // 'date' | 'time' | 'datetime'",
+      "// display=\"default\" // 'default' | 'spinner' | 'calendar' | 'clock'",
+      "// minimumDate={new Date(2000, 0, 1)}",
+      "// maximumDate={new Date(2030, 11, 31)}",
+      "// minuteInterval={1}",
+      "// timeZoneOffsetInMinutes={0}",
+      "// positiveButtonLabel=\"OK\"",
+      "// negativeButtonLabel=\"Cancel\""
+    ]
+  },
+  "ReactNative widgets rn.ext.snackbar.attributes": {
+    "prefix": "rn.ext.snackbar.attributes",
+    "description": "Make a ReactNative widgets rn.ext.snackbar.attributes widget",
+    "body": [
+      "",
+      "// SNACKBAR - Propiedades completas (requiere react-native-paper)",
+      "//: [visible,onDismiss] ,[duration,action] ,[theme,style]",
+      "// visible={false}",
+      "// onDismiss={() => {}}",
+      "// duration={3000}",
+      "// action={{label: 'Close', onPress: () => {}}}",
+      "// theme={{}}",
+      "// style={{}}",
+      "// wrapperStyle={{}}"
+    ]
+  },
+  "ReactNative widgets rn.ext.progress.attributes": {
+    "prefix": "rn.ext.progress.attributes",
+    "description": "Make a ReactNative widgets rn.ext.progress.attributes widget",
+    "body": [
+      "",
+      "// PROGRESSBAR - Propiedades completas (requiere react-native-paper)",
+      "//: [progress,color] ,[style,theme] ,[indeterminate,animated]",
+      "// progress={0.5} // 0 - 1",
+      "// color=\"#007aff\"",
+      "// style={{}}",
+      "// theme={{}}",
+      "// indeterminate={false}",
+      "// animated={true}"
+    ]
+  },
+  "ReactNative widgets rn.ext.markdown.attributes": {
+    "prefix": "rn.ext.markdown.attributes",
+    "description": "Make a ReactNative widgets rn.ext.markdown.attributes widget",
+    "body": [
+      "",
+      "// MARKDOWN - Propiedades completas (requiere react-native-markdown-display)",
+      "//: [children,style] ,[markdownit,mergeStyle] ,[onLinkPress,onLinkLongPress]",
+      "// children={markdownContent}",
+      "// style={{}}",
+      "// markdownit={{}}",
+      "// mergeStyle={true}",
+      "// onLinkPress={(url) => {}}",
+      "// onLinkLongPress={(url) => {}}",
+      "// onDoubleTap={() => {}}",
+      "// onLongPress={() => {}}",
+      "// onLoad={() => {}}",
+      "// onError={(error) => {}}"
+    ]
+  },
+  "ReactNative widgets fb.animation.fullExemple": {
+    "prefix": "fb.animation.fullExemple",
+    "description": "Make a ReactNative widgets fb.animation.fullExemple widget",
+    "body": [
+      "",
+      "import React from 'react';",
+      "import {",
+      "    Animated,",
+      "    Easing,",
+      "    SectionList, StyleSheet,",
+      "    Text,",
+      "    TouchableOpacity,",
+      "    View",
+      "} from 'react-native';",
+      "",
+      "const EasingEg = () => {",
+      "    let opacity = new Animated.Value(0);",
+      "",
+      "    const animate = easing => {",
+      "        opacity.setValue(0);",
+      "        Animated.timing(opacity, {",
+      "            toValue: 1,",
+      "            duration: 1200,",
+      "            easing,",
+      "        }).start();",
+      "    };",
+      "",
+      "    const size = opacity.interpolate({",
+      "        inputRange: [0, 1],",
+      "        outputRange: [0, 80],",
+      "    });",
+      "",
+      "    const animatedStyles = [",
+      "        styles.box,",
+      "        {",
+      "            opacity,",
+      "            width: size,",
+      "            height: size,",
+      "        },",
+      "    ];",
+      "",
+      "    return (",
+      "        <View style={styles.container}>",
+      "            <Text style={styles.title}>Press rows below to preview the Easing!</Text>",
+      "            <View style={styles.boxContainer}>",
+      "                <Animated.View style={animatedStyles} />",
+      "            </View>",
+      "            <SectionList",
+      "                style={styles.list}",
+      "                sections={SECTIONS}",
+      "                keyExtractor={item => item.title}",
+      "                renderItem={({ item }) => (",
+      "                    <TouchableOpacity onPress={() => animate(item.easing)} style={styles.listRow}>",
+      "                        <Text>{item.title}</Text>",
+      "                    </TouchableOpacity>",
+      "                )}",
+      "                renderSectionHeader={({ section: { title } }) => (",
+      "                    <Text style={styles.listHeader}>{title}</Text>",
+      "                )}",
+      "            />",
+      "        </View>",
+      "    );",
+      "};",
+      "",
+      "const SECTIONS = [",
+      "    {",
+      "        title: 'Predefined animations',",
+      "        data: [",
+      "            { title: 'Bounce', easing: Easing.bounce },",
+      "            { title: 'Ease', easing: Easing.ease },",
+      "            { title: 'Elastic', easing: Easing.elastic(4) },",
+      "        ],",
+      "    },",
+      "    {",
+      "        title: 'Standard functions',",
+      "        data: [",
+      "            { title: 'Linear', easing: Easing.linear },",
+      "            { title: 'Quad', easing: Easing.quad },",
+      "            { title: 'Cubic', easing: Easing.cubic },",
+      "        ],",
+      "    },",
+      "    {",
+      "        title: 'Additional functions',",
+      "        data: [",
+      "            {",
+      "                title: 'Bezier',",
+      "                easing: Easing.bezier(0, 2, 1, -1),",
+      "            },",
+      "            { title: 'Circle', easing: Easing.circle },",
+      "            { title: 'Sin', easing: Easing.sin },",
+      "            { title: 'Exp', easing: Easing.exp },",
+      "        ],",
+      "    },",
+      "    {",
+      "        title: 'Combinations',",
+      "        data: [",
+      "            {",
+      "                title: 'In + Bounce',",
+      "                easing: Easing.in(Easing.bounce),",
+      "            },",
+      "            {",
+      "                title: 'Out + Exp',",
+      "                easing: Easing.out(Easing.exp),",
+      "            },",
+      "            {",
+      "                title: 'InOut + Elastic',",
+      "                easing: Easing.inOut(Easing.elastic(1)),",
+      "            },",
+      "        ],",
+      "    },",
+      "];",
+      "",
+      "const styles = StyleSheet.create({",
+      "    container: {",
+      "        flex: 1,",
+      "        backgroundColor: '#20232a',",
+      "    },",
+      "    title: {",
+      "        marginTop: 10,",
+      "        textAlign: 'center',",
+      "        color: '#61dafb',",
+      "    },",
+      "    boxContainer: {",
+      "        height: 160,",
+      "        alignItems: 'center',",
+      "    },",
+      "    box: {",
+      "        marginTop: 32,",
+      "        borderRadius: 4,",
+      "        backgroundColor: '#61dafb',",
+      "    },",
+      "    list: {",
+      "        backgroundColor: '#fff',",
+      "    },",
+      "    listHeader: {",
+      "        paddingHorizontal: 8,",
+      "        paddingVertical: 4,",
+      "        backgroundColor: '#f4f4f4',",
+      "        color: '#999',",
+      "        fontSize: 12,",
+      "        textTransform: 'uppercase',",
+      "    },",
+      "    listRow: {",
+      "        padding: 8,",
+      "    },",
+      "});",
+      "",
+      "export default EasingEg;",
+      ""
+    ]
+  }
+}

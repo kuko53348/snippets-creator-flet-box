@@ -1,0 +1,1269 @@
+{
+  "flet widgets try": {
+    "prefix": "at.try",
+    "description": "Make a flet widgets try widget",
+    "body": [
+      "",
+      "    try:",
+      "        print(e)",
+      "    except Exception as e:",
+      "        print(e)",
+      "    "
+    ]
+  },
+  "flet widgets requests_handle_errors": {
+    "prefix": "at.requests_handle_errors",
+    "description": "Make a flet widgets requests_handle_errors widget",
+    "body": [
+      "",
+      "    # elif self.page.route == \"/markdown\":",
+      "    # ---------- capture internet --------------",
+      "    response = [False, []]",
+      "    try:",
+      "        response = self.app.request_get(",
+      "            url=\"http://192.168.44.1:8081/get-table-name/widget-list\",",
+      "            params=params,",
+      "        )",
+      "",
+      "    except Exception as e:",
+      "        self.page.session.set(\"error\", {\"error\": str(e), \"page\": \"/markdown\"})",
+      "        self.page.go(\"/error-connection\")",
+      "    # ---------- capture internet --------------",
+      "    # if response[0]:",
+      "    #    ...",
+      "    "
+    ]
+  },
+  "flet widgets for_range": {
+    "prefix": "at.for_range",
+    "description": "Make a flet widgets for_range widget",
+    "body": [
+      "for _ in range(8)"
+    ]
+  },
+  "flet widgets for_list": {
+    "prefix": "at.for_list",
+    "description": "Make a flet widgets for_list widget",
+    "body": [
+      "for _ in ['demo','list']"
+    ]
+  },
+  "flet widgets on_click_alert": {
+    "prefix": "at.on_click_alert",
+    "description": "Make a flet widgets on_click_alert widget",
+    "body": [
+      "on_click=lamnbda _: self.page.open(alert)"
+    ]
+  },
+  "flet widgets save_session_set": {
+    "prefix": "at.save_session_set",
+    "description": "Make a flet widgets save_session_set widget",
+    "body": [
+      "page.session.set('number.setting', 12345),"
+    ]
+  },
+  "flet widgets save_session_get": {
+    "prefix": "at.save_session_get",
+    "description": "Make a flet widgets save_session_get widget",
+    "body": [
+      "page.session.get('key'),"
+    ]
+  },
+  "flet widgets save_session_contains": {
+    "prefix": "at.save_session_contains",
+    "description": "Make a flet widgets save_session_contains widget",
+    "body": [
+      "page.session.contains_key('key'),"
+    ]
+  },
+  "flet widgets save_session_keys": {
+    "prefix": "at.save_session_keys",
+    "description": "Make a flet widgets save_session_keys widget",
+    "body": [
+      "page.session.get_keys('key-prefix.'),"
+    ]
+  },
+  "flet widgets save_session_remove": {
+    "prefix": "at.save_session_remove",
+    "description": "Make a flet widgets save_session_remove widget",
+    "body": [
+      "page.session.remove('key'),"
+    ]
+  },
+  "flet widgets save_session_clear": {
+    "prefix": "at.save_session_clear",
+    "description": "Make a flet widgets save_session_clear widget",
+    "body": [
+      "page.session.clear(),"
+    ]
+  },
+  "flet widgets save_storage_set": {
+    "prefix": "at.save_storage_set",
+    "description": "Make a flet widgets save_storage_set widget",
+    "body": [
+      "page.client_storage.set('number.setting', 12345),"
+    ]
+  },
+  "flet widgets save_storage_get": {
+    "prefix": "at.save_storage_get",
+    "description": "Make a flet widgets save_storage_get widget",
+    "body": [
+      "page.client_storage.get('key'),"
+    ]
+  },
+  "flet widgets save_storage_contains": {
+    "prefix": "at.save_storage_contains",
+    "description": "Make a flet widgets save_storage_contains widget",
+    "body": [
+      "page.client_storage.contains_key('key'),"
+    ]
+  },
+  "flet widgets save_storage_keys": {
+    "prefix": "at.save_storage_keys",
+    "description": "Make a flet widgets save_storage_keys widget",
+    "body": [
+      "page.client_storage.get_keys('key-prefix.'),"
+    ]
+  },
+  "flet widgets save_storage_remove": {
+    "prefix": "at.save_storage_remove",
+    "description": "Make a flet widgets save_storage_remove widget",
+    "body": [
+      "page.client_storage.remove('key'),"
+    ]
+  },
+  "flet widgets save_storage_clear": {
+    "prefix": "at.save_storage_clear",
+    "description": "Make a flet widgets save_storage_clear widget",
+    "body": [
+      "page.client_storage.clear(),"
+    ]
+  },
+  "flet widgets focused_color": {
+    "prefix": "at.focused_color",
+    "description": "Make a flet widgets focused_color widget",
+    "body": [
+      "focused_color=ft.Colors.BLUE_900,"
+    ]
+  },
+  "flet widgets focused_bgcolor": {
+    "prefix": "at.focused_bgcolor",
+    "description": "Make a flet widgets focused_bgcolor widget",
+    "body": [
+      "focused_bgcolor=ft.Colors.BLUE_900,"
+    ]
+  },
+  "flet widgets bgcolor": {
+    "prefix": "at.bgcolor",
+    "description": "Make a flet widgets bgcolor widget",
+    "body": [
+      "bgcolor=ft.Colors(ft.Colors.${1:GREY_900}),"
+    ]
+  },
+  "flet widgets bgcolor_with_opacity": {
+    "prefix": "at.bgcolor_with_opacity",
+    "description": "Make a flet widgets bgcolor_with_opacity widget",
+    "body": [
+      "bgcolor=ft.Colors.with_opacity(opacity=0.8,color=ft.Colors(ft.Colors.${1:GREY_900})),"
+    ]
+  },
+  "flet widgets bgcolor_gradient": {
+    "prefix": "at.bgcolor_gradient",
+    "description": "Make a flet widgets bgcolor_gradient widget",
+    "body": [
+      "bgcolor=ft.LinearGradient(colors=[ft.Colors.${1:BLUE}, ft.Colors.${2:CYAN}]),"
+    ]
+  },
+  "flet widgets image": {
+    "prefix": "at.image",
+    "description": "Make a flet widgets image widget",
+    "body": [
+      "image=ft.DecorationImage(src='logo.png',fit=ft.ImageFit.COVER,opacity=0.02),",
+      "# NONE CONTAIN COVER FILL FIT_HEIGHT FIT_WIDTH SCALE_DOWN,"
+    ]
+  },
+  "flet widgets bgimage": {
+    "prefix": "at.bgimage",
+    "description": "Make a flet widgets bgimage widget",
+    "body": [
+      "bgimage=ft.Image(src='${1:https://via.placeholder.com/600}'),"
+    ]
+  },
+  "flet widgets color": {
+    "prefix": "at.color",
+    "description": "Make a flet widgets color widget",
+    "body": [
+      "color=ft.Colors.${1:WHITE},"
+    ]
+  },
+  "flet widgets color_with_opacity": {
+    "prefix": "at.color_with_opacity",
+    "description": "Make a flet widgets color_with_opacity widget",
+    "body": [
+      "color=ft.Colors.with_opacity(opacity=0.8,color=ft.Colors(ft.Colors.${1:GREY_900})),"
+    ]
+  },
+  "flet widgets text": {
+    "prefix": "at.text",
+    "description": "Make a flet widgets text widget",
+    "body": [
+      "text='${1:flet-box}',"
+    ]
+  },
+  "flet widgets title": {
+    "prefix": "at.title",
+    "description": "Make a flet widgets title widget",
+    "body": [
+      "title=ft.Text('${1:flet-box}'),"
+    ]
+  },
+  "flet widgets content": {
+    "prefix": "at.content",
+    "description": "Make a flet widgets content widget",
+    "body": [
+      "content=ft.Text('${1:flet-box}'),"
+    ]
+  },
+  "flet widgets child": {
+    "prefix": "at.child",
+    "description": "Make a flet widgets child widget",
+    "body": [
+      "content=${1:ft.Container(content=ft.Text('${2:flet-box}'))},"
+    ]
+  },
+  "flet widgets children": {
+    "prefix": "at.children",
+    "description": "Make a flet widgets children widget",
+    "body": [
+      "controls=${1:[ft.Text('${2:flet-box}'), ft.Text('${3:flet-box}')]},"
+    ]
+  },
+  "flet widgets children_controls": {
+    "prefix": "at.children_controls",
+    "description": "Make a flet widgets children_controls widget",
+    "body": [
+      "controls=${1:[ft.Text('flet-box') for _ in range(${2:3})]},"
+    ]
+  },
+  "flet widgets width": {
+    "prefix": "at.width",
+    "description": "Make a flet widgets width widget",
+    "body": [
+      "width=${1:200},"
+    ]
+  },
+  "flet widgets height": {
+    "prefix": "at.height",
+    "description": "Make a flet widgets height widget",
+    "body": [
+      "height=${1:100},"
+    ]
+  },
+  "flet widgets min_width": {
+    "prefix": "at.min_width",
+    "description": "Make a flet widgets min_width widget",
+    "body": [
+      "min_width=${1:0},"
+    ]
+  },
+  "flet widgets max_width": {
+    "prefix": "at.max_width",
+    "description": "Make a flet widgets max_width widget",
+    "body": [
+      "max_width=${1:800},"
+    ]
+  },
+  "flet widgets min_height": {
+    "prefix": "at.min_height",
+    "description": "Make a flet widgets min_height widget",
+    "body": [
+      "min_height=${1:0},"
+    ]
+  },
+  "flet widgets max_height": {
+    "prefix": "at.max_height",
+    "description": "Make a flet widgets max_height widget",
+    "body": [
+      "max_height=${1:600},"
+    ]
+  },
+  "flet widgets expand": {
+    "prefix": "at.expand",
+    "description": "Make a flet widgets expand widget",
+    "body": [
+      "expand=${1:True},"
+    ]
+  },
+  "flet widgets flex": {
+    "prefix": "at.flex",
+    "description": "Make a flet widgets flex widget",
+    "body": [
+      "flex=${1:1},"
+    ]
+  },
+  "flet widgets alignment_row_column": {
+    "prefix": "at.alignment_row_column",
+    "description": "Make a flet widgets alignment_row_column widget",
+    "body": [
+      "alignment=ft.MainAxisAlignment.SPACE_AROUND,",
+      "# START END CENTER SPACE_BETWEEN SPACE_AROUND SPACE_EVENLY,"
+    ]
+  },
+  "flet widgets alignment_vertical_row": {
+    "prefix": "at.alignment_vertical_row",
+    "description": "Make a flet widgets alignment_vertical_row widget",
+    "body": [
+      "vertical_alignment=ft.CrossAxisAlignment.CENTER,",
+      "# START END CENTER STRETCH BASELINE,"
+    ]
+  },
+  "flet widgets alignment_horizontal_column": {
+    "prefix": "at.alignment_horizontal_column",
+    "description": "Make a flet widgets alignment_horizontal_column widget",
+    "body": [
+      "horizontal_alignment=ft.CrossAxisAlignment.CENTER,",
+      "# START END CENTER STRETCH BASELINE,"
+    ]
+  },
+  "flet widgets alignment": {
+    "prefix": "at.alignment",
+    "description": "Make a flet widgets alignment widget",
+    "body": [
+      "alignment=ft.alignment.${1:center}",
+      "# top_left,top_center,top_right,center_lef,center,center_righ,bottom_left,bottom_right,bottom_center,"
+    ]
+  },
+  "flet widgets child_aspect_ratio": {
+    "prefix": "at.child_aspect_ratio",
+    "description": "Make a flet widgets child_aspect_ratio widget",
+    "body": [
+      "child_aspect_ratio=${1:1.0},"
+    ]
+  },
+  "flet widgets scroll": {
+    "prefix": "at.scroll",
+    "description": "Make a flet widgets scroll widget",
+    "body": [
+      "scroll=ft.ScrollMode.${1:HIDDEN},",
+      "# ADAPTIVE ,AUTO ,HIDDEN ,ALWAYS"
+    ]
+  },
+  "flet widgets spacing": {
+    "prefix": "at.spacing",
+    "description": "Make a flet widgets spacing widget",
+    "body": [
+      "spacing=${1:8},"
+    ]
+  },
+  "flet widgets gap": {
+    "prefix": "at.gap",
+    "description": "Make a flet widgets gap widget",
+    "body": [
+      "gap=${1:8},"
+    ]
+  },
+  "flet widgets padding_only": {
+    "prefix": "at.padding_only",
+    "description": "Make a flet widgets padding_only widget",
+    "body": [
+      "padding=ft.padding.only(left=${1:0}, top=${2:10}, right=${3:0}, bottom=${4:10}),"
+    ]
+  },
+  "flet widgets margin_only": {
+    "prefix": "at.margin_only",
+    "description": "Make a flet widgets margin_only widget",
+    "body": [
+      "margin=ft.padding.only(left=${1:0}, top=${2:10}, right=${3:0}, bottom=${4:10}),"
+    ]
+  },
+  "flet widgets padding_all": {
+    "prefix": "at.padding_all",
+    "description": "Make a flet widgets padding_all widget",
+    "body": [
+      "padding=ft.padding.all(${1:10}),"
+    ]
+  },
+  "flet widgets margin_all": {
+    "prefix": "at.margin_all",
+    "description": "Make a flet widgets margin_all widget",
+    "body": [
+      "margin=ft.padding.all(${1:10}),"
+    ]
+  },
+  "flet widgets item_padding": {
+    "prefix": "at.item_padding",
+    "description": "Make a flet widgets item_padding widget",
+    "body": [
+      "item_padding=ft.padding.all(${1:6}),"
+    ]
+  },
+  "flet widgets content_padding": {
+    "prefix": "at.content_padding",
+    "description": "Make a flet widgets content_padding widget",
+    "body": [
+      "content_padding=ft.padding.symmetric(horizontal=${1:12}, vertical=${2:8}),"
+    ]
+  },
+  "flet widgets inner_padding": {
+    "prefix": "at.inner_padding",
+    "description": "Make a flet widgets inner_padding widget",
+    "body": [
+      "inner_padding=ft.padding.only(left=${1:8}, right=${2:8}),"
+    ]
+  },
+  "flet widgets margin_top": {
+    "prefix": "at.margin_top",
+    "description": "Make a flet widgets margin_top widget",
+    "body": [
+      "margin=ft.padding.only(top=${1:10}),"
+    ]
+  },
+  "flet widgets margin_bottom": {
+    "prefix": "at.margin_bottom",
+    "description": "Make a flet widgets margin_bottom widget",
+    "body": [
+      "margin=ft.padding.only(bottom=${1:10}),"
+    ]
+  },
+  "flet widgets margin_left": {
+    "prefix": "at.margin_left",
+    "description": "Make a flet widgets margin_left widget",
+    "body": [
+      "margin=ft.padding.only(left=${1:10}),"
+    ]
+  },
+  "flet widgets margin_right": {
+    "prefix": "at.margin_right",
+    "description": "Make a flet widgets margin_right widget",
+    "body": [
+      "margin=ft.padding.only(right=${1:10}),"
+    ]
+  },
+  "flet widgets padding_top": {
+    "prefix": "at.padding_top",
+    "description": "Make a flet widgets padding_top widget",
+    "body": [
+      "padding=ft.padding.only(top=${1:10}),"
+    ]
+  },
+  "flet widgets padding_bottom": {
+    "prefix": "at.padding_bottom",
+    "description": "Make a flet widgets padding_bottom widget",
+    "body": [
+      "padding=ft.padding.only(bottom=${1:10}),"
+    ]
+  },
+  "flet widgets padding_left": {
+    "prefix": "at.padding_left",
+    "description": "Make a flet widgets padding_left widget",
+    "body": [
+      "padding=ft.padding.only(left=${1:10}),"
+    ]
+  },
+  "flet widgets padding_right": {
+    "prefix": "at.padding_right",
+    "description": "Make a flet widgets padding_right widget",
+    "body": [
+      "padding=ft.padding.only(right=${1:10}),"
+    ]
+  },
+  "flet widgets margin_symmetric": {
+    "prefix": "at.margin_symmetric",
+    "description": "Make a flet widgets margin_symmetric widget",
+    "body": [
+      "margin=ft.padding.symmetric(horizontal=${1:8}, vertical=${2:12}),"
+    ]
+  },
+  "flet widgets padding_symmetric": {
+    "prefix": "at.padding_symmetric",
+    "description": "Make a flet widgets padding_symmetric widget",
+    "body": [
+      "padding=ft.padding.symmetric(horizontal=${1:8}, vertical=${2:12}),"
+    ]
+  },
+  "flet widgets margin_horizontal": {
+    "prefix": "at.margin_horizontal",
+    "description": "Make a flet widgets margin_horizontal widget",
+    "body": [
+      "margin=ft.padding.symmetric(horizontal=${1:8}),"
+    ]
+  },
+  "flet widgets margin_vertical": {
+    "prefix": "at.margin_vertical",
+    "description": "Make a flet widgets margin_vertical widget",
+    "body": [
+      "margin=ft.padding.symmetric(vertical=${1:12}),"
+    ]
+  },
+  "flet widgets padding_horizontal": {
+    "prefix": "at.padding_horizontal",
+    "description": "Make a flet widgets padding_horizontal widget",
+    "body": [
+      "padding=ft.padding.symmetric(horizontal=${1:8}),"
+    ]
+  },
+  "flet widgets padding_vertical": {
+    "prefix": "at.padding_vertical",
+    "description": "Make a flet widgets padding_vertical widget",
+    "body": [
+      "padding=ft.padding.symmetric(vertical=${1:12}),"
+    ]
+  },
+  "flet widgets border": {
+    "prefix": "at.border",
+    "description": "Make a flet widgets border widget",
+    "body": [
+      "border=ft.border.all(${1:1}, ft.Colors.${2:BLACK12}),"
+    ]
+  },
+  "flet widgets border_width": {
+    "prefix": "at.border_width",
+    "description": "Make a flet widgets border_width widget",
+    "body": [
+      "border_width=${1:1},"
+    ]
+  },
+  "flet widgets border_color": {
+    "prefix": "at.border_color",
+    "description": "Make a flet widgets border_color widget",
+    "body": [
+      "border_color=ft.Colors.${2:GREY_800}),"
+    ]
+  },
+  "flet widgets border_radius_all": {
+    "prefix": "at.border_radius_all",
+    "description": "Make a flet widgets border_radius_all widget",
+    "body": [
+      "border_radius=ft.border_radius.all(32),"
+    ]
+  },
+  "flet widgets border_radius_only": {
+    "prefix": "at.border_radius_only",
+    "description": "Make a flet widgets border_radius_only widget",
+    "body": [
+      "border_radius=ft.border_radius.only(top_left=8,top_right=8,bottom_left=8,bottom_right=8),"
+    ]
+  },
+  "flet widgets shadow": {
+    "prefix": "at.shadow",
+    "description": "Make a flet widgets shadow widget",
+    "body": [
+      "shadow=ft.BoxShadow(spread_radius=1,blur_radius=15,color=ft.Colors.BLACK,offset=ft.Offset(0,0),blur_style=ft.ShadowBlurStyle.OUTER,),"
+    ]
+  },
+  "flet widgets shadow_color": {
+    "prefix": "at.shadow_color",
+    "description": "Make a flet widgets shadow_color widget",
+    "body": [
+      "shadow=ft.Shadow(offset=ft.Offset(${1:2}, ${2:2}), blur=${3:6}, color=ft.Colors.${4:GREY_500}),"
+    ]
+  },
+  "flet widgets bg_opacity": {
+    "prefix": "at.bg_opacity",
+    "description": "Make a flet widgets bg_opacity widget",
+    "body": [
+      "opacity=${1:0.8},"
+    ]
+  },
+  "flet widgets gradient": {
+    "prefix": "at.gradient",
+    "description": "Make a flet widgets gradient widget",
+    "body": [
+      "gradient=ft.LinearGradient(begin=ft.alignment.top_center,end=ft.alignment.bottom_center,colors=[ft.Colors.TRANSPARENT,ft.Colors.BLACK12,],),"
+    ]
+  },
+  "flet widgets icon": {
+    "prefix": "at.icon",
+    "description": "Make a flet widgets icon widget",
+    "body": [
+      "icon=ft.Icons(ft.Icon(ft.icons.${1:INFO})),"
+    ]
+  },
+  "flet widgets icon_only": {
+    "prefix": "at.icon_only",
+    "description": "Make a flet widgets icon_only widget",
+    "body": [
+      "icon=ft.Icons(ft.Icon(ft.icons.${1:ADD})),"
+    ]
+  },
+  "flet widgets leading": {
+    "prefix": "at.leading",
+    "description": "Make a flet widgets leading widget",
+    "body": [
+      "leading=ft.Icon(ft.icons.${1:PERSON}),"
+    ]
+  },
+  "flet widgets trailing": {
+    "prefix": "at.trailing",
+    "description": "Make a flet widgets trailing widget",
+    "body": [
+      "trailing=ft.Icon(ft.icons.${1:CHECK}),"
+    ]
+  },
+  "flet widgets src": {
+    "prefix": "at.src",
+    "description": "Make a flet widgets src widget",
+    "body": [
+      "src='${1:https://via.placeholder.com/150}',"
+    ]
+  },
+  "flet widgets fit": {
+    "prefix": "at.fit",
+    "description": "Make a flet widgets fit widget",
+    "body": [
+      "fit='${1:contain}',"
+    ]
+  },
+  "flet widgets fit_mode": {
+    "prefix": "at.fit_mode",
+    "description": "Make a flet widgets fit_mode widget",
+    "body": [
+      "fit='${1:contain}',"
+    ]
+  },
+  "flet widgets autoplay": {
+    "prefix": "at.autoplay",
+    "description": "Make a flet widgets autoplay widget",
+    "body": [
+      "autoplay=${1:False},"
+    ]
+  },
+  "flet widgets autoplay_lottie": {
+    "prefix": "at.autoplay_lottie",
+    "description": "Make a flet widgets autoplay_lottie widget",
+    "body": [
+      "autoplay=${1:False},"
+    ]
+  },
+  "flet widgets poster": {
+    "prefix": "at.poster",
+    "description": "Make a flet widgets poster widget",
+    "body": [
+      "poster='${1:https://via.placeholder.com/320x180}',"
+    ]
+  },
+  "flet widgets javascript_enabled": {
+    "prefix": "at.javascript_enabled",
+    "description": "Make a flet widgets javascript_enabled widget",
+    "body": [
+      "javascript_enabled=${1:True},"
+    ]
+  },
+  "flet widgets cache": {
+    "prefix": "at.cache",
+    "description": "Make a flet widgets cache widget",
+    "body": [
+      "cache=${1:True},"
+    ]
+  },
+  "flet widgets preload": {
+    "prefix": "at.preload",
+    "description": "Make a flet widgets preload widget",
+    "body": [
+      "preload=${1:False},"
+    ]
+  },
+  "flet widgets poster_image": {
+    "prefix": "at.poster_image",
+    "description": "Make a flet widgets poster_image widget",
+    "body": [
+      "poster='${1:https://via.placeholder.com/320x180}',"
+    ]
+  },
+  "flet widgets value": {
+    "prefix": "at.value",
+    "description": "Make a flet widgets value widget",
+    "body": [
+      "value=${1:False},"
+    ]
+  },
+  "flet widgets values": {
+    "prefix": "at.values",
+    "description": "Make a flet widgets values widget",
+    "body": [
+      "values=${1:(10, 90)},"
+    ]
+  },
+  "flet widgets min": {
+    "prefix": "at.min",
+    "description": "Make a flet widgets min widget",
+    "body": [
+      "min=${1:0},"
+    ]
+  },
+  "flet widgets max": {
+    "prefix": "at.max",
+    "description": "Make a flet widgets max widget",
+    "body": [
+      "max=${1:100},"
+    ]
+  },
+  "flet widgets value_range": {
+    "prefix": "at.value_range",
+    "description": "Make a flet widgets value_range widget",
+    "body": [
+      "min=${1:0}, max=${2:100}, value=${3:50},"
+    ]
+  },
+  "flet widgets checked": {
+    "prefix": "at.checked",
+    "description": "Make a flet widgets checked widget",
+    "body": [
+      "value=${1:True},"
+    ]
+  },
+  "flet widgets hint_text": {
+    "prefix": "at.hint_text",
+    "description": "Make a flet widgets hint_text widget",
+    "body": [
+      "hint_text='${1:flet-box}',"
+    ]
+  },
+  "flet widgets label": {
+    "prefix": "at.label",
+    "description": "Make a flet widgets label widget",
+    "body": [
+      "label='${1:flet-box}',"
+    ]
+  },
+  "flet widgets label_style": {
+    "prefix": "at.label_style",
+    "description": "Make a flet widgets label_style widget",
+    "body": [
+      "label_style=ft.TextStyle( weight=ft.FontWeight.BOLD, size=18,),"
+    ]
+  },
+  "flet widgets placeholder": {
+    "prefix": "at.placeholder",
+    "description": "Make a flet widgets placeholder widget",
+    "body": [
+      "hint_text='${1:flet-box}',"
+    ]
+  },
+  "flet widgets options": {
+    "prefix": "at.options",
+    "description": "Make a flet widgets options widget",
+    "body": [
+      "options=${1:[\"flet-box,\",\"op2,\",\"op3\"]}"
+    ]
+  },
+  "flet widgets selected_index": {
+    "prefix": "at.selected_index",
+    "description": "Make a flet widgets selected_index widget",
+    "body": [
+      "selected_index=${1:0},"
+    ]
+  },
+  "flet widgets data": {
+    "prefix": "at.data",
+    "description": "Make a flet widgets data widget",
+    "body": [
+      "data=${1:[10,20,30]},"
+    ]
+  },
+  "flet widgets labels": {
+    "prefix": "at.labels",
+    "description": "Make a flet widgets labels widget",
+    "body": [
+      "labels=${1:[\"A,\",\"B,\",\"C\"]}"
+    ]
+  },
+  "flet widgets points": {
+    "prefix": "at.points",
+    "description": "Make a flet widgets points widget",
+    "body": [
+      "points=${1:[(1,2),(2,3),(3,1)]},"
+    ]
+  },
+  "flet widgets max_items": {
+    "prefix": "at.max_items",
+    "description": "Make a flet widgets max_items widget",
+    "body": [
+      "max_items=${1:10},"
+    ]
+  },
+  "flet widgets min_items": {
+    "prefix": "at.min_items",
+    "description": "Make a flet widgets min_items widget",
+    "body": [
+      "min_items=${1:0},"
+    ]
+  },
+  "flet widgets style": {
+    "prefix": "at.style",
+    "description": "Make a flet widgets style widget",
+    "body": [
+      "ft.TextStyle(decoration=ft.TextDecoration.${1:UNDERLINE}),",
+      "# OVERLINE, UNDERLINE, LINE_THROUGH,"
+    ]
+  },
+  "flet widgets spans": {
+    "prefix": "at.spans",
+    "description": "Make a flet widgets spans widget",
+    "body": [
+      "[ft.TextSpan('here goes italic', ft.TextStyle(italic=True, size=20, color=ft.Colors.${1:BLUE}),),],"
+    ]
+  },
+  "flet widgets theme_style": {
+    "prefix": "at.theme_style",
+    "description": "Make a flet widgets theme_style widget",
+    "body": [
+      "theme_style=ft.TextThemeStyle.${1:DISPLAY_LARGE},"
+    ]
+  },
+  "flet widgets italic": {
+    "prefix": "at.italic",
+    "description": "Make a flet widgets italic widget",
+    "body": [
+      "italic=${1:True},"
+    ]
+  },
+  "flet widgets font_size": {
+    "prefix": "at.font_size",
+    "description": "Make a flet widgets font_size widget",
+    "body": [
+      "size=${1:14},"
+    ]
+  },
+  "flet widgets font_family": {
+    "prefix": "at.font_family",
+    "description": "Make a flet widgets font_family widget",
+    "body": [
+      "font_family='${1:Roboto}',"
+    ]
+  },
+  "flet widgets font_weight": {
+    "prefix": "at.font_weight",
+    "description": "Make a flet widgets font_weight widget",
+    "body": [
+      "weight=ft.FontWeight.${1:NORMAL},"
+    ]
+  },
+  "flet widgets text_align": {
+    "prefix": "at.text_align",
+    "description": "Make a flet widgets text_align widget",
+    "body": [
+      "text_align=ft.TextAlign.${1:LEFT},"
+    ]
+  },
+  "flet widgets overflow": {
+    "prefix": "at.overflow",
+    "description": "Make a flet widgets overflow widget",
+    "body": [
+      "overflow=ft.TextOverflow.${1:ELLIPSIS},"
+    ]
+  },
+  "flet widgets max_lines": {
+    "prefix": "at.max_lines",
+    "description": "Make a flet widgets max_lines widget",
+    "body": [
+      "max_lines=${1:3},"
+    ]
+  },
+  "flet widgets min_lines": {
+    "prefix": "at.min_lines",
+    "description": "Make a flet widgets min_lines widget",
+    "body": [
+      "min_lines=${1:1},"
+    ]
+  },
+  "flet widgets wrap": {
+    "prefix": "at.wrap",
+    "description": "Make a flet widgets wrap widget",
+    "body": [
+      "wrap=${1:True},"
+    ]
+  },
+  "flet widgets stroke_width": {
+    "prefix": "at.stroke_width",
+    "description": "Make a flet widgets stroke_width widget",
+    "body": [
+      "stroke_width=${1:2},"
+    ]
+  },
+  "flet widgets stroke_color": {
+    "prefix": "at.stroke_color",
+    "description": "Make a flet widgets stroke_color widget",
+    "body": [
+      "color=ft.Colors.${1:BLACK},"
+    ]
+  },
+  "flet widgets blur": {
+    "prefix": "at.blur",
+    "description": "Make a flet widgets blur widget",
+    "body": [
+      "blur=${1:6},"
+    ]
+  },
+  "flet widgets offset": {
+    "prefix": "at.offset",
+    "description": "Make a flet widgets offset widget",
+    "body": [
+      "offset=ft.Offset(${1:2}, ${2:2}),"
+    ]
+  },
+  "flet widgets animate": {
+    "prefix": "at.animate",
+    "description": "Make a flet widgets animate widget",
+    "body": [
+      "animate=${1:True},"
+    ]
+  },
+  "flet widgets animation_duration": {
+    "prefix": "at.animation_duration",
+    "description": "Make a flet widgets animation_duration widget",
+    "body": [
+      "animation_duration=${1:300},"
+    ]
+  },
+  "flet widgets animation_curve": {
+    "prefix": "at.animation_curve",
+    "description": "Make a flet widgets animation_curve widget",
+    "body": [
+      "animation_curve=ft.AnimationCurve.${1:EASE_IN_OUT},"
+    ]
+  },
+  "flet widgets transition": {
+    "prefix": "at.transition",
+    "description": "Make a flet widgets transition widget",
+    "body": [
+      "transition=${1:None},"
+    ]
+  },
+  "flet widgets easing": {
+    "prefix": "at.easing",
+    "description": "Make a flet widgets easing widget",
+    "body": [
+      "duration=${1:300}, transition=ft.AnimatedSwitcherTransitionType.${2:SCALE},"
+    ]
+  },
+  "flet widgets easing_curve": {
+    "prefix": "at.easing_curve",
+    "description": "Make a flet widgets easing_curve widget",
+    "body": [
+      "curve=ft.AnimationCurve.${1:EASE_IN_OUT},"
+    ]
+  },
+  "flet widgets on_click": {
+    "prefix": "at.on_click",
+    "description": "Make a flet widgets on_click widget",
+    "body": [
+      "on_click=lambda e: print('${1:flet-box}'),"
+    ]
+  },
+  "flet widgets on_change": {
+    "prefix": "at.on_change",
+    "description": "Make a flet widgets on_change widget",
+    "body": [
+      "on_change=lambda e: print('${1:flet-box}'),"
+    ]
+  },
+  "flet widgets on_dismiss": {
+    "prefix": "at.on_dismiss",
+    "description": "Make a flet widgets on_dismiss widget",
+    "body": [
+      "on_dismiss=lambda e: print('${1:flet-box}'),"
+    ]
+  },
+  "flet widgets on_hover": {
+    "prefix": "at.on_hover",
+    "description": "Make a flet widgets on_hover widget",
+    "body": [
+      "on_hover=lambda e: print('${1:hovered}'),"
+    ]
+  },
+  "flet widgets on_long_press": {
+    "prefix": "at.on_long_press",
+    "description": "Make a flet widgets on_long_press widget",
+    "body": [
+      "on_long_press=lambda e: print('${1:long_press}'),"
+    ]
+  },
+  "flet widgets on_double_tap": {
+    "prefix": "at.on_double_tap",
+    "description": "Make a flet widgets on_double_tap widget",
+    "body": [
+      "on_double_tap=lambda e: print('${1:double_tap}'),"
+    ]
+  },
+  "flet widgets on_tap": {
+    "prefix": "at.on_tap",
+    "description": "Make a flet widgets on_tap widget",
+    "body": [
+      "on_tap=lambda e: print('${1:tapped}'),"
+    ]
+  },
+  "flet widgets on_submit": {
+    "prefix": "at.on_submit",
+    "description": "Make a flet widgets on_submit widget",
+    "body": [
+      "on_submit=lambda e: print('${1:submitted}'),"
+    ]
+  },
+  "flet widgets on_drop": {
+    "prefix": "at.on_drop",
+    "description": "Make a flet widgets on_drop widget",
+    "body": [
+      "on_drop=lambda e: print('${1:dropped}'),"
+    ]
+  },
+  "flet widgets on_accept": {
+    "prefix": "at.on_accept",
+    "description": "Make a flet widgets on_accept widget",
+    "body": [
+      "on_accept=lambda data: print('${1:accepted}'),"
+    ]
+  },
+  "flet widgets on_selected": {
+    "prefix": "at.on_selected",
+    "description": "Make a flet widgets on_selected widget",
+    "body": [
+      "on_selected=lambda e: print('${1:selected}'),"
+    ]
+  },
+  "flet widgets on_screenshot": {
+    "prefix": "at.on_screenshot",
+    "description": "Make a flet widgets on_screenshot widget",
+    "body": [
+      "on_screenshot=lambda e: print('${1:screenshot}'),"
+    ]
+  },
+  "flet widgets validator": {
+    "prefix": "at.validator",
+    "description": "Make a flet widgets validator widget",
+    "body": [
+      "validator=lambda v: ${1:True}  # return True/False or error string,"
+    ]
+  },
+  "flet widgets value_binding": {
+    "prefix": "at.value_binding",
+    "description": "Make a flet widgets value_binding widget",
+    "body": [
+      "value_binding=${1:my_binding},"
+    ]
+  },
+  "flet widgets format": {
+    "prefix": "at.format",
+    "description": "Make a flet widgets format widget",
+    "body": [
+      "format='${1:%Y-%m-%d}',"
+    ]
+  },
+  "flet widgets tooltip": {
+    "prefix": "at.tooltip",
+    "description": "Make a flet widgets tooltip widget",
+    "body": [
+      "tooltip='${1:flet-box}',"
+    ]
+  },
+  "flet widgets aria_label": {
+    "prefix": "at.aria_label",
+    "description": "Make a flet widgets aria_label widget",
+    "body": [
+      "aria_label='${1:description}',"
+    ]
+  },
+  "flet widgets tab_index": {
+    "prefix": "at.tab_index",
+    "description": "Make a flet widgets tab_index widget",
+    "body": [
+      "tab_index=${1:0},"
+    ]
+  },
+  "flet widgets enabled": {
+    "prefix": "at.enabled",
+    "description": "Make a flet widgets enabled widget",
+    "body": [
+      "enabled=${1:True},"
+    ]
+  },
+  "flet widgets visible": {
+    "prefix": "at.visible",
+    "description": "Make a flet widgets visible widget",
+    "body": [
+      "visible=${1:True},"
+    ]
+  },
+  "flet widgets readonly": {
+    "prefix": "at.readonly",
+    "description": "Make a flet widgets readonly widget",
+    "body": [
+      "readonly=${1:False},"
+    ]
+  },
+  "flet widgets selectable": {
+    "prefix": "at.selectable",
+    "description": "Make a flet widgets selectable widget",
+    "body": [
+      "selectable=${1:True},"
+    ]
+  },
+  "flet widgets open": {
+    "prefix": "at.open",
+    "description": "Make a flet widgets open widget",
+    "body": [
+      "open=${1:True},"
+    ]
+  },
+  "flet widgets open_on_start": {
+    "prefix": "at.open_on_start",
+    "description": "Make a flet widgets open_on_start widget",
+    "body": [
+      "open=${1:True},"
+    ]
+  },
+  "flet widgets disabled": {
+    "prefix": "at.disabled",
+    "description": "Make a flet widgets disabled widget",
+    "body": [
+      "disabled=${1:True},"
+    ]
+  },
+  "flet widgets location": {
+    "prefix": "at.location",
+    "description": "Make a flet widgets location widget",
+    "body": [
+      "location=(${1:23.1136}, ${2:-82.3666}),"
+    ]
+  },
+  "flet widgets url_template": {
+    "prefix": "at.url_template",
+    "description": "Make a flet widgets url_template widget",
+    "body": [
+      "url_template='${1:https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png}',"
+    ]
+  },
+  "flet widgets tile_options": {
+    "prefix": "at.tile_options",
+    "description": "Make a flet widgets tile_options widget",
+    "body": [
+      "tile_options={'maxZoom':${1:18}},"
+    ]
+  },
+  "flet widgets cluster": {
+    "prefix": "at.cluster",
+    "description": "Make a flet widgets cluster widget",
+    "body": [
+      "cluster=${1:True},"
+    ]
+  },
+  "flet widgets draggable_marker": {
+    "prefix": "at.draggable_marker",
+    "description": "Make a flet widgets draggable_marker widget",
+    "body": [
+      "draggable_marker=${1:True},"
+    ]
+  },
+  "flet widgets marker_radius": {
+    "prefix": "at.marker_radius",
+    "description": "Make a flet widgets marker_radius widget",
+    "body": [
+      "radius=${1:5},"
+    ]
+  },
+  "flet widgets map_type": {
+    "prefix": "at.map_type",
+    "description": "Make a flet widgets map_type widget",
+    "body": [
+      "map_type='${1:streets}',"
+    ]
+  },
+  "flet widgets marker_content": {
+    "prefix": "at.marker_content",
+    "description": "Make a flet widgets marker_content widget",
+    "body": [
+      "content=ft.Text('${1:flet-box}'),"
+    ]
+  },
+  "flet widgets figure": {
+    "prefix": "at.figure",
+    "description": "Make a flet widgets figure widget",
+    "body": [
+      "figure=${1:None}, width=${2:400}, height=${3:300},"
+    ]
+  },
+  "flet widgets plotly_figure": {
+    "prefix": "at.plotly_figure",
+    "description": "Make a flet widgets plotly_figure widget",
+    "body": [
+      "figure=${1:None}, width=${2:400}, height=${3:300},"
+    ]
+  },
+  "flet widgets matplotlib_figure": {
+    "prefix": "at.matplotlib_figure",
+    "description": "Make a flet widgets matplotlib_figure widget",
+    "body": [
+      "figure=${1:None}, width=${2:400}, height=${3:300},"
+    ]
+  },
+  "flet widgets feedback": {
+    "prefix": "at.feedback",
+    "description": "Make a flet widgets feedback widget",
+    "body": [
+      "feedback=ft.Text('${1:dragging}'),"
+    ]
+  },
+  "flet widgets draggable": {
+    "prefix": "at.draggable",
+    "description": "Make a flet widgets draggable widget",
+    "body": [
+      "draggable=${1:False},"
+    ]
+  },
+  "flet widgets drop_target": {
+    "prefix": "at.drop_target",
+    "description": "Make a flet widgets drop_target widget",
+    "body": [
+      "on_drop=lambda e: print('${1:dropped}'),"
+    ]
+  },
+  "flet widgets readonly_mode": {
+    "prefix": "at.readonly_mode",
+    "description": "Make a flet widgets readonly_mode widget",
+    "body": [
+      "readonly=${1:False},"
+    ]
+  },
+  "flet widgets cache_policy": {
+    "prefix": "at.cache_policy",
+    "description": "Make a flet widgets cache_policy widget",
+    "body": [
+      "cache=${1:True},"
+    ]
+  },
+  "flet widgets preload_resources": {
+    "prefix": "at.preload_resources",
+    "description": "Make a flet widgets preload_resources widget",
+    "body": [
+      "preload=${1:False},"
+    ]
+  },
+  "flet widgets aria_role": {
+    "prefix": "at.aria_role",
+    "description": "Make a flet widgets aria_role widget",
+    "body": [
+      "aria_role='${1:button}',"
+    ]
+  },
+  "flet widgets data_testid": {
+    "prefix": "at.data_testid",
+    "description": "Make a flet widgets data_testid widget",
+    "body": [
+      "data_testid='${1:test-id}',"
+    ]
+  },
+  "flet widgets custom_style": {
+    "prefix": "at.custom_style",
+    "description": "Make a flet widgets custom_style widget",
+    "body": [
+      "style=${1:ft.ButtonStyle(color=ft.Colors.${2:BLUE})},"
+    ]
+  },
+  "flet widgets extra": {
+    "prefix": "at.extra",
+    "description": "Make a flet widgets extra widget",
+    "body": [
+      "extra=${1:None},"
+    ]
+  }
+}
